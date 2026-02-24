@@ -1,0 +1,35 @@
+fujii_innsbruck_final:
+  round: innsbruck_boulder_men_final
+  athlete: kokoro_fujii
+  rank: 1
+  score_raw: "4T5z 4 4"
+  tops: 4
+  zones: 4
+  top_attempts: 5
+  zone_attempts: 4
+
+narasaki_innsbruck_final:
+  round: innsbruck_boulder_men_final
+  athlete: tomoa_narasaki
+  rank: 2
+  score_raw: "3T4z 4 5"
+  tops: 3
+  zones: 4
+  top_attempts: 4
+  zone_attempts: 5
+
+garnbret_chamonix_final:
+  round: chamonix_lead_women_final
+  athlete: janja_garnbret
+  rank: 1
+  score_raw: "42+"
+  lead_height: 42.5
+  lead_plus: true
+
+speed_result:
+  round: innsbruck_boulder_men_qual
+  athlete: speed_athlete
+  rank: 5
+  score_raw: "6.53"
+  speed_time: 6.53
+  speed_eliminated_stage: "quarter_final"

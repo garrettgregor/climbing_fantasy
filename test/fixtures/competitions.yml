@@ -1,0 +1,29 @@
+innsbruck_boulder:
+  season: season_2024
+  external_event_id: 1291
+  name: "IFSC World Cup Innsbruck 2024"
+  location: "Innsbruck, AUT"
+  starts_on: "2024-06-26"
+  ends_on: "2024-06-30"
+  discipline: 0
+  status: 2
+
+chamonix_lead:
+  season: season_2024
+  external_event_id: 1292
+  name: "IFSC World Cup Chamonix 2024"
+  location: "Chamonix, FRA"
+  starts_on: "2024-07-10"
+  ends_on: "2024-07-14"
+  discipline: 1
+  status: 2
+
+upcoming_speed:
+  season: season_2025
+  external_event_id: 1350
+  name: "IFSC World Cup Seoul 2025"
+  location: "Seoul, KOR"
+  starts_on: "2025-09-01"
+  ends_on: "2025-09-05"
+  discipline: 2
+  status: 0

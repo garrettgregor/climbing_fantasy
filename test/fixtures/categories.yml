@@ -1,0 +1,20 @@
+innsbruck_boulder_men:
+  competition: innsbruck_boulder
+  external_category_id: 5001
+  name: "Boulder - Men"
+  discipline: 0
+  gender: 0
+
+innsbruck_boulder_women:
+  competition: innsbruck_boulder
+  external_category_id: 5002
+  name: "Boulder - Women"
+  discipline: 0
+  gender: 1
+
+chamonix_lead_women:
+  competition: chamonix_lead
+  external_category_id: 5003
+  name: "Lead - Women"
+  discipline: 1
+  gender: 1

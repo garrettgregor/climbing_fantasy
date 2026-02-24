@@ -1,0 +1,27 @@
+janja_garnbret:
+  external_athlete_id: 5765
+  first_name: "Janja"
+  last_name: "Garnbret"
+  country_code: "SLO"
+  gender: 1
+
+tomoa_narasaki:
+  external_athlete_id: 6280
+  first_name: "Tomoa"
+  last_name: "Narasaki"
+  country_code: "JPN"
+  gender: 0
+
+kokoro_fujii:
+  external_athlete_id: 8677
+  first_name: "Kokoro"
+  last_name: "Fujii"
+  country_code: "JPN"
+  gender: 0
+
+speed_athlete:
+  external_athlete_id: 9000
+  first_name: "Veddriq"
+  last_name: "Leonardo"
+  country_code: "INA"
+  gender: 0

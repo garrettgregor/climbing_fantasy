@@ -1,0 +1,20 @@
+innsbruck_boulder_men_qual:
+  category: innsbruck_boulder_men
+  external_round_id: 7001
+  name: "Qualification"
+  round_type: 0
+  status: 2
+
+innsbruck_boulder_men_final:
+  category: innsbruck_boulder_men
+  external_round_id: 7002
+  name: "Final"
+  round_type: 2
+  status: 2
+
+chamonix_lead_women_final:
+  category: chamonix_lead_women
+  external_round_id: 7003
+  name: "Final"
+  round_type: 2
+  status: 2
