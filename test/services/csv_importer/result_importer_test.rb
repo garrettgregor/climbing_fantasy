@@ -7,11 +7,11 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
       #{athletes(:kokoro_fujii).external_athlete_id},1,boulder,2023,2023-06-15,9999,Prague,8001
     CSV
 
-    file = Tempfile.new(["results", ".csv"])
+    file = Tempfile.new([ "results", ".csv" ])
     file.write(csv_content)
     file.rewind
 
-    assert_difference ["Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count"] do
+    assert_difference [ "Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count" ] do
       CsvImporter::ResultImporter.import(file.path)
     end
 
@@ -48,13 +48,13 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
       #{athletes(:kokoro_fujii).external_athlete_id},1,boulder,2023,2023-06-15,9998,Berlin,8002
     CSV
 
-    file = Tempfile.new(["results", ".csv"])
+    file = Tempfile.new([ "results", ".csv" ])
     file.write(csv_content)
     file.rewind
 
     CsvImporter::ResultImporter.import(file.path)
 
-    assert_no_difference ["Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count"] do
+    assert_no_difference [ "Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count" ] do
       CsvImporter::ResultImporter.import(file.path)
     end
   ensure
@@ -68,7 +68,7 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
       #{athletes(:janja_garnbret).external_athlete_id},1,boulder&lead,2023,2023-08-10,9997,Munich,8003
     CSV
 
-    file = Tempfile.new(["results", ".csv"])
+    file = Tempfile.new([ "results", ".csv" ])
     file.write(csv_content)
     file.rewind
 
@@ -90,7 +90,7 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
       999999,1,lead,2023,2023-06-15,9996,Tokyo,8004
     CSV
 
-    file = Tempfile.new(["results", ".csv"])
+    file = Tempfile.new([ "results", ".csv" ])
     file.write(csv_content)
     file.rewind
 
@@ -109,7 +109,7 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
       #{athletes(:tomoa_narasaki).external_athlete_id},2,boulder,2023,2023-06-15,9995,Hachioji,8005
     CSV
 
-    file = Tempfile.new(["results", ".csv"])
+    file = Tempfile.new([ "results", ".csv" ])
     file.write(csv_content)
     file.rewind
 
