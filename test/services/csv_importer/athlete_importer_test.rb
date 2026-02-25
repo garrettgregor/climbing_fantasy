@@ -8,7 +8,7 @@ class CsvImporter::AthleteImporterTest < ActiveSupport::TestCase
       99002,Another,Climber,GBR,F
     CSV
 
-    file = Tempfile.new(["athletes", ".csv"])
+    file = Tempfile.new([ "athletes", ".csv" ])
     file.write(csv_content)
     file.rewind
 
@@ -26,7 +26,7 @@ class CsvImporter::AthleteImporterTest < ActiveSupport::TestCase
       99003,New,Climber,USA,M
     CSV
 
-    file = Tempfile.new(["athletes", ".csv"])
+    file = Tempfile.new([ "athletes", ".csv" ])
     file.write(csv_content)
     file.rewind
 
@@ -47,7 +47,7 @@ class CsvImporter::AthleteImporterTest < ActiveSupport::TestCase
       99005,Female,Climber,USA,F
     CSV
 
-    file = Tempfile.new(["athletes", ".csv"])
+    file = Tempfile.new([ "athletes", ".csv" ])
     file.write(csv_content)
     file.rewind
 

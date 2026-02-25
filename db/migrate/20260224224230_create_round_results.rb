@@ -23,6 +23,6 @@ class CreateRoundResults < ActiveRecord::Migration[8.1]
       t.timestamps
     end
 
-    add_index :round_results, [:round_id, :athlete_id], unique: true
+    add_index :round_results, [ :round_id, :athlete_id ], unique: true
   end
 end

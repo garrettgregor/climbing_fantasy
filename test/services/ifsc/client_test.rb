@@ -4,7 +4,7 @@ class Ifsc::ClientTest < ActiveSupport::TestCase
   test "fetches seasons index" do
     stub_response = File.read(Rails.root.join("test/fixtures/files/ifsc_seasons_response.json"))
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get("/results-api.php?api=index") { [200, { "Content-Type" => "application/json" }, stub_response] }
+      stub.get("/results-api.php?api=index") { [ 200, { "Content-Type" => "application/json" }, stub_response ] }
     end
 
     client = Ifsc::Client.new(adapter: :test, stubs: stubs)
@@ -18,7 +18,7 @@ class Ifsc::ClientTest < ActiveSupport::TestCase
   test "fetches event results" do
     stub_response = File.read(Rails.root.join("test/fixtures/files/ifsc_event_results_response.json"))
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get("/results-api.php?api=event_results&event_id=1350") { [200, { "Content-Type" => "application/json" }, stub_response] }
+      stub.get("/results-api.php?api=event_results&event_id=1350") { [ 200, { "Content-Type" => "application/json" }, stub_response ] }
     end
 
     client = Ifsc::Client.new(adapter: :test, stubs: stubs)
@@ -31,7 +31,7 @@ class Ifsc::ClientTest < ActiveSupport::TestCase
   test "fetches category results" do
     stub_response = File.read(Rails.root.join("test/fixtures/files/ifsc_category_results_response.json"))
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get("/api/v1/events/1350/result/5001") { [200, { "Content-Type" => "application/json" }, stub_response] }
+      stub.get("/api/v1/events/1350/result/5001") { [ 200, { "Content-Type" => "application/json" }, stub_response ] }
     end
 
     client = Ifsc::Client.new(adapter: :test, stubs: stubs)
@@ -43,7 +43,7 @@ class Ifsc::ClientTest < ActiveSupport::TestCase
 
   test "raises on HTTP error" do
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get("/results-api.php?api=index") { [500, {}, "Internal Server Error"] }
+      stub.get("/results-api.php?api=index") { [ 500, {}, "Internal Server Error" ] }
     end
 
     client = Ifsc::Client.new(adapter: :test, stubs: stubs)

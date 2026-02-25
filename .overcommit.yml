@@ -1,0 +1,28 @@
+# Use this file to configure the Overcommit hooks you wish to use. This will
+# ensure that these checks are run locally before committing.
+#
+# For a complete list of hooks, see:
+# https://github.com/sds/overcommit/tree/master/lib/overcommit/hook
+#
+# After adding this file, install the hooks with:
+#   bundle exec overcommit --install
+#   bundle exec overcommit --sign
+
+PreCommit:
+  RuboCop:
+    enabled: true
+    command: ["bundle", "exec", "rubocop"]
+    on_warn: fail
+
+  BundleAudit:
+    enabled: true
+
+  Brakeman:
+    enabled: true
+
+PostCheckout:
+  ALL:
+    quiet: true
+
+  BundleInstall:
+    enabled: true

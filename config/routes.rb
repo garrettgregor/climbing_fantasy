@@ -2,8 +2,8 @@ require "sidekiq/web"
 require "sidekiq/cron/web"
 
 Rails.application.routes.draw do
-  mount Rswag::Ui::Engine => '/api-docs'
-  mount Rswag::Api::Engine => '/api-docs'
+  mount Rswag::Ui::Engine => "/api-docs"
+  mount Rswag::Api::Engine => "/api-docs"
   devise_for :admin_users
   ActiveAdmin.routes(self)
 
@@ -13,11 +13,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :seasons, only: [:index, :show]
-      resources :competitions, only: [:index, :show]
-      resources :categories, only: [:show]
-      resources :rounds, only: [:show]
-      resources :athletes, only: [:index, :show]
+      resources :seasons, only: [ :index, :show ]
+      resources :competitions, only: [ :index, :show ]
+      resources :categories, only: [ :show ]
+      resources :rounds, only: [ :show ]
+      resources :athletes, only: [ :index, :show ]
     end
   end
 
