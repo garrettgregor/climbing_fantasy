@@ -1,6 +1,6 @@
 namespace :import do
   desc "Import athletes from CSV file"
-  task :athletes, [:path] => :environment do |_t, args|
+  task :athletes, [ :path ] => :environment do |_t, args|
     abort "Usage: rake import:athletes[path/to/file.csv]" unless args[:path]
     abort "File not found: #{args[:path]}" unless File.exist?(args[:path])
 
@@ -10,7 +10,7 @@ namespace :import do
   end
 
   desc "Import results from CSV file"
-  task :results, [:path] => :environment do |_t, args|
+  task :results, [ :path ] => :environment do |_t, args|
     abort "Usage: rake import:results[path/to/file.csv]" unless args[:path]
     abort "File not found: #{args[:path]}" unless File.exist?(args[:path])
 

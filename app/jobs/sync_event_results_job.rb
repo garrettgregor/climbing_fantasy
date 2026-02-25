@@ -4,7 +4,7 @@ class SyncEventResultsJob < ApplicationJob
   def perform(adapter: :net_http, stubs: nil)
     client = Ifsc::Client.new(adapter: adapter, stubs: stubs)
 
-    Competition.where(status: [:in_progress, :completed]).find_each do |competition|
+    Competition.where(status: [ :in_progress, :completed ]).find_each do |competition|
       next unless competition.external_event_id
 
       event_data = client.fetch_event_results(competition.external_event_id)

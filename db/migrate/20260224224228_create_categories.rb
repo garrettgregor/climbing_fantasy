@@ -10,6 +10,6 @@ class CreateCategories < ActiveRecord::Migration[8.1]
       t.timestamps
     end
 
-    add_index :categories, [:competition_id, :external_category_id], unique: true
+    add_index :categories, [ :competition_id, :external_category_id ], unique: true
   end
 end

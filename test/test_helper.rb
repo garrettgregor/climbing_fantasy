@@ -29,7 +29,7 @@ module CommitteeValidation
       validator_option: Committee::SchemaValidator::Option.new({}, schema, :open_api_3)
     )
     status, headers, body = response.status, response.headers, response.body
-    validator.call(request, status, headers, [body], strict: false)
+    validator.call(request, status, headers, [ body ], strict: false)
   rescue Committee::InvalidResponse => e
     flunk "Response does not conform to OpenAPI schema: #{e.message}"
   end
