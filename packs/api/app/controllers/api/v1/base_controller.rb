@@ -8,14 +8,14 @@ module Api
       private
 
       def not_found
-        render json: { error: "Not found" }, status: :not_found
+        render(json: { error: "Not found" }, status: :not_found)
       end
 
       def pagination_meta(pagy)
         {
           page: pagy.page,
           per_page: pagy.limit,
-          total: pagy.count
+          total: pagy.count,
         }
       end
     end

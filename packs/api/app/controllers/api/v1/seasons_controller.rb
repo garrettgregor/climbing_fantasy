@@ -3,17 +3,17 @@ module Api
     class SeasonsController < BaseController
       def index
         pagy, seasons = pagy(Season.order(year: :desc), limit: params.fetch(:per_page, 25).to_i)
-        render json: {
+        render(json: {
           data: SeasonBlueprint.render_as_hash(seasons),
-          meta: pagination_meta(pagy)
-        }
+          meta: pagination_meta(pagy),
+        })
       end
 
       def show
         season = Season.find(params[:id])
-        render json: {
-          data: SeasonBlueprint.render_as_hash(season, view: :extended)
-        }
+        render(json: {
+          data: SeasonBlueprint.render_as_hash(season, view: :extended),
+        })
       end
     end
   end
