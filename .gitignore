@@ -39,3 +39,6 @@
 
 # Ignore node modules (used for ActiveAdmin CSS build)
 /node_modules
+
+# Ignore Claude Plans
+/.claude/plans
