@@ -93,6 +93,9 @@ group :development do
 
   # Git hooks manager to catch linting issues before committing
   gem "overcommit", require: false
+
+  # Annotate models, routes, etc. with schema info
+  gem "annotaterb"
 end
 
 group :test do
