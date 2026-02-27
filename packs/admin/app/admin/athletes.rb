@@ -1,8 +1,14 @@
-ActiveAdmin.register Athlete do
+ActiveAdmin.register(Athlete) do
   menu priority: 4
 
-  permit_params :external_athlete_id, :first_name, :last_name,
-                :country_code, :gender, :height, :arm_span, :birthday
+  permit_params :external_athlete_id,
+    :first_name,
+    :last_name,
+    :country_code,
+    :gender,
+    :height,
+    :arm_span,
+    :birthday
 
   index do
     selectable_column

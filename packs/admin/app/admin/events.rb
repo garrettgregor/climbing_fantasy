@@ -1,8 +1,14 @@
-ActiveAdmin.register Event do
+ActiveAdmin.register(Event) do
   menu priority: 3
 
-  permit_params :season_id, :external_id, :name, :location,
-                :starts_on, :ends_on, :discipline, :status
+  permit_params :season_id,
+    :external_id,
+    :name,
+    :location,
+    :starts_on,
+    :ends_on,
+    :discipline,
+    :status
 
   scope :all
   scope :upcoming

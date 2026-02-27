@@ -1,10 +1,18 @@
-ActiveAdmin.register RoundResult do
+ActiveAdmin.register(RoundResult) do
   menu priority: 7
 
-  permit_params :round_id, :athlete_id, :rank, :score_raw,
-                :tops, :zones, :top_attempts, :zone_attempts,
-                :lead_height, :lead_plus, :speed_time,
-                :speed_eliminated_stage
+  permit_params :round_id,
+    :athlete_id,
+    :rank,
+    :score_raw,
+    :tops,
+    :zones,
+    :top_attempts,
+    :zone_attempts,
+    :lead_height,
+    :lead_plus,
+    :speed_time,
+    :speed_eliminated_stage
 
   index do
     selectable_column

@@ -20,6 +20,12 @@ PreCommit:
   Brakeman:
     enabled: true
 
+  ScriptRunner:
+    enabled: true
+    description: "Packwerk architectural boundary check"
+    command: ["bundle", "exec", "packwerk", "check"]
+    on_warn: fail
+
 PostCheckout:
   ALL:
     quiet: true

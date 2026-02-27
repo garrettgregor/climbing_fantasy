@@ -10,7 +10,7 @@ class SyncUpcomingEventsJob < ApplicationJob
       event_data = client.fetch_event_results(event.external_id)
       Ifsc::ResultSyncer.sync_categories(event, event_data)
     rescue Ifsc::Client::ApiError => e
-      Rails.logger.error "Failed to sync upcoming event #{event.id}: #{e.message}"
+      Rails.logger.error("Failed to sync upcoming event #{event.id}: #{e.message}")
     end
   end
 end

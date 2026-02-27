@@ -1,9 +1,14 @@
-ActiveAdmin.register Category do
+ActiveAdmin.register(Category) do
   menu priority: 5
 
-  permit_params :event_id, :external_id, :name,
-                :discipline, :gender, :age_category,
-                :para_classification, :para_intensity
+  permit_params :event_id,
+    :external_id,
+    :name,
+    :discipline,
+    :gender,
+    :age_category,
+    :para_classification,
+    :para_intensity
 
   index do
     selectable_column

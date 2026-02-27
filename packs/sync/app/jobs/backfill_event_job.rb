@@ -16,10 +16,10 @@ class BackfillEventJob < ApplicationJob
 
     event.update!(results_synced_at: Time.current)
   rescue Ferrum::Error => e
-    Rails.logger.error "BackfillEventJob: Ferrum error for event #{event_id}: #{e.message}"
+    Rails.logger.error("BackfillEventJob: Ferrum error for event #{event_id}: #{e.message}")
     raise
   rescue Ifsc::DomScraper::ScraperError => e
-    Rails.logger.error "BackfillEventJob: ScraperError for event #{event_id}: #{e.message}"
+    Rails.logger.error("BackfillEventJob: ScraperError for event #{event_id}: #{e.message}")
     raise
   ensure
     scraper&.close

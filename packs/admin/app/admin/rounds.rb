@@ -1,8 +1,11 @@
-ActiveAdmin.register Round do
+ActiveAdmin.register(Round) do
   menu priority: 6
 
-  permit_params :category_id, :external_round_id, :name,
-                :round_type, :status
+  permit_params :category_id,
+    :external_round_id,
+    :name,
+    :round_type,
+    :status
 
   scope :all
   scope :pending

@@ -1,4 +1,4 @@
-ActiveAdmin.register AdminUser do
+ActiveAdmin.register(AdminUser) do
   menu priority: 10, parent: "Admin"
 
   permit_params :email, :password, :password_confirmation, :role
@@ -20,10 +20,10 @@ ActiveAdmin.register AdminUser do
 
   form do |f|
     f.inputs do
-      f.input :email
-      f.input :password
-      f.input :password_confirmation
-      f.input :role, as: :select, collection: AdminUser.roles.keys
+      f.input(:email)
+      f.input(:password)
+      f.input(:password_confirmation)
+      f.input(:role, as: :select, collection: AdminUser.roles.keys)
     end
     f.actions
   end

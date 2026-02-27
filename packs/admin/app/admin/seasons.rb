@@ -1,4 +1,4 @@
-ActiveAdmin.register Season do
+ActiveAdmin.register(Season) do
   menu priority: 2
 
   permit_params :external_id, :name, :year

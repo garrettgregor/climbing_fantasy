@@ -1,0 +1,5 @@
+enforce_dependencies: true
+enforce_privacy: true
+dependencies:
+  - packs/core
+  - "."  # AdminUser and ApplicationPolicy live in the root package

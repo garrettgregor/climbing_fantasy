@@ -53,6 +53,14 @@ gem "ferrum"
 gem "sidekiq"
 gem "sidekiq-cron"
 
+# Structured query parameters (also used by activeadmin)
+gem "ransack"
+
+# Modular architecture enforcement
+gem "packwerk", require: false
+gem "packs-rails"
+gem "benchmark" # required by packwerk (no longer default in Ruby 4)
+
 # Admin dashboard
 gem "activeadmin", "~> 4.0.0.beta21"
 
@@ -75,8 +83,9 @@ group :development, :test do
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
-  # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
-  gem "rubocop-rails-omakase", require: false
+  # Shopify Ruby style guide
+  gem "rubocop-shopify", require: false
+  gem "rubocop-rails",   require: false
 
   # OpenAPI documentation (serve spec + Swagger UI)
   gem "rswag-api"

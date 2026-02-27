@@ -7,11 +7,15 @@ module CsvImporter
       "lead" => :lead,
       "speed" => :speed,
       "combined" => :combined,
-      "boulder&lead" => :boulder_and_lead
+      "boulder&lead" => :boulder_and_lead,
     }.freeze
 
-    def self.import(file_path)
-      new.import(file_path)
+    class << self
+      # rubocop:disable Rails/Delegate -- `delegate :import, to: :new` doesn't convey intent here
+      def import(file_path)
+        new.import(file_path)
+      end
+      # rubocop:enable Rails/Delegate
     end
 
     def import(file_path)
@@ -31,7 +35,7 @@ module CsvImporter
         end
       end
 
-      Rails.logger.info "ResultImporter complete: #{@row_count} rows processed, #{@skipped} skipped"
+      Rails.logger.info("ResultImporter complete: #{@row_count} rows processed, #{@skipped} skipped")
     end
 
     private
@@ -66,9 +70,13 @@ module CsvImporter
 
       @events[cache_key] ||= Event.find_or_create_by!(
         season: season,
-        external_id: event_id
+        external_id: event_id,
       ) do |e|
-        date = Date.parse(row["date"]) rescue Date.new(season.year, 1, 1)
+        date = begin
+          Date.parse(row["date"])
+        rescue
+          Date.new(season.year, 1, 1)
+        end
         location = row["event_location"].presence || "Unknown"
         e.name = "IFSC World Cup #{location} #{season.year}"
         e.location = location
@@ -85,7 +93,7 @@ module CsvImporter
 
       @categories[cache_key] ||= Category.find_or_create_by!(
         event: event,
-        external_id: d_cat
+        external_id: d_cat,
       ) do |c|
         c.name = "#{discipline.to_s.titleize} - #{athlete.gender.titleize}"
         c.discipline = discipline
@@ -108,7 +116,7 @@ module CsvImporter
     end
 
     def log_progress
-      Rails.logger.info "ResultImporter: processed #{@row_count} rows (#{@skipped} skipped)..."
+      Rails.logger.info("ResultImporter: processed #{@row_count} rows (#{@skipped} skipped)...")
     end
   end
 end

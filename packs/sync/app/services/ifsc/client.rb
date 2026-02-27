@@ -6,9 +6,9 @@ module Ifsc
 
     def initialize(adapter: :net_http, stubs: nil)
       @connection = Faraday.new(url: BASE_URL) do |f|
-        f.request :json
-        f.response :json, content_type: /\bjson$/
-        f.adapter adapter, stubs
+        f.request(:json)
+        f.response(:json, content_type: /\bjson$/)
+        f.adapter(adapter, stubs)
       end
     end
 

@@ -1,0 +1,5 @@
+# See: https://github.com/Shopify/packwerk/blob/main/USAGE.md#configuring-packwerk
+
+include_paths:
+  - app
+  - packs/*/app

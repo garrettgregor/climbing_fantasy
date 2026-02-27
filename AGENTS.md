@@ -31,19 +31,20 @@ CI pipeline (GitHub Actions, `.github/workflows/ci.yml`) runs five jobs:
 
 1. **scan_ruby** — Brakeman security scan + Bundler-Audit
 2. **scan_js** — Importmap audit
-3. **lint** — RuboCop (Omakase style)
+3. **lint** — RuboCop (Shopify style guide)
 4. **test** — Minitest with PostgreSQL service
 5. **system-test** — Capybara system tests, uploads screenshots on failure
 
 Run linting and security scans locally:
 
 ```bash
-bin/rubocop                     # RuboCop (rubocop-rails-omakase)
+bin/rubocop                     # RuboCop (rubocop-shopify + rubocop-rails)
+bin/packwerk check              # Packwerk architectural boundary check
 bin/brakeman                    # Rails security scanner
 bin/bundler-audit               # Gem vulnerability audit
 ```
 
-Pre-commit hooks via Overcommit (`.overcommit.yml`) run RuboCop, BundleAudit, and Brakeman automatically.
+Pre-commit hooks via Overcommit (`.overcommit.yml`) run RuboCop, Packwerk, BundleAudit, and Brakeman automatically.
 
 ## Architecture
 
@@ -80,11 +81,11 @@ Response shape: `{ "data": [...], "meta": { "page": 1, "per_page": 25, "total": 
 
 ### Serialization
 
-Blueprinter serializers live in `app/blueprints/`. Each has a default view and an extended view that includes associations.
+Blueprinter serializers live in `packs/api/app/blueprints/`. Each has a default view and an extended view that includes associations.
 
 ### Authorization
 
-Pundit policies in `app/policies/` gate admin access by role. API endpoints are public (no auth required).
+Pundit policies in `packs/admin/app/policies/` gate admin access by role. API endpoints are public (no auth required).
 
 ### OpenAPI validation
 
@@ -94,7 +95,7 @@ Tests use Committee to validate API responses against `swagger/v1/swagger.yaml`.
 
 Data flows in from the IFSC results API via background jobs. No manual data entry through the API — it is read-only.
 
-### IFSC services (`app/services/ifsc/`)
+### IFSC services (`packs/sync/app/services/ifsc/`)
 
 - **Ifsc::Client** — Faraday HTTP wrapper around `ifsc.results.info`. Raises `Ifsc::Client::ApiError` on failures.
 - **Ifsc::SeasonFetcher** — fetches and syncs seasons
@@ -129,17 +130,29 @@ Services: `CsvImporter::AthleteImporter`, `CsvImporter::ResultImporter`.
 ## Project structure
 
 ```txt
-app/
-  admin/              # ActiveAdmin resource definitions
-  blueprints/         # Blueprinter JSON serializers
+app/                          # Base classes only (root package)
   controllers/
-    api/v1/           # API controllers (BaseController + 5 resources)
-  jobs/               # Sidekiq background jobs
-  models/             # ActiveRecord models (7 domain + AdminUser)
-  policies/           # Pundit authorization policies
-  services/
-    ifsc/             # IFSC API client and data syncers
-    csv_importer/     # CSV import services
+    application_controller.rb
+  jobs/
+    application_job.rb
+  models/
+    admin_user.rb
+    application_record.rb
+packs/
+  core/                       # Domain models — no inbound pack dependencies
+    app/models/               # Event, Season, Category, Round, RoundResult, Athlete, Climb, ClimbResult
+  api/                        # JSON API layer — depends on core
+    app/blueprints/           # Blueprinter serializers
+    app/controllers/api/v1/   # BaseController + 5 resource controllers
+    app/queries/              # EventQuery, AthleteQuery (ransack-backed)
+  admin/                      # Admin interface — depends on core
+    app/admin/                # ActiveAdmin resource definitions
+    app/policies/             # Pundit authorization policies
+  sync/                       # Data sync — depends on core
+    app/jobs/                 # Sidekiq background jobs
+    app/services/ifsc/        # IFSC API client and data syncers
+    app/services/csv_importer/ # CSV import services
+    lib/tasks/sync.rake       # Rake tasks for backfill/sync
 config/
   database.yml        # PostgreSQL, multi-db in production (primary, cache, queue, cable)
   sidekiq.yml         # Queue configuration
@@ -152,16 +165,20 @@ test/
   fixtures/           # YAML fixtures and mock data
   jobs/               # Background job tests
   models/             # Model validation tests
+  queries/            # Query object tests
   services/           # Service object tests
+packwerk.yml          # Packwerk configuration (include_paths: app, packs/*/app)
 ```
 
 ## Conventions
 
-- **Ruby style:** Omakase via `rubocop-rails-omakase`. No custom overrides.
-- **Testing:** Minitest with parallel workers. Shoulda-matchers for model validations. Committee for API schema conformance.
-- **Models:** Enums for discipline, status, gender, round_type, role. Validations on presence and uniqueness where appropriate.
-- **Services:** Class method interfaces (e.g., `CsvImporter::AthleteImporter.import(path)`). IFSC services take a client in the initializer for testability.
-- **Controllers:** Thin controllers. Filtering logic lives in controller private methods. Pagination via Pagy.
+- **Ruby style:** Shopify style guide via `rubocop-shopify` + `rubocop-rails`. No frozen_string_literal magic comments (Ruby 4 default). `class << self` for class methods.
+- **Architecture:** Packwerk packages in `packs/`. Run `bin/packwerk check` to validate boundaries. `packs/core` has no inbound pack deps; api/admin/sync depend only on core.
+- **Filtering:** API filtering goes through query objects (`packs/api/app/queries/`). Use Ransack predicates — pass enum integer values (e.g., `Event.statuses[status_string]`) not strings.
+- **Testing:** Minitest with parallel workers. Shoulda-matchers for model validations. Committee for API schema conformance. Query tests in `test/queries/`.
+- **Models:** Enums for discipline, status, gender, round_type, role. Each model declares explicit `ransackable_attributes`/`ransackable_associations` allowlists.
+- **Services:** Class method interfaces via `class << self` (e.g., `CsvImporter::AthleteImporter.import(path)`). IFSC services take a client in the initializer for testability.
+- **Controllers:** Thin controllers — delegate filtering to query objects, pagination via Pagy.
 - **Serialization:** Blueprinter with default and extended views. No inline JSON rendering.
 - **Jobs:** Rescue from `ApiError`, log, and continue processing remaining items.
 - **Database:** PostgreSQL with UUID-less integer primary keys. Multi-database in production (Solid Cache, Solid Queue, Solid Cable).

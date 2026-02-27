@@ -19,7 +19,7 @@ module Ifsc
       def sync_categories(event, data)
         data["d_cats"]&.each do |dcat|
           category = event.categories.find_or_initialize_by(
-            external_id: dcat["dcat_id"]
+            external_id: dcat["dcat_id"],
           )
           category.name = dcat["dcat_name"]
           category.discipline = map_discipline(dcat["discipline"])
@@ -35,7 +35,7 @@ module Ifsc
 
           ranking["rounds"]&.each do |round_data|
             round = category.rounds.find_or_initialize_by(
-              external_round_id: round_data["round_id"]
+              external_round_id: round_data["round_id"],
             )
             round.name = round_data["round_name"]
             round.round_type = map_round_type(round_data["round_name"])
@@ -62,7 +62,7 @@ module Ifsc
 
       def sync_event(season, event_data)
         event = season.events.find_or_initialize_by(
-          external_id: event_data["event_id"]
+          external_id: event_data["event_id"],
         )
         event.name = event_data["event"]
         event.location = event_data["location"] || "TBD"
@@ -94,6 +94,7 @@ module Ifsc
         return :boulder if name.include?("boulder")
         return :lead if name.include?("lead")
         return :speed if name.include?("speed")
+
         :boulder # default
       end
 
@@ -133,7 +134,8 @@ module Ifsc
         return :small_final  if name&.match?(/small.final|3rd/)
         return :semi_final   if name&.match?(/semi/)
         return :quarter_final if name&.match?(/quarter/)
-        return :round_of_16  if name&.match?(/round.of.16|1\/8/)
+        return :round_of_16 if name&.match?(%r{round.of.16|1/8})
+
         :qualification
       end
     end
