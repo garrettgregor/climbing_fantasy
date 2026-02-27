@@ -11,6 +11,16 @@ class Event < ApplicationRecord
   validates :ends_on, presence: true
   validates :discipline, presence: true
   validates :status, presence: true
+
+  class << self
+    def ransackable_attributes(_auth_object = nil)
+      ["name", "location", "discipline", "status", "starts_on", "ends_on", "results_synced_at", "season_id"]
+    end
+
+    def ransackable_associations(_auth_object = nil)
+      ["season", "categories"]
+    end
+  end
 end
 
 # == Schema Information

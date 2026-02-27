@@ -5,11 +5,11 @@ class Round < ApplicationRecord
 
   enum :round_type, {
     qualification: "qualification",
-    round_of_16:   "round_of_16",
+    round_of_16: "round_of_16",
     quarter_final: "quarter_final",
-    semi_final:    "semi_final",
-    small_final:   "small_final",
-    final:         "final"
+    semi_final: "semi_final",
+    small_final: "small_final",
+    final: "final",
   }
   enum :status, { pending: 0, in_progress: 1, completed: 2 }
 

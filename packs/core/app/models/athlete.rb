@@ -9,6 +9,12 @@ class Athlete < ApplicationRecord
   validates :gender, presence: true
   validates :external_athlete_id, uniqueness: true, allow_nil: true
   validates :height, :arm_span, numericality: { greater_than: 0 }, allow_nil: true
+
+  class << self
+    def ransackable_attributes(_auth_object = nil)
+      ["first_name", "last_name", "country_code", "gender"]
+    end
+  end
 end
 
 # == Schema Information

@@ -3,6 +3,12 @@ class Season < ApplicationRecord
 
   validates :name, presence: true
   validates :year, presence: true, numericality: { only_integer: true }
+
+  class << self
+    def ransackable_attributes(_auth_object = nil)
+      ["name", "year", "external_id"]
+    end
+  end
 end
 
 # == Schema Information
