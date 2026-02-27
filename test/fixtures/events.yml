@@ -1,6 +1,6 @@
 innsbruck_boulder:
   season: season_2024
-  external_event_id: 1291
+  external_id: 1291
   name: "IFSC World Cup Innsbruck 2024"
   location: "Innsbruck, AUT"
   starts_on: "2024-06-26"
@@ -10,7 +10,7 @@ innsbruck_boulder:
 
 chamonix_lead:
   season: season_2024
-  external_event_id: 1292
+  external_id: 1292
   name: "IFSC World Cup Chamonix 2024"
   location: "Chamonix, FRA"
   starts_on: "2024-07-10"
@@ -20,7 +20,7 @@ chamonix_lead:
 
 upcoming_speed:
   season: season_2025
-  external_event_id: 1350
+  external_id: 1350
   name: "IFSC World Cup Seoul 2025"
   location: "Seoul, KOR"
   starts_on: "2025-09-01"
@@ -30,23 +30,24 @@ upcoming_speed:
 
 # == Schema Information
 #
-# Table name: competitions
+# Table name: events
 #
 #  id                :bigint           not null, primary key
 #  discipline        :integer          not null
 #  ends_on           :date             not null
 #  location          :string           not null
 #  name              :string           not null
+#  results_synced_at :datetime
 #  starts_on         :date             not null
 #  status            :integer          default("upcoming"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
-#  external_event_id :integer
+#  external_id       :integer
 #  season_id         :bigint           not null
 #
 # Indexes
 #
-#  index_competitions_on_season_id  (season_id)
+#  index_events_on_season_id  (season_id)
 #
 # Foreign Keys
 #

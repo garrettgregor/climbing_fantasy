@@ -1,43 +1,49 @@
 innsbruck_boulder_men:
-  competition: innsbruck_boulder
-  external_category_id: 5001
+  event: innsbruck_boulder
+  external_id: 5001
   name: "Boulder - Men"
   discipline: 0
   gender: 0
+  age_category: "Open"
 
 innsbruck_boulder_women:
-  competition: innsbruck_boulder
-  external_category_id: 5002
+  event: innsbruck_boulder
+  external_id: 5002
   name: "Boulder - Women"
   discipline: 0
   gender: 1
+  age_category: "Open"
 
 chamonix_lead_women:
-  competition: chamonix_lead
-  external_category_id: 5003
+  event: chamonix_lead
+  external_id: 5003
   name: "Lead - Women"
   discipline: 1
   gender: 1
+  age_category: "Open"
 
 # == Schema Information
 #
 # Table name: categories
 #
-#  id                   :bigint           not null, primary key
-#  discipline           :integer          not null
-#  gender               :integer          not null
-#  name                 :string           not null
-#  created_at           :datetime         not null
-#  updated_at           :datetime         not null
-#  competition_id       :bigint           not null
-#  external_category_id :integer
+#  id                  :bigint           not null, primary key
+#  age_category        :string           default("open"), not null
+#  discipline          :integer          not null
+#  gender              :integer          not null
+#  name                :string           not null
+#  para_classification :string
+#  para_intensity      :integer
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#  event_id            :bigint           not null
+#  external_id         :integer
 #
 # Indexes
 #
-#  index_categories_on_competition_id                           (competition_id)
-#  index_categories_on_competition_id_and_external_category_id  (competition_id,external_category_id) UNIQUE
+#  index_categories_on_event_id                  (event_id)
+#  index_categories_on_event_id_and_external_id  (event_id,external_id) UNIQUE
 #
 # Foreign Keys
 #
-#  fk_rails_...  (competition_id => competitions.id)
+#  fk_rails_...  (event_id => events.id)
 #

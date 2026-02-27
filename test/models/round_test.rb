@@ -9,7 +9,7 @@ class RoundTest < ActiveSupport::TestCase
   end
 
   test "round_type enum values" do
-    assert_equal %w[qualification semi_final final], Round.round_types.keys
+    assert_equal %w[qualification round_of_16 quarter_final semi_final small_final final], Round.round_types.keys
   end
 
   test "status enum values" do
@@ -26,6 +26,11 @@ class RoundTest < ActiveSupport::TestCase
     assert_includes round.round_results, round_results(:fujii_innsbruck_final)
     assert_includes round.round_results, round_results(:narasaki_innsbruck_final)
   end
+
+  test "has many climbs" do
+    round = rounds(:innsbruck_boulder_men_final)
+    assert_includes round.climbs, climbs(:innsbruck_final_problem_1)
+  end
 end
 
 # == Schema Information
@@ -34,7 +39,7 @@ end
 #
 #  id                :bigint           not null, primary key
 #  name              :string           not null
-#  round_type        :integer          not null
+#  round_type        :string           not null
 #  status            :integer          default("pending"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null

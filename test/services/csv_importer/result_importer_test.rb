@@ -1,7 +1,7 @@
 require "test_helper"
 
 class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
-  test "creates Season Competition Category Round and RoundResult from CSV" do
+  test "creates Season Event Category Round and RoundResult from CSV" do
     csv_content = <<~CSV
       athlete_id,rank,discipline,season,date,event_id,event_location,d_cat
       #{athletes(:kokoro_fujii).external_athlete_id},1,boulder,2023,2023-06-15,9999,Prague,8001
@@ -11,22 +11,22 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
     file.write(csv_content)
     file.rewind
 
-    assert_difference [ "Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count" ] do
+    assert_difference [ "Season.count", "Event.count", "Category.count", "Round.count", "RoundResult.count" ] do
       CsvImporter::ResultImporter.import(file.path)
     end
 
     season = Season.find_by(year: 2023)
     assert_equal "IFSC World Cup 2023", season.name
 
-    comp = Competition.find_by(external_event_id: 9999)
-    assert_equal "Prague", comp.location
-    assert_equal "boulder", comp.discipline
-    assert_equal "completed", comp.status
-    assert_equal season, comp.season
+    event = Event.find_by(external_id: 9999)
+    assert_equal "Prague", event.location
+    assert_equal "boulder", event.discipline
+    assert_equal "completed", event.status
+    assert_equal season, event.season
 
-    category = comp.categories.first
+    category = event.categories.first
     assert_equal "boulder", category.discipline
-    assert_equal 8001, category.external_category_id
+    assert_equal 8001, category.external_id
     assert_equal "male", category.gender
 
     round = category.rounds.first
@@ -54,7 +54,7 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
 
     CsvImporter::ResultImporter.import(file.path)
 
-    assert_no_difference [ "Season.count", "Competition.count", "Category.count", "Round.count", "RoundResult.count" ] do
+    assert_no_difference [ "Season.count", "Event.count", "Category.count", "Round.count", "RoundResult.count" ] do
       CsvImporter::ResultImporter.import(file.path)
     end
   ensure
@@ -74,10 +74,10 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
 
     CsvImporter::ResultImporter.import(file.path)
 
-    comp = Competition.find_by(external_event_id: 9997)
-    assert_equal "boulder_and_lead", comp.discipline
+    event = Event.find_by(external_id: 9997)
+    assert_equal "boulder_and_lead", event.discipline
 
-    category = comp.categories.first
+    category = event.categories.first
     assert_equal "boulder_and_lead", category.discipline
   ensure
     file&.close
@@ -115,7 +115,7 @@ class CsvImporter::ResultImporterTest < ActiveSupport::TestCase
 
     CsvImporter::ResultImporter.import(file.path)
 
-    round = Competition.find_by(external_event_id: 9995).categories.first.rounds.first
+    round = Event.find_by(external_id: 9995).categories.first.rounds.first
     assert_equal 2, round.round_results.count
   ensure
     file&.close

@@ -69,6 +69,7 @@ end
 # Table name: round_results
 #
 #  id                     :bigint           not null, primary key
+#  group_label            :string
 #  lead_height            :decimal(, )
 #  lead_plus              :boolean          default(FALSE)
 #  rank                   :integer

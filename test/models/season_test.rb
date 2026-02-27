@@ -19,10 +19,10 @@ class SeasonTest < ActiveSupport::TestCase
     assert_includes season.errors[:year], "must be an integer"
   end
 
-  test "has many competitions" do
+  test "has many events" do
     season = seasons(:season_2024)
-    assert_includes season.competitions, competitions(:innsbruck_boulder)
-    assert_includes season.competitions, competitions(:chamonix_lead)
+    assert_includes season.events, events(:innsbruck_boulder)
+    assert_includes season.events, events(:chamonix_lead)
   end
 
   test "season has expected attributes" do

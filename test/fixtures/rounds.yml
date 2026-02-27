@@ -2,21 +2,21 @@ innsbruck_boulder_men_qual:
   category: innsbruck_boulder_men
   external_round_id: 7001
   name: "Qualification"
-  round_type: 0
+  round_type: "qualification"
   status: 2
 
 innsbruck_boulder_men_final:
   category: innsbruck_boulder_men
   external_round_id: 7002
   name: "Final"
-  round_type: 2
+  round_type: "final"
   status: 2
 
 chamonix_lead_women_final:
   category: chamonix_lead_women
   external_round_id: 7003
   name: "Final"
-  round_type: 2
+  round_type: "final"
   status: 2
 
 # == Schema Information
@@ -25,7 +25,7 @@ chamonix_lead_women_final:
 #
 #  id                :bigint           not null, primary key
 #  name              :string           not null
-#  round_type        :integer          not null
+#  round_type        :string           not null
 #  status            :integer          default("pending"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null

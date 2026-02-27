@@ -21,7 +21,7 @@ class Api::V1::SeasonsControllerTest < ActionDispatch::IntegrationTest
     assert season.key?("year")
   end
 
-  test "GET /api/v1/seasons/:id returns season with competitions" do
+  test "GET /api/v1/seasons/:id returns season with events" do
     season = seasons(:season_2024)
     get api_v1_season_path(season)
     assert_response :success
@@ -29,7 +29,7 @@ class Api::V1::SeasonsControllerTest < ActionDispatch::IntegrationTest
     json = JSON.parse(response.body)
     assert_equal season.id, json["data"]["id"]
     assert_equal season.name, json["data"]["name"]
-    assert json["data"].key?("competitions")
+    assert json["data"].key?("events")
   end
 
   test "GET /api/v1/seasons/:id returns 404 for missing season" do
