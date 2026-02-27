@@ -1,5 +1,5 @@
 class Season < ApplicationRecord
-  has_many :competitions, dependent: :destroy
+  has_many :events, dependent: :destroy
 
   validates :name, presence: true
   validates :year, presence: true, numericality: { only_integer: true }

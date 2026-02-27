@@ -3,6 +3,6 @@ class SeasonBlueprint < Blueprinter::Base
   fields :name, :year, :external_id
 
   view :extended do
-    association :competitions, blueprint: CompetitionBlueprint
+    association :events, blueprint: EventBlueprint
   end
 end

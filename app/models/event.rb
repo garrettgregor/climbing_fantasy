@@ -1,4 +1,4 @@
-class Competition < ApplicationRecord
+class Event < ApplicationRecord
   belongs_to :season
   has_many :categories, dependent: :destroy
 
@@ -15,23 +15,24 @@ end
 
 # == Schema Information
 #
-# Table name: competitions
+# Table name: events
 #
 #  id                :bigint           not null, primary key
 #  discipline        :integer          not null
 #  ends_on           :date             not null
 #  location          :string           not null
 #  name              :string           not null
+#  results_synced_at :datetime
 #  starts_on         :date             not null
 #  status            :integer          default("upcoming"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
-#  external_event_id :integer
+#  external_id       :integer
 #  season_id         :bigint           not null
 #
 # Indexes
 #
-#  index_competitions_on_season_id  (season_id)
+#  index_events_on_season_id  (season_id)
 #
 # Foreign Keys
 #

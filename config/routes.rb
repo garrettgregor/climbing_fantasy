@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :seasons, only: [ :index, :show ]
-      resources :competitions, only: [ :index, :show ]
+      resources :events, only: [ :index, :show ]
       resources :categories, only: [ :show ]
       resources :rounds, only: [ :show ]
       resources :athletes, only: [ :index, :show ]

@@ -9,7 +9,7 @@ ActiveAdmin.register Season do
     column :name
     column :year
     column :external_id
-    column("Competitions") { |s| s.competitions.count }
+    column("Events") { |s| s.events.count }
     column :created_at
     actions
   end
@@ -27,14 +27,15 @@ ActiveAdmin.register Season do
       row :updated_at
     end
 
-    panel "Competitions" do
-      table_for resource.competitions.order(:starts_on) do
-        column(:name) { |c| link_to c.name, admin_competition_path(c) }
+    panel "Events" do
+      table_for resource.events.order(:starts_on) do
+        column(:name) { |e| link_to e.name, admin_event_path(e) }
         column :location
         column :discipline
         column :status
         column :starts_on
         column :ends_on
+        column :results_synced_at
       end
     end
   end

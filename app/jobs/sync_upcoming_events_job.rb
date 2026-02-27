@@ -4,13 +4,13 @@ class SyncUpcomingEventsJob < ApplicationJob
   def perform(adapter: :net_http, stubs: nil)
     client = Ifsc::Client.new(adapter: adapter, stubs: stubs)
 
-    Competition.upcoming.find_each do |competition|
-      next unless competition.external_event_id
+    Event.upcoming.find_each do |event|
+      next unless event.external_id
 
-      event_data = client.fetch_event_results(competition.external_event_id)
-      Ifsc::ResultSyncer.sync_categories(competition, event_data)
+      event_data = client.fetch_event_results(event.external_id)
+      Ifsc::ResultSyncer.sync_categories(event, event_data)
     rescue Ifsc::Client::ApiError => e
-      Rails.logger.error "Failed to sync upcoming event #{competition.id}: #{e.message}"
+      Rails.logger.error "Failed to sync upcoming event #{event.id}: #{e.message}"
     end
   end
 end
