@@ -4,11 +4,11 @@ module Ifsc
       @client = client
     end
 
-    def call(competition)
-      return unless competition.external_event_id
+    def call(event)
+      return unless event.external_id
 
-      data = @client.fetch_event_results(competition.external_event_id)
-      ResultSyncer.sync_categories(competition, data)
+      data = @client.fetch_event_results(event.external_id)
+      ResultSyncer.sync_categories(event, data)
     end
   end
 end

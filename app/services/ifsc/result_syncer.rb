@@ -9,21 +9,22 @@ module Ifsc
           season.save!
 
           season_data["leagues"]&.each do |league|
-            league["events"]&.each do |event|
-              sync_competition(season, event)
+            league["events"]&.each do |event_data|
+              sync_event(season, event_data)
             end
           end
         end
       end
 
-      def sync_categories(competition, data)
+      def sync_categories(event, data)
         data["d_cats"]&.each do |dcat|
-          category = competition.categories.find_or_initialize_by(
-            external_category_id: dcat["dcat_id"]
+          category = event.categories.find_or_initialize_by(
+            external_id: dcat["dcat_id"]
           )
           category.name = dcat["dcat_name"]
           category.discipline = map_discipline(dcat["discipline"])
           category.gender = map_gender(dcat["category"])
+          category.age_category = category.canonical_age_category
           category.save!
         end
       end
@@ -59,17 +60,17 @@ module Ifsc
 
       private
 
-      def sync_competition(season, event_data)
-        competition = season.competitions.find_or_initialize_by(
-          external_event_id: event_data["event_id"]
+      def sync_event(season, event_data)
+        event = season.events.find_or_initialize_by(
+          external_id: event_data["event_id"]
         )
-        competition.name = event_data["event"]
-        competition.location = event_data["location"] || "TBD"
-        competition.starts_on = Date.parse(event_data["starts_at"])
-        competition.ends_on = Date.parse(event_data["ends_at"])
-        competition.discipline = infer_discipline(event_data["event"])
-        competition.status = infer_status(competition.starts_on, competition.ends_on)
-        competition.save!
+        event.name = event_data["event"]
+        event.location = event_data["location"] || "TBD"
+        event.starts_on = Date.parse(event_data["starts_at"])
+        event.ends_on = Date.parse(event_data["ends_at"])
+        event.discipline = infer_discipline(event_data["event"])
+        event.status = infer_status(event.starts_on, event.ends_on)
+        event.save!
       end
 
       def find_or_create_athlete(ranking)
@@ -127,11 +128,13 @@ module Ifsc
       end
 
       def map_round_type(round_name)
-        case round_name&.downcase
-        when /final/ then :final
-        when /semi/ then :semi_final
-        else :qualification
-        end
+        name = round_name&.downcase
+        return :final        if name&.match?(/final/) && !name&.match?(/semi|small|quarter/)
+        return :small_final  if name&.match?(/small.final|3rd/)
+        return :semi_final   if name&.match?(/semi/)
+        return :quarter_final if name&.match?(/quarter/)
+        return :round_of_16  if name&.match?(/round.of.16|1\/8/)
+        :qualification
       end
     end
   end

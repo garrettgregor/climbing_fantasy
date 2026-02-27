@@ -5,10 +5,10 @@ module Ifsc
     end
 
     def call(category)
-      competition = category.competition
-      return unless competition.external_event_id && category.external_category_id
+      event = category.event
+      return unless event.external_id && category.external_id
 
-      data = @client.fetch_category_results(competition.external_event_id, category.external_category_id)
+      data = @client.fetch_category_results(event.external_id, category.external_id)
       ResultSyncer.sync_results(category, data)
     end
   end

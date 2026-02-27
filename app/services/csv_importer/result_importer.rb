@@ -16,7 +16,7 @@ module CsvImporter
 
     def import(file_path)
       @seasons = {}
-      @competitions = {}
+      @events = {}
       @categories = {}
       @rounds = {}
       @athletes = Athlete.where.not(external_athlete_id: nil).index_by(&:external_athlete_id)
@@ -47,8 +47,8 @@ module CsvImporter
       return unless discipline
 
       season = find_or_create_season(row["season"].to_i)
-      competition = find_or_create_competition(season, row, discipline)
-      category = find_or_create_category(competition, row, discipline, athlete)
+      event = find_or_create_event(season, row, discipline)
+      category = find_or_create_category(event, row, discipline, athlete)
       round = find_or_create_round(category)
 
       find_or_create_result(round, athlete, row["rank"].to_i)
@@ -60,36 +60,37 @@ module CsvImporter
       end
     end
 
-    def find_or_create_competition(season, row, discipline)
+    def find_or_create_event(season, row, discipline)
       event_id = row["event_id"].to_i
       cache_key = "#{season.id}-#{event_id}"
 
-      @competitions[cache_key] ||= Competition.find_or_create_by!(
+      @events[cache_key] ||= Event.find_or_create_by!(
         season: season,
-        external_event_id: event_id
-      ) do |c|
+        external_id: event_id
+      ) do |e|
         date = Date.parse(row["date"]) rescue Date.new(season.year, 1, 1)
         location = row["event_location"].presence || "Unknown"
-        c.name = "IFSC World Cup #{location} #{season.year}"
-        c.location = location
-        c.discipline = discipline
-        c.starts_on = date
-        c.ends_on = date
-        c.status = :completed
+        e.name = "IFSC World Cup #{location} #{season.year}"
+        e.location = location
+        e.discipline = discipline
+        e.starts_on = date
+        e.ends_on = date
+        e.status = :completed
       end
     end
 
-    def find_or_create_category(competition, row, discipline, athlete)
+    def find_or_create_category(event, row, discipline, athlete)
       d_cat = row["d_cat"].to_i
-      cache_key = "#{competition.id}-#{d_cat}"
+      cache_key = "#{event.id}-#{d_cat}"
 
       @categories[cache_key] ||= Category.find_or_create_by!(
-        competition: competition,
-        external_category_id: d_cat
+        event: event,
+        external_id: d_cat
       ) do |c|
         c.name = "#{discipline.to_s.titleize} - #{athlete.gender.titleize}"
         c.discipline = discipline
         c.gender = athlete.gender
+        c.age_category = :open
       end
     end
 
