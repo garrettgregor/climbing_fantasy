@@ -147,19 +147,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
     t.index ["sync_state"], name: "index_events_on_sync_state"
   end
 
-  create_table "officials", force: :cascade do |t|
-    t.string "country_code", limit: 3
-    t.datetime "created_at", null: false
-    t.bigint "event_id", null: false
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.integer "role", null: false
-    t.string "source_url"
-    t.datetime "updated_at", null: false
-    t.index ["event_id", "role", "first_name", "last_name"], name: "idx_on_event_id_role_first_name_last_name_be5e297904", unique: true
-    t.index ["event_id"], name: "index_officials_on_event_id"
-  end
-
   create_table "round_results", force: :cascade do |t|
     t.bigint "athlete_id", null: false
     t.decimal "boulder_points"
@@ -195,34 +182,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
     t.index ["category_id"], name: "index_rounds_on_category_id"
   end
 
-  create_table "routesetters", force: :cascade do |t|
-    t.bigint "category_id", null: false
-    t.string "country_code", limit: 3
-    t.datetime "created_at", null: false
-    t.integer "discipline_focus", null: false
-    t.string "first_name", null: false
-    t.boolean "inferred", default: false, null: false
-    t.string "last_name", null: false
-    t.integer "role", null: false
-    t.string "source_url"
-    t.datetime "updated_at", null: false
-    t.index ["category_id", "role", "discipline_focus", "first_name", "last_name"], name: "index_routesetters_unique_assignment", unique: true
-    t.index ["category_id"], name: "index_routesetters_on_category_id"
-  end
-
-  create_table "scrape_page_snapshots", force: :cascade do |t|
-    t.string "content_sha256"
-    t.datetime "created_at", null: false
-    t.string "error_class"
-    t.datetime "last_fetched_at"
-    t.datetime "last_parsed_at"
-    t.integer "scope", null: false
-    t.integer "status_code"
-    t.datetime "updated_at", null: false
-    t.string "url", null: false
-    t.index ["url", "scope"], name: "index_scrape_page_snapshots_on_url_and_scope", unique: true
-  end
-
   create_table "seasons", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.integer "external_id"
@@ -238,9 +197,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
   add_foreign_key "climb_results", "round_results"
   add_foreign_key "climbs", "rounds"
   add_foreign_key "events", "seasons"
-  add_foreign_key "officials", "events"
   add_foreign_key "round_results", "athletes"
   add_foreign_key "round_results", "rounds"
   add_foreign_key "rounds", "categories"
-  add_foreign_key "routesetters", "categories"
 end
