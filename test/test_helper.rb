@@ -8,6 +8,7 @@ VCR.configure do |config|
   config.cassette_library_dir = "test/cassettes"
   config.hook_into(:webmock)
   config.allow_http_connections_when_no_cassette = true
+  config.default_cassette_options = { re_record_interval: 7.days }
   config.filter_sensitive_data("<IFSC_SESSION_COOKIE>") do |interaction|
     cookie = interaction.request.headers["Cookie"]&.first
     if cookie
