@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/events/1491/registrations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"99b222a8f40a9f90ebd5585317cb6895"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 24f31a47d9da27ee443657a341282a5b
+      X-Runtime:
+      - '0.032862'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=idLUppuhKTDLlkrdc5BrVPpuODQ2cIKKRIM%2FZhKlsCy1n7DR5r3yVNTqUXx%2BANXF%2BbHaXeh%2BiYDmymlRz9CzqcK4eGeNnCwJDO2zgkOU"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ad9eba6021f7-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"athlete_id":16642,"firstname":"Christian","lastname":"WILLIAMS","name":"WILLIAMS
+        Christian","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":17580,"firstname":"Ashlyn","lastname":"SMITH","name":"SMITH
+        Ashlyn","gender":1,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":17581,"firstname":"Tahlia","lastname":"HARSDORF","name":"HARSDORF
+        Tahlia","gender":1,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":17243,"firstname":"Daniela","lastname":"TAPIA-LEAL","name":"TAPIA-LEAL
+        Daniela","gender":1,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":15246,"firstname":"Tarni","lastname":"CAVANAGH","name":"CAVANAGH
+        Tarni","gender":1,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":15243,"firstname":"Erasmus","lastname":"DARWIN","name":"DARWIN
+        Erasmus","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":13851,"firstname":"Hayden","lastname":"BARTON","name":"BARTON
+        Hayden","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":15242,"firstname":"Andrew","lastname":"BURGE","name":"BURGE
+        Andrew","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":15235,"firstname":"Thomas","lastname":"CHEAH","name":"CHEAH
+        Thomas","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":11841,"firstname":"Aaron","lastname":"MATTES","name":"MATTES
+        Aaron","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":17582,"firstname":"Fin Luc","lastname":"SANDECK","name":"SANDECK
+        Fin Luc","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":15913,"firstname":"James","lastname":"MOUTON","name":"MOUTON
+        James","gender":0,"federation":"SCA","federation_id":28,"country":"AUS","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":13914,"firstname":"Flynn","lastname":"CHISHOLM","name":"CHISHOLM
+        Flynn","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":17583,"firstname":"Eliezar","lastname":"CACHATOOR-FABER","name":"CACHATOOR-FABER
+        Eliezar","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":15249,"firstname":"Karyss","lastname":"ADAMS","name":"ADAMS
+        Karyss","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":13913,"firstname":"Antony","lastname":"DEATH","name":"DEATH
+        Antony","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":13915,"firstname":"Julian","lastname":"DAVID","name":"DAVID
+        Julian","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":14987,"firstname":"Ned","lastname":"JOHNSTON","name":"JOHNSTON
+        Ned","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":16640,"firstname":"Cara","lastname":"HICKS","name":"HICKS
+        Cara","gender":1,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":17585,"firstname":"George","lastname":"HILLARY","name":"HILLARY
+        George","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]},{"athlete_id":3759,"firstname":"Sarah","lastname":"TETZLAFF","name":"TETZLAFF
+        Sarah","gender":1,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":16639,"firstname":"Helen","lastname":"LEE","name":"LEE
+        Helen","gender":1,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":3772,"firstname":"Abby","lastname":"GEBERT","name":"GEBERT
+        Abby","gender":1,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":14049,"firstname":"Jorja","lastname":"RANGI","name":"RANGI
+        Jorja","gender":1,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":510,"name":"SPEED
+        Women","status":"confirmed"}]},{"athlete_id":15247,"firstname":"Luke","lastname":"STOCK","name":"STOCK
+        Luke","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"not attending"}]},{"athlete_id":17584,"firstname":"Timothy","lastname":"FREW","name":"FREW
+        Timothy","gender":0,"federation":"CNZ","federation_id":53,"country":"NZL","d_cats":[{"id":490,"name":"SPEED
+        Men","status":"confirmed"}]}]'
+  recorded_at: Sun, 01 Mar 2026 16:53:30 GMT
+recorded_with: VCR 6.4.0

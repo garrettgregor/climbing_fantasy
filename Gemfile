@@ -43,11 +43,8 @@ gem "image_processing", "~> 1.2"
 # JSON serialization
 gem "blueprinter"
 
-# HTTP client for IFSC scraping
+# HTTP client for IFSC API
 gem "faraday"
-
-# Headless Chrome fallback for scraping
-gem "ferrum"
 
 # Background job processing
 gem "sidekiq"
@@ -114,4 +111,8 @@ group :test do
 
   # Test matchers
   gem "shoulda-matchers"
+
+  # HTTP request recording/stubbing
+  gem "vcr"
+  gem "webmock"
 end

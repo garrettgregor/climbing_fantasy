@@ -1,0 +1,279 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/season_leagues/457
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"fb590c7f8f130e6f7f2ed0f0704835a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 578e598213eb2648c571947d32d61ac5
+      X-Runtime:
+      - '0.536306'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rdpt8sBW9ktRyoTVGdKPZQXwT6WSWJ2xyBkDWmklPLbycvf4tyPTfOd1K9JtB6RvpvtMnuBBS%2BLOtvdnjBcxeRTGjWbB%2BoViCJqipcSMJKE%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ada758e15521-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"season":"2026","league":"World Cups and World Championships","d_cats":[{"id":1,"name":"LEAD
+        Men","discipline":"Lead","discipline_kind_id":0},{"id":2,"name":"SPEED Men","discipline":"Speed","discipline_kind_id":1},{"id":3,"name":"BOULDER
+        Men","discipline":"Boulder","discipline_kind_id":2},{"id":4,"name":"COMBINED
+        Men","discipline":"Combined","discipline_kind_id":3},{"id":617,"name":"BOULDER\u0026LEAD
+        Men","discipline":"Boulder\u0026lead","discipline_kind_id":4},{"id":5,"name":"LEAD
+        Women","discipline":"Lead","discipline_kind_id":0},{"id":6,"name":"SPEED Women","discipline":"Speed","discipline_kind_id":1},{"id":7,"name":"BOULDER
+        Women","discipline":"Boulder","discipline_kind_id":2},{"id":8,"name":"COMBINED
+        Women","discipline":"Combined","discipline_kind_id":3},{"id":618,"name":"BOULDER\u0026LEAD
+        Women","discipline":"Boulder\u0026lead","discipline_kind_id":4}],"events":[{"event":"World
+        Climbing Series Keqiao 2026","event_id":1524,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1524","registration_url":"/api/v1/events/1524/registrations","infosheet_url":"https://ifsc.results.info/events/1524/infosheet","additional_info_url":null,"starts_at":"2026-04-30
+        16:00:00 UTC","ends_at":"2026-05-03 15:59:00 UTC","local_start_date":"2026-05-01","local_end_date":"2026-05-03","timezone":{"value":"Asia/Shanghai"},"d_cats":[{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2026-01-09 08:10:12 UTC","result_url":"/api/v1/events/1524/result/3","category_rounds":[{"category_round_id":10642,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:10:12 UTC","result_url":"/api/v1/category_rounds/10642/results","starting_groups":[{"id":343,"name":"Group
+        A","ranking":"/api/v1/starting_groups/343/results","routes":[{"id":18623,"name":"1","startlist":"/api/v1/routes/18623/startlist"},{"id":18624,"name":"2","startlist":"/api/v1/routes/18624/startlist"},{"id":18625,"name":"3","startlist":"/api/v1/routes/18625/startlist"},{"id":18626,"name":"4","startlist":"/api/v1/routes/18626/startlist"},{"id":18627,"name":"5","startlist":"/api/v1/routes/18627/startlist"}]},{"id":344,"name":"Group
+        B","ranking":"/api/v1/starting_groups/344/results","routes":[{"id":18628,"name":"1","startlist":"/api/v1/routes/18628/startlist"},{"id":18629,"name":"2","startlist":"/api/v1/routes/18629/startlist"},{"id":18630,"name":"3","startlist":"/api/v1/routes/18630/startlist"},{"id":18631,"name":"4","startlist":"/api/v1/routes/18631/startlist"},{"id":18632,"name":"5","startlist":"/api/v1/routes/18632/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2026-01-09
+        08:10:12 UTC","result_url":"/api/v1/events/1524/result/7","category_rounds":[{"category_round_id":10643,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:10:12 UTC","result_url":"/api/v1/category_rounds/10643/results","starting_groups":[{"id":345,"name":"Group
+        A","ranking":"/api/v1/starting_groups/345/results","routes":[{"id":18633,"name":"1","startlist":"/api/v1/routes/18633/startlist"},{"id":18634,"name":"2","startlist":"/api/v1/routes/18634/startlist"},{"id":18635,"name":"3","startlist":"/api/v1/routes/18635/startlist"},{"id":18636,"name":"4","startlist":"/api/v1/routes/18636/startlist"},{"id":18637,"name":"5","startlist":"/api/v1/routes/18637/startlist"}]},{"id":346,"name":"Group
+        B","ranking":"/api/v1/starting_groups/346/results","routes":[{"id":18638,"name":"1","startlist":"/api/v1/routes/18638/startlist"},{"id":18639,"name":"2","startlist":"/api/v1/routes/18639/startlist"},{"id":18640,"name":"3","startlist":"/api/v1/routes/18640/startlist"},{"id":18641,"name":"4","startlist":"/api/v1/routes/18641/startlist"},{"id":18642,"name":"5","startlist":"/api/v1/routes/18642/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]}]},{"event":"World Climbing Series Wujiang
+        2026","event_id":1525,"cup_name":"IFSC Climbing World Cup 2026","cup_id":111,"url":"/api/v1/events/1525","registration_url":"/api/v1/events/1525/registrations","infosheet_url":"https://ifsc.results.info/events/1525/infosheet","additional_info_url":null,"starts_at":"2026-05-07
+        16:00:00 UTC","ends_at":"2026-05-10 15:59:00 UTC","local_start_date":"2026-05-08","local_end_date":"2026-05-10","timezone":{"value":"Asia/Shanghai"},"d_cats":[{"id":1,"name":"LEAD
+        Men","status":"registration_pending","status_as_of":"2026-01-09 08:21:50 UTC","result_url":"/api/v1/events/1525/result/1","category_rounds":[{"category_round_id":10644,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:21:50 UTC","result_url":"/api/v1/category_rounds/10644/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18643,"name":"1","startlist":"/api/v1/routes/18643/startlist","ranking":"/api/v1/routes/18643/results"},{"id":18644,"name":"2","startlist":"/api/v1/routes/18644/startlist","ranking":"/api/v1/routes/18644/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2026-01-09 08:21:50
+        UTC","result_url":"/api/v1/events/1525/result/5","category_rounds":[{"category_round_id":10645,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:21:50 UTC","result_url":"/api/v1/category_rounds/10645/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18645,"name":"1","startlist":"/api/v1/routes/18645/startlist","ranking":"/api/v1/routes/18645/results"},{"id":18646,"name":"2","startlist":"/api/v1/routes/18646/startlist","ranking":"/api/v1/routes/18646/results"}]}]},{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2026-01-09 08:21:50 UTC","result_url":"/api/v1/events/1525/result/2","category_rounds":[{"category_round_id":10646,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:21:50 UTC","result_url":"/api/v1/category_rounds/10646/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18647,"name":"A","startlist":"/api/v1/routes/18647/startlist"},{"id":18648,"name":"B","startlist":"/api/v1/routes/18648/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2026-01-09 08:21:50
+        UTC","result_url":"/api/v1/events/1525/result/6","category_rounds":[{"category_round_id":10647,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:21:50 UTC","result_url":"/api/v1/category_rounds/10647/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18649,"name":"A","startlist":"/api/v1/routes/18649/startlist"},{"id":18650,"name":"B","startlist":"/api/v1/routes/18650/startlist"}]}]}]},{"event":"World
+        Climbing Series Bern 2026","event_id":1478,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1478","registration_url":"/api/v1/events/1478/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-05-21
+        22:00:00 UTC","ends_at":"2026-05-24 21:59:00 UTC","local_start_date":"2026-05-22","local_end_date":"2026-05-24","timezone":{"value":"Europe/Zurich"},"d_cats":[{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:14:04 UTC","result_url":"/api/v1/events/1478/result/3","category_rounds":[{"category_round_id":10378,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:14:04 UTC","result_url":"/api/v1/category_rounds/10378/results","starting_groups":[{"id":307,"name":"Group
+        A","ranking":"/api/v1/starting_groups/307/results","routes":[{"id":17863,"name":"1","startlist":"/api/v1/routes/17863/startlist"},{"id":17864,"name":"2","startlist":"/api/v1/routes/17864/startlist"},{"id":17865,"name":"3","startlist":"/api/v1/routes/17865/startlist"},{"id":17866,"name":"4","startlist":"/api/v1/routes/17866/startlist"},{"id":17867,"name":"5","startlist":"/api/v1/routes/17867/startlist"}]},{"id":308,"name":"Group
+        B","ranking":"/api/v1/starting_groups/308/results","routes":[{"id":17868,"name":"1","startlist":"/api/v1/routes/17868/startlist"},{"id":17869,"name":"2","startlist":"/api/v1/routes/17869/startlist"},{"id":17870,"name":"3","startlist":"/api/v1/routes/17870/startlist"},{"id":17871,"name":"4","startlist":"/api/v1/routes/17871/startlist"},{"id":17872,"name":"5","startlist":"/api/v1/routes/17872/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2025-10-31
+        14:14:04 UTC","result_url":"/api/v1/events/1478/result/7","category_rounds":[{"category_round_id":10379,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:14:04 UTC","result_url":"/api/v1/category_rounds/10379/results","starting_groups":[{"id":309,"name":"Group
+        A","ranking":"/api/v1/starting_groups/309/results","routes":[{"id":17873,"name":"1","startlist":"/api/v1/routes/17873/startlist"},{"id":17874,"name":"2","startlist":"/api/v1/routes/17874/startlist"},{"id":17875,"name":"3","startlist":"/api/v1/routes/17875/startlist"},{"id":17876,"name":"4","startlist":"/api/v1/routes/17876/startlist"},{"id":17877,"name":"5","startlist":"/api/v1/routes/17877/startlist"}]},{"id":310,"name":"Group
+        B","ranking":"/api/v1/starting_groups/310/results","routes":[{"id":17878,"name":"1","startlist":"/api/v1/routes/17878/startlist"},{"id":17879,"name":"2","startlist":"/api/v1/routes/17879/startlist"},{"id":17880,"name":"3","startlist":"/api/v1/routes/17880/startlist"},{"id":17881,"name":"4","startlist":"/api/v1/routes/17881/startlist"},{"id":17882,"name":"5","startlist":"/api/v1/routes/17882/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]}]},{"event":"World Climbing Series Comunidad
+        de Madrid 2026","event_id":1479,"cup_name":"IFSC Climbing World Cup 2026","cup_id":111,"url":"/api/v1/events/1479","registration_url":"/api/v1/events/1479/registrations","infosheet_url":"https://ifsc.results.info/events/1479/infosheet","additional_info_url":null,"starts_at":"2026-05-27
+        22:00:00 UTC","ends_at":"2026-05-31 21:59:00 UTC","local_start_date":"2026-05-28","local_end_date":"2026-05-31","timezone":{"value":"Europe/Madrid"},"d_cats":[{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:16:47 UTC","result_url":"/api/v1/events/1479/result/3","category_rounds":[{"category_round_id":10380,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/category_rounds/10380/results","starting_groups":[{"id":311,"name":"Group
+        A","ranking":"/api/v1/starting_groups/311/results","routes":[{"id":17883,"name":"1","startlist":"/api/v1/routes/17883/startlist"},{"id":17884,"name":"2","startlist":"/api/v1/routes/17884/startlist"},{"id":17885,"name":"3","startlist":"/api/v1/routes/17885/startlist"},{"id":17886,"name":"4","startlist":"/api/v1/routes/17886/startlist"},{"id":17887,"name":"5","startlist":"/api/v1/routes/17887/startlist"}]},{"id":312,"name":"Group
+        B","ranking":"/api/v1/starting_groups/312/results","routes":[{"id":17888,"name":"1","startlist":"/api/v1/routes/17888/startlist"},{"id":17889,"name":"2","startlist":"/api/v1/routes/17889/startlist"},{"id":17890,"name":"3","startlist":"/api/v1/routes/17890/startlist"},{"id":17891,"name":"4","startlist":"/api/v1/routes/17891/startlist"},{"id":17892,"name":"5","startlist":"/api/v1/routes/17892/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/events/1479/result/7","category_rounds":[{"category_round_id":10381,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/category_rounds/10381/results","starting_groups":[{"id":313,"name":"Group
+        A","ranking":"/api/v1/starting_groups/313/results","routes":[{"id":17893,"name":"1","startlist":"/api/v1/routes/17893/startlist"},{"id":17894,"name":"2","startlist":"/api/v1/routes/17894/startlist"},{"id":17895,"name":"3","startlist":"/api/v1/routes/17895/startlist"},{"id":17896,"name":"4","startlist":"/api/v1/routes/17896/startlist"},{"id":17897,"name":"5","startlist":"/api/v1/routes/17897/startlist"}]},{"id":314,"name":"Group
+        B","ranking":"/api/v1/starting_groups/314/results","routes":[{"id":17898,"name":"1","startlist":"/api/v1/routes/17898/startlist"},{"id":17899,"name":"2","startlist":"/api/v1/routes/17899/startlist"},{"id":17900,"name":"3","startlist":"/api/v1/routes/17900/startlist"},{"id":17901,"name":"4","startlist":"/api/v1/routes/17901/startlist"},{"id":17902,"name":"5","startlist":"/api/v1/routes/17902/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":2,"name":"SPEED Men","status":"registration_pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/events/1479/result/2","category_rounds":[{"category_round_id":10382,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/category_rounds/10382/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17903,"name":"A","startlist":"/api/v1/routes/17903/startlist"},{"id":17904,"name":"B","startlist":"/api/v1/routes/17904/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:16:47
+        UTC","result_url":"/api/v1/events/1479/result/6","category_rounds":[{"category_round_id":10383,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:16:47 UTC","result_url":"/api/v1/category_rounds/10383/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17905,"name":"A","startlist":"/api/v1/routes/17905/startlist"},{"id":17906,"name":"B","startlist":"/api/v1/routes/17906/startlist"}]}]}]},{"event":"World
+        Climbing Series Prague 2026","event_id":1480,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1480","registration_url":"/api/v1/events/1480/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-06-02
+        22:00:00 UTC","ends_at":"2026-06-07 21:59:00 UTC","local_start_date":"2026-06-03","local_end_date":"2026-06-07","timezone":{"value":"Europe/Prague"},"d_cats":[{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:19:11 UTC","result_url":"/api/v1/events/1480/result/3","category_rounds":[{"category_round_id":10384,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/category_rounds/10384/results","starting_groups":[{"id":315,"name":"Group
+        A","ranking":"/api/v1/starting_groups/315/results","routes":[{"id":17907,"name":"1","startlist":"/api/v1/routes/17907/startlist"},{"id":17908,"name":"2","startlist":"/api/v1/routes/17908/startlist"},{"id":17909,"name":"3","startlist":"/api/v1/routes/17909/startlist"},{"id":17910,"name":"4","startlist":"/api/v1/routes/17910/startlist"},{"id":17911,"name":"5","startlist":"/api/v1/routes/17911/startlist"}]},{"id":316,"name":"Group
+        B","ranking":"/api/v1/starting_groups/316/results","routes":[{"id":17912,"name":"1","startlist":"/api/v1/routes/17912/startlist"},{"id":17913,"name":"2","startlist":"/api/v1/routes/17913/startlist"},{"id":17914,"name":"3","startlist":"/api/v1/routes/17914/startlist"},{"id":17915,"name":"4","startlist":"/api/v1/routes/17915/startlist"},{"id":17916,"name":"5","startlist":"/api/v1/routes/17916/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/events/1480/result/7","category_rounds":[{"category_round_id":10385,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/category_rounds/10385/results","starting_groups":[{"id":317,"name":"Group
+        A","ranking":"/api/v1/starting_groups/317/results","routes":[{"id":17917,"name":"1","startlist":"/api/v1/routes/17917/startlist"},{"id":17918,"name":"2","startlist":"/api/v1/routes/17918/startlist"},{"id":17919,"name":"3","startlist":"/api/v1/routes/17919/startlist"},{"id":17920,"name":"4","startlist":"/api/v1/routes/17920/startlist"},{"id":17921,"name":"5","startlist":"/api/v1/routes/17921/startlist"}]},{"id":318,"name":"Group
+        B","ranking":"/api/v1/starting_groups/318/results","routes":[{"id":17922,"name":"1","startlist":"/api/v1/routes/17922/startlist"},{"id":17923,"name":"2","startlist":"/api/v1/routes/17923/startlist"},{"id":17924,"name":"3","startlist":"/api/v1/routes/17924/startlist"},{"id":17925,"name":"4","startlist":"/api/v1/routes/17925/startlist"},{"id":17926,"name":"5","startlist":"/api/v1/routes/17926/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":1,"name":"LEAD Men","status":"registration_pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/events/1480/result/1","category_rounds":[{"category_round_id":10386,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/category_rounds/10386/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17927,"name":"1","startlist":"/api/v1/routes/17927/startlist","ranking":"/api/v1/routes/17927/results"},{"id":17928,"name":"2","startlist":"/api/v1/routes/17928/startlist","ranking":"/api/v1/routes/17928/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:19:11
+        UTC","result_url":"/api/v1/events/1480/result/5","category_rounds":[{"category_round_id":10387,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:19:11 UTC","result_url":"/api/v1/category_rounds/10387/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17929,"name":"1","startlist":"/api/v1/routes/17929/startlist","ranking":"/api/v1/routes/17929/results"},{"id":17930,"name":"2","startlist":"/api/v1/routes/17930/startlist","ranking":"/api/v1/routes/17930/results"}]}]}]},{"event":"World
+        Climbing Series Innsbruck 2026","event_id":1482,"cup_name":"IFSC Climbing
+        World Cup 2026","cup_id":111,"url":"/api/v1/events/1482","registration_url":"/api/v1/events/1482/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-06-16
+        22:00:00 UTC","ends_at":"2026-06-21 21:59:00 UTC","local_start_date":"2026-06-17","local_end_date":"2026-06-21","timezone":{"value":"Europe/Vienna"},"d_cats":[{"id":1,"name":"LEAD
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:38:53 UTC","result_url":"/api/v1/events/1482/result/1","category_rounds":[{"category_round_id":10408,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:38:53 UTC","result_url":"/api/v1/category_rounds/10408/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17951,"name":"1","startlist":"/api/v1/routes/17951/startlist","ranking":"/api/v1/routes/17951/results"},{"id":17952,"name":"2","startlist":"/api/v1/routes/17952/startlist","ranking":"/api/v1/routes/17952/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:38:53
+        UTC","result_url":"/api/v1/events/1482/result/5","category_rounds":[{"category_round_id":10409,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:38:53 UTC","result_url":"/api/v1/category_rounds/10409/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17953,"name":"1","startlist":"/api/v1/routes/17953/startlist","ranking":"/api/v1/routes/17953/results"},{"id":17954,"name":"2","startlist":"/api/v1/routes/17954/startlist","ranking":"/api/v1/routes/17954/results"}]}]},{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:38:53 UTC","result_url":"/api/v1/events/1482/result/3","category_rounds":[{"category_round_id":10410,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:38:53 UTC","result_url":"/api/v1/category_rounds/10410/results","starting_groups":[{"id":319,"name":"Group
+        A","ranking":"/api/v1/starting_groups/319/results","routes":[{"id":17955,"name":"1","startlist":"/api/v1/routes/17955/startlist"},{"id":17956,"name":"2","startlist":"/api/v1/routes/17956/startlist"},{"id":17957,"name":"3","startlist":"/api/v1/routes/17957/startlist"},{"id":17958,"name":"4","startlist":"/api/v1/routes/17958/startlist"},{"id":17959,"name":"5","startlist":"/api/v1/routes/17959/startlist"}]},{"id":320,"name":"Group
+        B","ranking":"/api/v1/starting_groups/320/results","routes":[{"id":17960,"name":"1","startlist":"/api/v1/routes/17960/startlist"},{"id":17961,"name":"2","startlist":"/api/v1/routes/17961/startlist"},{"id":17962,"name":"3","startlist":"/api/v1/routes/17962/startlist"},{"id":17963,"name":"4","startlist":"/api/v1/routes/17963/startlist"},{"id":17964,"name":"5","startlist":"/api/v1/routes/17964/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2025-10-31
+        14:38:53 UTC","result_url":"/api/v1/events/1482/result/7","category_rounds":[{"category_round_id":10411,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:38:53 UTC","result_url":"/api/v1/category_rounds/10411/results","starting_groups":[{"id":321,"name":"Group
+        A","ranking":"/api/v1/starting_groups/321/results","routes":[{"id":17965,"name":"1","startlist":"/api/v1/routes/17965/startlist"},{"id":17966,"name":"2","startlist":"/api/v1/routes/17966/startlist"},{"id":17967,"name":"3","startlist":"/api/v1/routes/17967/startlist"},{"id":17968,"name":"4","startlist":"/api/v1/routes/17968/startlist"},{"id":17969,"name":"5","startlist":"/api/v1/routes/17969/startlist"}]},{"id":322,"name":"Group
+        B","ranking":"/api/v1/starting_groups/322/results","routes":[{"id":17970,"name":"1","startlist":"/api/v1/routes/17970/startlist"},{"id":17971,"name":"2","startlist":"/api/v1/routes/17971/startlist"},{"id":17972,"name":"3","startlist":"/api/v1/routes/17972/startlist"},{"id":17973,"name":"4","startlist":"/api/v1/routes/17973/startlist"},{"id":17974,"name":"5","startlist":"/api/v1/routes/17974/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]}]},{"event":"World Climbing Series Krakow
+        2026","event_id":1483,"cup_name":"IFSC Climbing World Cup 2026","cup_id":111,"url":"/api/v1/events/1483","registration_url":"/api/v1/events/1483/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-07-02
+        22:00:00 UTC","ends_at":"2026-07-05 21:59:00 UTC","local_start_date":"2026-07-03","local_end_date":"2026-07-05","timezone":{"value":"Europe/Warsaw"},"d_cats":[{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:42:27 UTC","result_url":"/api/v1/events/1483/result/2","category_rounds":[{"category_round_id":10412,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:42:27 UTC","result_url":"/api/v1/category_rounds/10412/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17975,"name":"A","startlist":"/api/v1/routes/17975/startlist"},{"id":17976,"name":"B","startlist":"/api/v1/routes/17976/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:42:27
+        UTC","result_url":"/api/v1/events/1483/result/6","category_rounds":[{"category_round_id":10413,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:42:27 UTC","result_url":"/api/v1/category_rounds/10413/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17977,"name":"A","startlist":"/api/v1/routes/17977/startlist"},{"id":17978,"name":"B","startlist":"/api/v1/routes/17978/startlist"}]}]}]},{"event":"World
+        Climbing Series Chamonix 2026","event_id":1484,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1484","registration_url":"/api/v1/events/1484/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-07-09
+        22:00:00 UTC","ends_at":"2026-07-12 21:59:00 UTC","local_start_date":"2026-07-10","local_end_date":"2026-07-12","timezone":{"value":"Europe/Paris"},"d_cats":[{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:44:35 UTC","result_url":"/api/v1/events/1484/result/2","category_rounds":[{"category_round_id":10414,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:44:35 UTC","result_url":"/api/v1/category_rounds/10414/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17979,"name":"A","startlist":"/api/v1/routes/17979/startlist"},{"id":17980,"name":"B","startlist":"/api/v1/routes/17980/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:44:35
+        UTC","result_url":"/api/v1/events/1484/result/6","category_rounds":[{"category_round_id":10415,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:44:35 UTC","result_url":"/api/v1/category_rounds/10415/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":17981,"name":"A","startlist":"/api/v1/routes/17981/startlist"},{"id":17982,"name":"B","startlist":"/api/v1/routes/17982/startlist"}]}]},{"id":1,"name":"LEAD
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:44:35 UTC","result_url":"/api/v1/events/1484/result/1","category_rounds":[{"category_round_id":10416,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:44:35 UTC","result_url":"/api/v1/category_rounds/10416/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17983,"name":"1","startlist":"/api/v1/routes/17983/startlist","ranking":"/api/v1/routes/17983/results"},{"id":17984,"name":"2","startlist":"/api/v1/routes/17984/startlist","ranking":"/api/v1/routes/17984/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:44:35
+        UTC","result_url":"/api/v1/events/1484/result/5","category_rounds":[{"category_round_id":10417,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:44:35 UTC","result_url":"/api/v1/category_rounds/10417/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":17985,"name":"1","startlist":"/api/v1/routes/17985/startlist","ranking":"/api/v1/routes/17985/results"},{"id":17986,"name":"2","startlist":"/api/v1/routes/17986/startlist","ranking":"/api/v1/routes/17986/results"}]}]}]},{"event":"World
+        Climbing Series Koper 2026","event_id":1487,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1487","registration_url":"/api/v1/events/1487/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-09-03
+        22:00:00 UTC","ends_at":"2026-09-05 21:59:00 UTC","local_start_date":"2026-09-04","local_end_date":"2026-09-05","timezone":{"value":"Europe/Ljubljana"},"d_cats":[{"id":1,"name":"LEAD
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:54:50 UTC","result_url":"/api/v1/events/1487/result/1","category_rounds":[{"category_round_id":10444,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:54:50 UTC","result_url":"/api/v1/category_rounds/10444/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18035,"name":"1","startlist":"/api/v1/routes/18035/startlist","ranking":"/api/v1/routes/18035/results"},{"id":18036,"name":"2","startlist":"/api/v1/routes/18036/startlist","ranking":"/api/v1/routes/18036/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2025-10-31 14:54:50
+        UTC","result_url":"/api/v1/events/1487/result/5","category_rounds":[{"category_round_id":10445,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:54:50 UTC","result_url":"/api/v1/category_rounds/10445/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18037,"name":"1","startlist":"/api/v1/routes/18037/startlist","ranking":"/api/v1/routes/18037/results"},{"id":18038,"name":"2","startlist":"/api/v1/routes/18038/startlist","ranking":"/api/v1/routes/18038/results"}]}]}]},{"event":"World
+        Climbing Series Guiyang 2026","event_id":1526,"cup_name":"IFSC Climbing World
+        Cup 2026","cup_id":111,"url":"/api/v1/events/1526","registration_url":"/api/v1/events/1526/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-09-10
+        16:00:00 UTC","ends_at":"2026-09-13 15:59:00 UTC","local_start_date":"2026-09-11","local_end_date":"2026-09-13","timezone":{"value":"Asia/Shanghai"},"d_cats":[{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2026-01-09 08:23:16 UTC","result_url":"/api/v1/events/1526/result/2","category_rounds":[{"category_round_id":10648,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:23:16 UTC","result_url":"/api/v1/category_rounds/10648/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18651,"name":"A","startlist":"/api/v1/routes/18651/startlist"},{"id":18652,"name":"B","startlist":"/api/v1/routes/18652/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2026-01-09 08:23:16
+        UTC","result_url":"/api/v1/events/1526/result/6","category_rounds":[{"category_round_id":10649,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:23:16 UTC","result_url":"/api/v1/category_rounds/10649/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18653,"name":"A","startlist":"/api/v1/routes/18653/startlist"},{"id":18654,"name":"B","startlist":"/api/v1/routes/18654/startlist"}]}]}]},{"event":"World
+        Climbing Series Chongqing 2026","event_id":1527,"cup_name":"IFSC Climbing
+        World Cup 2026","cup_id":111,"url":"/api/v1/events/1527","registration_url":"/api/v1/events/1527/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-09-17
+        16:00:00 UTC","ends_at":"2026-09-20 15:59:00 UTC","local_start_date":"2026-09-18","local_end_date":"2026-09-20","timezone":{"value":"Asia/Shanghai"},"d_cats":[{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2026-01-09 08:25:10 UTC","result_url":"/api/v1/events/1527/result/2","category_rounds":[{"category_round_id":10650,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:25:10 UTC","result_url":"/api/v1/category_rounds/10650/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18655,"name":"A","startlist":"/api/v1/routes/18655/startlist"},{"id":18656,"name":"B","startlist":"/api/v1/routes/18656/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2026-01-09 08:25:10
+        UTC","result_url":"/api/v1/events/1527/result/6","category_rounds":[{"category_round_id":10651,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2026-01-09
+        08:25:10 UTC","result_url":"/api/v1/category_rounds/10651/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18657,"name":"A","startlist":"/api/v1/routes/18657/startlist"},{"id":18658,"name":"B","startlist":"/api/v1/routes/18658/startlist"}]}]}]},{"event":"World
+        Climbing Series Salt Lake City 2026","event_id":1488,"cup_name":"IFSC Climbing
+        World Cup 2026","cup_id":111,"url":"/api/v1/events/1488","registration_url":"/api/v1/events/1488/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-10-16
+        06:00:00 UTC","ends_at":"2026-10-19 05:59:00 UTC","local_start_date":"2026-10-16","local_end_date":"2026-10-18","timezone":{"value":"America/Denver"},"d_cats":[{"id":3,"name":"BOULDER
+        Men","status":"registration_pending","status_as_of":"2025-10-31 14:57:00 UTC","result_url":"/api/v1/events/1488/result/3","category_rounds":[{"category_round_id":10446,"kind":"boulder","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:57:00 UTC","result_url":"/api/v1/category_rounds/10446/results","starting_groups":[{"id":327,"name":"Group
+        A","ranking":"/api/v1/starting_groups/327/results","routes":[{"id":18039,"name":"1","startlist":"/api/v1/routes/18039/startlist"},{"id":18040,"name":"2","startlist":"/api/v1/routes/18040/startlist"},{"id":18041,"name":"3","startlist":"/api/v1/routes/18041/startlist"},{"id":18042,"name":"4","startlist":"/api/v1/routes/18042/startlist"},{"id":18043,"name":"5","startlist":"/api/v1/routes/18043/startlist"}]},{"id":328,"name":"Group
+        B","ranking":"/api/v1/starting_groups/328/results","routes":[{"id":18044,"name":"1","startlist":"/api/v1/routes/18044/startlist"},{"id":18045,"name":"2","startlist":"/api/v1/routes/18045/startlist"},{"id":18046,"name":"3","startlist":"/api/v1/routes/18046/startlist"},{"id":18047,"name":"4","startlist":"/api/v1/routes/18047/startlist"},{"id":18048,"name":"5","startlist":"/api/v1/routes/18048/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]},{"id":7,"name":"BOULDER Women","status":"registration_pending","status_as_of":"2025-10-31
+        14:57:00 UTC","result_url":"/api/v1/events/1488/result/7","category_rounds":[{"category_round_id":10447,"kind":"boulder","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        14:57:00 UTC","result_url":"/api/v1/category_rounds/10447/results","starting_groups":[{"id":329,"name":"Group
+        A","ranking":"/api/v1/starting_groups/329/results","routes":[{"id":18049,"name":"1","startlist":"/api/v1/routes/18049/startlist"},{"id":18050,"name":"2","startlist":"/api/v1/routes/18050/startlist"},{"id":18051,"name":"3","startlist":"/api/v1/routes/18051/startlist"},{"id":18052,"name":"4","startlist":"/api/v1/routes/18052/startlist"},{"id":18053,"name":"5","startlist":"/api/v1/routes/18053/startlist"}]},{"id":330,"name":"Group
+        B","ranking":"/api/v1/starting_groups/330/results","routes":[{"id":18054,"name":"1","startlist":"/api/v1/routes/18054/startlist"},{"id":18055,"name":"2","startlist":"/api/v1/routes/18055/startlist"},{"id":18056,"name":"3","startlist":"/api/v1/routes/18056/startlist"},{"id":18057,"name":"4","startlist":"/api/v1/routes/18057/startlist"},{"id":18058,"name":"5","startlist":"/api/v1/routes/18058/startlist"}]}],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 groups 2025 (points)","routes":[]}]}]},{"event":"World Climbing Series Santiago
+        2026","event_id":1489,"cup_name":"IFSC Climbing World Cup 2026","cup_id":111,"url":"/api/v1/events/1489","registration_url":"/api/v1/events/1489/registrations","infosheet_url":null,"additional_info_url":null,"starts_at":"2026-10-23
+        03:00:00 UTC","ends_at":"2026-10-26 02:59:00 UTC","local_start_date":"2026-10-23","local_end_date":"2026-10-25","timezone":{"value":"America/Santiago"},"d_cats":[{"id":2,"name":"SPEED
+        Men","status":"registration_pending","status_as_of":"2025-10-31 15:00:05 UTC","result_url":"/api/v1/events/1489/result/2","category_rounds":[{"category_round_id":10448,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        15:00:05 UTC","result_url":"/api/v1/category_rounds/10448/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18059,"name":"A","startlist":"/api/v1/routes/18059/startlist"},{"id":18060,"name":"B","startlist":"/api/v1/routes/18060/startlist"}]}]},{"id":6,"name":"SPEED
+        Women","status":"registration_pending","status_as_of":"2025-10-31 15:00:05
+        UTC","result_url":"/api/v1/events/1489/result/6","category_rounds":[{"category_round_id":10449,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        15:00:05 UTC","result_url":"/api/v1/category_rounds/10449/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC
+        2025: Qualification","routes":[{"id":18061,"name":"A","startlist":"/api/v1/routes/18061/startlist"},{"id":18062,"name":"B","startlist":"/api/v1/routes/18062/startlist"}]}]},{"id":1,"name":"LEAD
+        Men","status":"registration_pending","status_as_of":"2025-10-31 15:00:05 UTC","result_url":"/api/v1/events/1489/result/1","category_rounds":[{"category_round_id":10450,"kind":"lead","name":"Qualification","category":"Men","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        15:00:05 UTC","result_url":"/api/v1/category_rounds/10450/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18063,"name":"1","startlist":"/api/v1/routes/18063/startlist","ranking":"/api/v1/routes/18063/results"},{"id":18064,"name":"2","startlist":"/api/v1/routes/18064/startlist","ranking":"/api/v1/routes/18064/results"}]}]},{"id":5,"name":"LEAD
+        Women","status":"registration_pending","status_as_of":"2025-10-31 15:00:05
+        UTC","result_url":"/api/v1/events/1489/result/5","category_rounds":[{"category_round_id":10451,"kind":"lead","name":"Qualification","category":"Women","schedule":null,"status":"pending","status_as_of":"2025-10-31
+        15:00:05 UTC","result_url":"/api/v1/category_rounds/10451/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":1},"format":"IFSC:
+        2 routes","routes":[{"id":18065,"name":"1","startlist":"/api/v1/routes/18065/startlist","ranking":"/api/v1/routes/18065/results"},{"id":18066,"name":"2","startlist":"/api/v1/routes/18066/startlist","ranking":"/api/v1/routes/18066/results"}]}]}]}],"cups":[{"cup":"IFSC
+        Climbing World Cup 2026","cup_id":111,"d_cats":[{"name":"LEAD Men","ranking_url":"/api/v1/cups/111/dcat/1"},{"name":"SPEED
+        Men","ranking_url":"/api/v1/cups/111/dcat/2"},{"name":"BOULDER Men","ranking_url":"/api/v1/cups/111/dcat/3"},{"name":"COMBINED
+        Men","ranking_url":"/api/v1/cups/111/dcat/4"},{"name":"BOULDER\u0026LEAD Men","ranking_url":"/api/v1/cups/111/dcat/617"},{"name":"LEAD
+        Women","ranking_url":"/api/v1/cups/111/dcat/5"},{"name":"SPEED Women","ranking_url":"/api/v1/cups/111/dcat/6"},{"name":"BOULDER
+        Women","ranking_url":"/api/v1/cups/111/dcat/7"},{"name":"COMBINED Women","ranking_url":"/api/v1/cups/111/dcat/8"},{"name":"BOULDER\u0026LEAD
+        Women","ranking_url":"/api/v1/cups/111/dcat/618"}]}]}'
+  recorded_at: Sun, 01 Mar 2026 16:53:32 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/seasons/999999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:30 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - 130df59822d81f99e60f7af24dcad85d
+      X-Runtime:
+      - '0.017061'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BITxDATbbQFXmabg2poipRGez4600sbn6JU0wR2I8b2iLZHStAMSiLC8OeH1nzhhLfz%2FMr94IcyctaxF0DTxdjds%2Bv8zzQs3DRplFVW8Yo4%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ada389a4e73f-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":404,"error":"Not Found"}'
+  recorded_at: Sun, 01 Mar 2026 16:53:30 GMT
+recorded_with: VCR 6.4.0

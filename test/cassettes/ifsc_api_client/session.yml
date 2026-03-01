@@ -1,0 +1,199 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - "</assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css>;
+        rel=preload; as=style; nopush,</assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js>;
+        rel=preload; as=script; nopush,</vite/assets/entrypoint-X7AjDN1q.js>; rel=modulepreload;
+        as=script; crossorigin=anonymous; nopush,</vite/assets/entrypoint-C-xbeWYT.css>;
+        rel=preload; as=style; nopush,</vite/assets/rs_tabs-CrVLFnQq.css>; rel=preload;
+        as=style; nopush,</vite/assets/app-tn0RQdqM.css>; rel=preload; as=style; nopush,</vite/assets/rs_hr-s5aWKrUf.css>;
+        rel=preload; as=style; nopush,</vite/assets/rs_modal-BzNihJLl.css>; rel=preload;
+        as=style; nopush,</vite/assets/style-CnzGhvb0.css>; rel=preload; as=style;
+        nopush,</vite/assets/tag_layout-BVd5WBkf.css>; rel=preload; as=style; nopush"
+      Vary:
+      - Accept
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MTOh3HumPilgedMqc0CG55A1IT59i8tiIKSbpqeDnHH6NnfngebR%2BIBHyNXLDhEk2dEHhThcn6nJgK2bTQW2rkcsYRNS5Hgw%2Fm9%2FlciGmWQ%3D"}]}'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>; path=/; httponly;
+        samesite=lax
+      X-Request-Id:
+      - 27aa9f2474fddc7eb6c24425ae0d6864
+      X-Runtime:
+      - '0.010663'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ad99cff57d3a-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,
+        maximum-scale=1.0\">\n    \n      <!-- Google Tag Manager -->\n      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n
+        \     })(window,document,'script','dataLayer','GTM-MT5GL8L');</script>\n      <!--
+        End Google Tag Manager -->\n    \n    <script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\"
+        async></script>\n    <script>window.VL_UNIFIED_APP = true</script>\n    <title>IFSC
+        Climbing Result Service</title>\n    <meta name=\"csrf-param\" content=\"authenticity_token\"
+        />\n<meta name=\"csrf-token\" content=\"yCcTJ7u4clUWH64NuGGH0EFMh93Z9e9OPWYcxFOrnN_4MfbD4ypVlPRezI9si_zc6CQeHA4VyxY50gjQj302hg\"
+        />\n    \n    \n\n    <link rel=\"stylesheet\" href=\"/assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css\"
+        media=\"all\" />\n    <script src=\"/assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js\"></script>\n
+        \   <script src=\"/vite/assets/entrypoint-X7AjDN1q.js\" crossorigin=\"anonymous\"
+        type=\"module\"></script><link rel=\"modulepreload\" href=\"/vite/assets/preload-helper-5ZGr_LBp.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entrypoint-DFigYQlr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/composables-jAtiwv2_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.esm-CZESSAMY.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_icon-CXzTYfTJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/_plugin-vue2_normalizer-p4i_2SC9.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/i18n_setup-BtuafnSi.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_tabs-B14Q5A6c.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_name-_1CfECI5.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_hr-C2aKFk-R.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tag-DmLb3DvM.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_utils-DwA0ZFyU.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/props-B3foWNzJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/key-codes-Bt4DpOyo.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/dom-DDZV-SPr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/events-CgYgUeaR.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/model-BF41jnrQ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/attrs-Cywx4c7b.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/id-BphFwieP.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/listen-on-root-DwFrt9zj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/normalize-slot-9NBffYSu.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/math-CQa76VPJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/number-CJJY9OPM.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lib.esm-CapLYTHa.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/modal-BXBJUNMj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/bv-transition-CZBHMyEm.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/spinner-BjTMZdVG.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entry_point_store-BHqGMENB.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_modal-CuSQmv4o.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/feature_store-BA9tEMmL.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/country_store-BQ4y_X0A.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/public-Ce66jwHn.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/admin-CenVvafH.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lm-CNJFozQZ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/athlete-Bnws9B1q.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/federation-D8ES3qCv.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/media-B_nA_Chm.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/judges-rPeGmFf8.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/authentication_hook-B7Evn8Gn.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/authorization_hook-DjIMVP03.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/apollo-BxZXqVz_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tslib.es6-DMAEmUcV.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/objects-Cf4v8IUe.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/apollo_fragments-mE_9tQOA.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-D0_PgLgw.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/_commonjsHelpers-BKZ-ARjd.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/__vite-browser-external-D7Ct-6yo.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-kgqKusg0.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/cable-BUaQ6ONA.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/mount_toast-Bb-DYg6f.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-toXovs3b.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_phase_store-BLvHv91B.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/ascent_store-iowA89w8.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/league_season_store-BMKwU82s.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/style-DhxIIjwg.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-D6DHuLFk.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.common-BOn40jyj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/appsignal-Ca-Kv47_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-BkxJEC-h.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/dynamic-import-helper-BheWnx7M.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tag_layout-SDMX3e4M.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/cache-D5WFDLmr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/loose-equal-CjsRkg3x.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/html-CRHIijQk.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/observe-dom-C2_rMkar.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/warn-D5o36TJc.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/create-new-child-component-Dum-xWhX.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/use-parent-D1dwWoLa.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/button-B4PhUwBI.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/link-Dk09RFOx.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/safe-vue-instance-DN0dfUsB.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/listeners-osK7SfR5.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/bv-event.class-CtQx-8wU.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-qt9XboYO.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event-CHo2-zcV.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_setup-BVdPKmsN.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/category_round-BgmRfW6O.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/users-CAA06hyU.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/user_profile-BQvpUnAz.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/sport80-BXzd1kaM.js\"
+        as=\"script\" crossorigin=\"anonymous\"><link rel=\"stylesheet\" href=\"/vite/assets/entrypoint-C-xbeWYT.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_tabs-CrVLFnQq.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/app-tn0RQdqM.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_hr-s5aWKrUf.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_modal-BzNihJLl.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/style-CnzGhvb0.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/tag_layout-BVd5WBkf.css\"
+        media=\"screen\" />\n    <meta property=\"og:url\"                content='https://ifsc.results.info'
+        />\n    <meta property=\"og:type\"               content='website' />\n    <meta
+        property=\"og:title\"              content='IFSC Climbing Result Service'
+        />\n    <meta property=\"og:description\"        content='The result site
+        of IFSC climbing competitions, with starters, live results and rankings powered
+        by Vertical-Life'/>\n  </head>\n\n  <body>\n    <!-- Google Tag Manager (noscript)
+        -->\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-MT5GL8L\"\n
+        \   height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n
+        \   <!-- End Google Tag Manager (noscript) -->\n\n    <div style=\"display:
+        none;\" id=\"cable-path\">ifsc_cable</div>\n\n    <div id=\"unified-vue-app\">\n</div>\n\n
+        \     <script nomodule=\"nomodule\" src=\"/vite/assets/polyfills-legacy-Bdc_imsb.js\"></script><script
+        nomodule=\"nomodule\">System.import('/vite/assets/entrypoint-legacy-CS2XE8it.js')</script>\n
+        \ </body>\n</html>\n"
+  recorded_at: Sun, 01 Mar 2026 16:53:29 GMT
+recorded_with: VCR 6.4.0

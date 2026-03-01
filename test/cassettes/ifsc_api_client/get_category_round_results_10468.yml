@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/category_rounds/10468/results
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"b61d97126d3955024ce09378e87b7295"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 03cf614dfb4a4e499d4693cd4406bd08
+      X-Runtime:
+      - '0.007701'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FdjctFH2BP8dywnUbKZtj8%2BSHY98aYerFATtcpEX92XhKzVRqTeXbrCwfFGawIX9pg9FuFg4YfDHmjIy1rf3eOhE7zTZLezaotu9TLBzMJo%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ad9d4edcb4d2-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":10468,"event":"World Climbing Oceania Championship Mount Maunganui
+        2026","event_id":1491,"dcat_id":490,"discipline":"Speed","status":"finished","status_as_of":"2026-02-13
+        23:04:03 UTC","category":"Men","round":"Qualification","format":"IFSC 2026:
+        Qualification","routes":[{"id":18663,"name":"A","startlist":"/api/v1/routes/18663/startlist"},{"id":18664,"name":"B","startlist":"/api/v1/routes/18664/startlist"}],"ranking":[{"athlete_id":13915,"name":"DAVID
+        Julian","firstname":"Julian","lastname":"DAVID","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"618","rank":1,"score":"5.43","score_time":"5.43","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":5435,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:51:29 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":5491,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:36:36 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":17582,"name":"SANDECK
+        Fin Luc","firstname":"Fin Luc","lastname":"SANDECK","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"611","rank":2,"score":"6.48","score_time":"6.48","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":6481,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:58:08 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":8495,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:44:52 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":15243,"name":"DARWIN
+        Erasmus","firstname":"Erasmus","lastname":"DARWIN","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"610","rank":3,"score":"6.62","score_time":"6.62","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":6620,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:44:21 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":6981,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:58:52 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":13851,"name":"BARTON
+        Hayden","firstname":"Hayden","lastname":"BARTON","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"614","rank":4,"score":"6.87","score_time":"6.87","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":6877,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:54:59 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":9588,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:40:11 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":14987,"name":"JOHNSTON
+        Ned","firstname":"Ned","lastname":"JOHNSTON","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"621","rank":5,"score":"7.31","score_time":"7.31","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":7319,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:56:47 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":7581,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:42:22 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":13914,"name":"CHISHOLM
+        Flynn","firstname":"Flynn","lastname":"CHISHOLM","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"612","rank":6,"score":"7.44","score_time":"7.44","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":7442,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:59:29 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":7566,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:45:52 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":11841,"name":"MATTES
+        Aaron","firstname":"Aaron","lastname":"MATTES","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"601","rank":7,"score":"7.53","score_time":"7.53","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":7538,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:53:10 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":8170,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:38:16 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":17583,"name":"CACHATOOR-FABER
+        Eliezar","firstname":"Eliezar","lastname":"CACHATOOR-FABER","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"609","rank":8,"score":"7.71","score_time":"7.71","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":7714,"dnf":false,"dns":false,"modified":"2026-02-13
+        23:02:37 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":8287,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:49:08 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":17584,"name":"FREW
+        Timothy","firstname":"Timothy","lastname":"FREW","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"626","rank":9,"score":"8.01","score_time":"8.01","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":8012,"dnf":false,"dns":false,"modified":"2026-02-13
+        23:00:59 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":8983,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:47:37 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":13913,"name":"DEATH
+        Antony","firstname":"Antony","lastname":"DEATH","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"604","rank":10,"score":"8.17","score_time":"8.17","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":8179,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:38:16 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":null,"dnf":true,"dns":false,"modified":"2026-02-13
+        22:53:38 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":15242,"name":"BURGE
+        Andrew","firstname":"Andrew","lastname":"BURGE","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"603","rank":11,"score":"8.72","score_time":"8.72","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":8723,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:49:08 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":null,"dnf":true,"dns":false,"modified":"2026-02-13
+        23:02:37 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":15913,"name":"MOUTON
+        James","firstname":"James","lastname":"MOUTON","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"616","rank":12,"score":"8.78","score_time":"8.78","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":8784,"dnf":false,"dns":false,"modified":"2026-02-13
+        23:00:59 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":9133,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:47:37 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":15249,"name":"ADAMS
+        Karyss","firstname":"Karyss","lastname":"ADAMS","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"619","rank":13,"score":"9.61","score_time":"9.61","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":9611,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:56:47 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":10909,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:42:22 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":16642,"name":"WILLIAMS
+        Christian","firstname":"Christian","lastname":"WILLIAMS","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"607","rank":14,"score":"10.08","score_time":"10.08","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":10083,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:36:36 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":null,"dnf":true,"dns":false,"modified":"2026-02-13
+        22:51:29 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":15235,"name":"CHEAH
+        Thomas","firstname":"Thomas","lastname":"CHEAH","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"bib":"625","rank":15,"score":"10.16","score_time":"10.16","record":false,"record_types":[],"ascents":[{"route_id":18663,"route_name":"A","time_ms":10168,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:45:52 +00:00","status":"active"},{"route_id":18664,"route_name":"B","time_ms":10904,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:59:29 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false},{"athlete_id":17585,"name":"HILLARY
+        George","firstname":"George","lastname":"HILLARY","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"bib":"613","rank":16,"score":"10.39","score_time":"10.39","record":false,"record_types":[],"ascents":[{"route_id":18664,"route_name":"B","time_ms":10395,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:54:59 +00:00","status":"active"},{"route_id":18663,"route_name":"A","time_ms":12796,"dnf":false,"dns":false,"modified":"2026-02-13
+        22:40:11 +00:00","status":"active"}],"combined_stages":null,"active":false,"under_appeal":false}],"startlist":[{"athlete_id":13915,"route_start_positions":[{"route_name":"A","route_id":18663,"position":1},{"route_name":"B","route_id":18664,"position":9}],"name":"DAVID
+        Julian","firstname":"Julian","lastname":"DAVID","bib":"618","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":16642,"route_start_positions":[{"route_name":"A","route_id":18663,"position":9},{"route_name":"B","route_id":18664,"position":1}],"name":"WILLIAMS
+        Christian","firstname":"Christian","lastname":"WILLIAMS","bib":"607","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":13913,"route_start_positions":[{"route_name":"A","route_id":18663,"position":10},{"route_name":"B","route_id":18664,"position":2}],"name":"DEATH
+        Antony","firstname":"Antony","lastname":"DEATH","bib":"604","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":11841,"route_start_positions":[{"route_name":"A","route_id":18663,"position":2},{"route_name":"B","route_id":18664,"position":10}],"name":"MATTES
+        Aaron","firstname":"Aaron","lastname":"MATTES","bib":"601","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":13851,"route_start_positions":[{"route_name":"A","route_id":18663,"position":11},{"route_name":"B","route_id":18664,"position":3}],"name":"BARTON
+        Hayden","firstname":"Hayden","lastname":"BARTON","bib":"614","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":17585,"route_start_positions":[{"route_name":"A","route_id":18663,"position":3},{"route_name":"B","route_id":18664,"position":11}],"name":"HILLARY
+        George","firstname":"George","lastname":"HILLARY","bib":"613","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":14987,"route_start_positions":[{"route_name":"A","route_id":18663,"position":4},{"route_name":"B","route_id":18664,"position":12}],"name":"JOHNSTON
+        Ned","firstname":"Ned","lastname":"JOHNSTON","bib":"621","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":15249,"route_start_positions":[{"route_name":"A","route_id":18663,"position":12},{"route_name":"B","route_id":18664,"position":4}],"name":"ADAMS
+        Karyss","firstname":"Karyss","lastname":"ADAMS","bib":"619","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":15243,"route_start_positions":[{"route_name":"A","route_id":18663,"position":5},{"route_name":"B","route_id":18664,"position":13}],"name":"DARWIN
+        Erasmus","firstname":"Erasmus","lastname":"DARWIN","bib":"610","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":17582,"route_start_positions":[{"route_name":"A","route_id":18663,"position":13},{"route_name":"B","route_id":18664,"position":5}],"name":"SANDECK
+        Fin Luc","firstname":"Fin Luc","lastname":"SANDECK","bib":"611","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":13914,"route_start_positions":[{"route_name":"A","route_id":18663,"position":14},{"route_name":"B","route_id":18664,"position":6}],"name":"CHISHOLM
+        Flynn","firstname":"Flynn","lastname":"CHISHOLM","bib":"612","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":15235,"route_start_positions":[{"route_name":"A","route_id":18663,"position":6},{"route_name":"B","route_id":18664,"position":14}],"name":"CHEAH
+        Thomas","firstname":"Thomas","lastname":"CHEAH","bib":"625","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":15913,"route_start_positions":[{"route_name":"A","route_id":18663,"position":7},{"route_name":"B","route_id":18664,"position":15}],"name":"MOUTON
+        James","firstname":"James","lastname":"MOUTON","bib":"616","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28},{"athlete_id":17584,"route_start_positions":[{"route_name":"A","route_id":18663,"position":15},{"route_name":"B","route_id":18664,"position":7}],"name":"FREW
+        Timothy","firstname":"Timothy","lastname":"FREW","bib":"626","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":17583,"route_start_positions":[{"route_name":"A","route_id":18663,"position":16},{"route_name":"B","route_id":18664,"position":8}],"name":"CACHATOOR-FABER
+        Eliezar","firstname":"Eliezar","lastname":"CACHATOOR-FABER","bib":"609","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":15242,"route_start_positions":[{"route_name":"A","route_id":18663,"position":8},{"route_name":"B","route_id":18664,"position":16}],"name":"BURGE
+        Andrew","firstname":"Andrew","lastname":"BURGE","bib":"603","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28}],"next_round_startlist":[13915,17582,15243,13851,14987,13914,11841,17583,17584,13913,15242,15913,15249,16642,15235,17585]}'
+  recorded_at: Sun, 01 Mar 2026 16:53:29 GMT
+recorded_with: VCR 6.4.0

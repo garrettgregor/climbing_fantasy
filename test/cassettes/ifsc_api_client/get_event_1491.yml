@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/events/1491
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2026 16:53:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"2e80ae66b4158ec10683bebce8aee56c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 675eb08e0b967ed0ca421924f79873b7
+      X-Runtime:
+      - '0.080263'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cuANo%2BqIkzdcgZ%2BFyNzTMmy73Nid9kW1DNvFl6wg48b7uFrWLbIJatBffd%2FR3bozWcTTNWfuDXwCj1I2Du8cLeVgSpuPSibsAEsM1W%2B1"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d59ada1bbb4b188-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1491,"name":"World Climbing Oceania Championship Mount Maunganui
+        2026","type":"classic","league_id":16,"rounds":[{"id":2824,"name":"Qualification"},{"id":2825,"name":"Final"}],"league_season_id":467,"season_id":38,"starts_at":"2026-02-13
+        11:00:00 UTC","ends_at":"2026-02-14 10:59:00 UTC","local_start_date":"2026-02-14","local_end_date":"2026-02-14","timezone":{"value":"Pacific/Auckland"},"location":"Mount
+        Maunganui, New Zealand","registration_url":"/api/v1/events/1491/registrations","public_information":{"organiser_name":null,"organiser_url":null,"venue_name":null,"description":null},"cup_name":"","country":"NZL","registration_deadline":"2026-02-07T23:59:00.000Z","registration_opens_at":"2025-02-14T00:00:00.000Z","removal_deadline":"2026-02-07T23:59:00.000Z","athlete_self_registration":false,"team_official_self_registration":false,"event_logo":null,"series_logo":null,"cover":null,"infosheet_url":"https://ifsc.results.info/events/1491/infosheet","additional_info_url":null,"is_paraclimbing_event":false,"self_judged":false,"d_cats":[{"dcat_id":490,"event_id":1491,"dcat_name":"SPEED
+        Men","discipline_kind":"speed","category_id":6978,"category_name":"Men","status":"finished","status_as_of":"2026-02-14
+        00:46:45 UTC","ranking_as_of":"2026-02-14 00:38:05 UTC","category_rounds":[{"category_round_id":10468,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"finished","status_as_of":"2026-02-13
+        23:04:03 UTC","result_url":"/api/v1/category_rounds/10468/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":46},"format":"IFSC
+        2026: Qualification","routes":[{"id":18663,"name":"A","startlist":"/api/v1/routes/18663/startlist"},{"id":18664,"name":"B","startlist":"/api/v1/routes/18664/startlist"}]},{"category_round_id":10470,"kind":"speed","name":"Final","category":"Men","schedule":null,"status":"finished","status_as_of":"2026-02-14
+        00:38:12 UTC","result_url":"/api/v1/category_rounds/10470/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":48},"format":"IFSC
+        2026+: Elimination","routes":[{"id":18667,"name":"A","startlist":"/api/v1/routes/18667/startlist"},{"id":18668,"name":"B","startlist":"/api/v1/routes/18668/startlist"}]}],"full_results_url":"/api/v1/events/1491/result/490","top_3_results":[{"athlete_id":13915,"rank":1,"name":"DAVID
+        Julian","firstname":"Julian","lastname":"DAVID","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"618","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":17582,"rank":2,"name":"SANDECK
+        Fin Luc","firstname":"Fin Luc","lastname":"SANDECK","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"611","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"rounds":[],"qualified":null},{"athlete_id":13851,"rank":3,"name":"BARTON
+        Hayden","firstname":"Hayden","lastname":"BARTON","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"614","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"rounds":[],"qualified":null}]},{"dcat_id":510,"event_id":1491,"dcat_name":"SPEED
+        Women","discipline_kind":"speed","category_id":6979,"category_name":"Women","status":"finished","status_as_of":"2026-02-14
+        00:46:19 UTC","ranking_as_of":"2026-02-14 00:36:33 UTC","category_rounds":[{"category_round_id":10469,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"finished","status_as_of":"2026-02-13
+        22:38:59 UTC","result_url":"/api/v1/category_rounds/10469/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":46},"format":"IFSC
+        2026: Qualification","routes":[{"id":18665,"name":"A","startlist":"/api/v1/routes/18665/startlist"},{"id":18666,"name":"B","startlist":"/api/v1/routes/18666/startlist"}]},{"category_round_id":10471,"kind":"speed","name":"Final","category":"Women","schedule":null,"status":"finished","status_as_of":"2026-02-14
+        00:36:41 UTC","result_url":"/api/v1/category_rounds/10471/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":48},"format":"IFSC
+        2026+: Elimination","routes":[{"id":18669,"name":"A","startlist":"/api/v1/routes/18669/startlist"},{"id":18670,"name":"B","startlist":"/api/v1/routes/18670/startlist"}]}],"full_results_url":"/api/v1/events/1491/result/510","top_3_results":[{"athlete_id":16639,"rank":1,"name":"LEE
+        Helen","firstname":"Helen","lastname":"LEE","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"615","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3759,"rank":2,"name":"TETZLAFF
+        Sarah","firstname":"Sarah","lastname":"TETZLAFF","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"622","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3772,"rank":3,"name":"GEBERT
+        Abby","firstname":"Abby","lastname":"GEBERT","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"602","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null}]}],"dcats":[{"dcat_id":490,"event_id":1491,"dcat_name":"SPEED
+        Men","discipline_kind":"speed","category_id":6978,"category_name":"Men","status":"finished","status_as_of":"2026-02-14
+        00:46:45 UTC","ranking_as_of":"2026-02-14 00:38:05 UTC","category_rounds":[{"category_round_id":10468,"kind":"speed","name":"Qualification","category":"Men","schedule":null,"status":"finished","status_as_of":"2026-02-13
+        23:04:03 UTC","result_url":"/api/v1/category_rounds/10468/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":46},"format":"IFSC
+        2026: Qualification","routes":[{"id":18663,"name":"A","startlist":"/api/v1/routes/18663/startlist"},{"id":18664,"name":"B","startlist":"/api/v1/routes/18664/startlist"}]},{"category_round_id":10470,"kind":"speed","name":"Final","category":"Men","schedule":null,"status":"finished","status_as_of":"2026-02-14
+        00:38:12 UTC","result_url":"/api/v1/category_rounds/10470/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":48},"format":"IFSC
+        2026+: Elimination","routes":[{"id":18667,"name":"A","startlist":"/api/v1/routes/18667/startlist"},{"id":18668,"name":"B","startlist":"/api/v1/routes/18668/startlist"}]}],"full_results_url":"/api/v1/events/1491/result/490","top_3_results":[{"athlete_id":13915,"rank":1,"name":"DAVID
+        Julian","firstname":"Julian","lastname":"DAVID","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"618","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":17582,"rank":2,"name":"SANDECK
+        Fin Luc","firstname":"Fin Luc","lastname":"SANDECK","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"611","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"rounds":[],"qualified":null},{"athlete_id":13851,"rank":3,"name":"BARTON
+        Hayden","firstname":"Hayden","lastname":"BARTON","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"614","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28,"rounds":[],"qualified":null}]},{"dcat_id":510,"event_id":1491,"dcat_name":"SPEED
+        Women","discipline_kind":"speed","category_id":6979,"category_name":"Women","status":"finished","status_as_of":"2026-02-14
+        00:46:19 UTC","ranking_as_of":"2026-02-14 00:36:33 UTC","category_rounds":[{"category_round_id":10469,"kind":"speed","name":"Qualification","category":"Women","schedule":null,"status":"finished","status_as_of":"2026-02-13
+        22:38:59 UTC","result_url":"/api/v1/category_rounds/10469/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":46},"format":"IFSC
+        2026: Qualification","routes":[{"id":18665,"name":"A","startlist":"/api/v1/routes/18665/startlist"},{"id":18666,"name":"B","startlist":"/api/v1/routes/18666/startlist"}]},{"category_round_id":10471,"kind":"speed","name":"Final","category":"Women","schedule":null,"status":"finished","status_as_of":"2026-02-14
+        00:36:41 UTC","result_url":"/api/v1/category_rounds/10471/results","starting_groups":[],"combined_stages":[],"round":{"league_round_id":48},"format":"IFSC
+        2026+: Elimination","routes":[{"id":18669,"name":"A","startlist":"/api/v1/routes/18669/startlist"},{"id":18670,"name":"B","startlist":"/api/v1/routes/18670/startlist"}]}],"full_results_url":"/api/v1/events/1491/result/510","top_3_results":[{"athlete_id":16639,"rank":1,"name":"LEE
+        Helen","firstname":"Helen","lastname":"LEE","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"615","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3759,"rank":2,"name":"TETZLAFF
+        Sarah","firstname":"Sarah","lastname":"TETZLAFF","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"622","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3772,"rank":3,"name":"GEBERT
+        Abby","firstname":"Abby","lastname":"GEBERT","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"602","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null}]}],"disciplines":[{"id":1826,"kind":"speed","settings":null}],"computed_combined_categories":[],"team_ranking_disciplines":["speed"],"team_ranking_url":"/api/v1/events/1491/team_results/","time_rankings":false,"time_ranking_url":null,"custom_event_registration_fields":[]}'
+  recorded_at: Sun, 01 Mar 2026 16:53:30 GMT
+recorded_with: VCR 6.4.0
