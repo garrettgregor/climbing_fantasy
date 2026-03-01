@@ -1,0 +1,394 @@
+{
+  "info": {
+    "name": "Climbing Fantasy API",
+    "description": "Generated from OpenAPI + fixture-backed examples for realistic mocks.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "seasonId",
+      "value": "1"
+    },
+    {
+      "key": "eventId",
+      "value": "1"
+    },
+    {
+      "key": "categoryId",
+      "value": "1"
+    },
+    {
+      "key": "roundId",
+      "value": "1"
+    },
+    {
+      "key": "athleteId",
+      "value": "35"
+    },
+    {
+      "key": "athleteQuery",
+      "value": "Hunt"
+    },
+    {
+      "key": "countryCode",
+      "value": "USA"
+    },
+    {
+      "key": "year",
+      "value": "2025"
+    },
+    {
+      "key": "discipline",
+      "value": "boulder"
+    },
+    {
+      "key": "eventStatus",
+      "value": "completed"
+    }
+  ],
+  "item": [
+    {
+      "name": "Seasons",
+      "item": [
+        {
+          "name": "List seasons",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/seasons?page=1&per_page=25"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/seasons?page=1&per_page=25"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 1,\n      \"name\": \"IFSC World Cup 2025\",\n      \"year\": 2025,\n      \"external_id\": 37\n    },\n    {\n      \"id\": 2,\n      \"name\": \"World Climbing Series 2026\",\n      \"year\": 2026,\n      \"external_id\": 38\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"per_page\": 25,\n    \"total\": 2\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get season",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"IFSC World Cup 2025\",\n    \"year\": 2025,\n    \"external_id\": 37,\n    \"events\": [\n      {\n        \"id\": 1,\n        \"name\": \"IFSC World Cup Keqiao 2025\",\n        \"location\": \"Keqiao, CHN\",\n        \"starts_on\": \"2025-04-18\",\n        \"ends_on\": \"2025-04-20\",\n        \"discipline\": \"boulder\",\n        \"status\": \"completed\",\n        \"season_id\": 1,\n        \"external_id\": 1405,\n        \"results_synced_at\": null\n      },\n      {\n        \"id\": 2,\n        \"name\": \"IFSC World Cup Wujiang 2025\",\n        \"location\": \"Wujiang, CHN\",\n        \"starts_on\": \"2025-04-25\",\n        \"ends_on\": \"2025-04-27\",\n        \"discipline\": \"lead\",\n        \"status\": \"completed\",\n        \"season_id\": 1,\n        \"external_id\": 1406,\n        \"results_synced_at\": null\n      }\n    ]\n  }\n}"
+            },
+            {
+              "name": "404 Not Found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": \"Not found\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "List events",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/events?season_id={{seasonId}}&discipline={{discipline}}&status={{eventStatus}}&year={{year}}&page=1&per_page=25"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/events?season_id={{seasonId}}&discipline={{discipline}}&status={{eventStatus}}&year={{year}}&page=1&per_page=25"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 1,\n      \"name\": \"IFSC World Cup Keqiao 2025\",\n      \"location\": \"Keqiao, CHN\",\n      \"starts_on\": \"2025-04-18\",\n      \"ends_on\": \"2025-04-20\",\n      \"discipline\": \"boulder\",\n      \"status\": \"completed\",\n      \"season_id\": 1,\n      \"external_id\": 1405,\n      \"results_synced_at\": null\n    },\n    {\n      \"id\": 2,\n      \"name\": \"IFSC World Cup Wujiang 2025\",\n      \"location\": \"Wujiang, CHN\",\n      \"starts_on\": \"2025-04-25\",\n      \"ends_on\": \"2025-04-27\",\n      \"discipline\": \"lead\",\n      \"status\": \"completed\",\n      \"season_id\": 1,\n      \"external_id\": 1406,\n      \"results_synced_at\": null\n    },\n    {\n      \"id\": 3,\n      \"name\": \"World Climbing Oceania Series New South Wales 2026\",\n      \"location\": \"Gladesville, AUS\",\n      \"starts_on\": \"2026-02-28\",\n      \"ends_on\": \"2026-03-01\",\n      \"discipline\": \"boulder\",\n      \"status\": \"completed\",\n      \"season_id\": 2,\n      \"external_id\": 1523,\n      \"results_synced_at\": null\n    },\n    {\n      \"id\": 4,\n      \"name\": \"World Climbing Series Keqiao 2026\",\n      \"location\": \"Keqiao, CHN\",\n      \"starts_on\": \"2026-05-01\",\n      \"ends_on\": \"2026-05-03\",\n      \"discipline\": \"boulder\",\n      \"status\": \"upcoming\",\n      \"season_id\": 2,\n      \"external_id\": 1524,\n      \"results_synced_at\": null\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"per_page\": 25,\n    \"total\": 4\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get event",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/events/{{eventId}}"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/events/{{eventId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"IFSC World Cup Keqiao 2025\",\n    \"location\": \"Keqiao, CHN\",\n    \"starts_on\": \"2025-04-18\",\n    \"ends_on\": \"2025-04-20\",\n    \"discipline\": \"boulder\",\n    \"status\": \"completed\",\n    \"season_id\": 1,\n    \"external_id\": 1405,\n    \"results_synced_at\": null,\n    \"season\": {\n      \"id\": 1,\n      \"name\": \"IFSC World Cup 2025\",\n      \"year\": 2025,\n      \"external_id\": 37\n    },\n    \"categories\": [\n      {\n        \"id\": 1,\n        \"name\": \"Boulder - Men\",\n        \"discipline\": \"boulder\",\n        \"gender\": \"male\",\n        \"external_id\": 6330,\n        \"age_category\": \"open\",\n        \"para_classification\": null,\n        \"para_intensity\": null,\n        \"event_id\": 1\n      },\n      {\n        \"id\": 2,\n        \"name\": \"Boulder - Women\",\n        \"discipline\": \"boulder\",\n        \"gender\": \"female\",\n        \"external_id\": 6331,\n        \"age_category\": \"open\",\n        \"para_classification\": null,\n        \"para_intensity\": null,\n        \"event_id\": 1\n      }\n    ]\n  }\n}"
+            },
+            {
+              "name": "404 Not Found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/events/{{eventId}}"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": \"Not found\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/categories/{{categoryId}}"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/categories/{{categoryId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Boulder - Men\",\n    \"discipline\": \"boulder\",\n    \"gender\": \"male\",\n    \"external_id\": 6330,\n    \"age_category\": \"open\",\n    \"para_classification\": null,\n    \"para_intensity\": null,\n    \"event_id\": 1,\n    \"rounds\": [\n      {\n        \"id\": 1,\n        \"name\": \"Qualification\",\n        \"round_type\": \"qualification\",\n        \"status\": \"completed\",\n        \"external_round_id\": 9381,\n        \"category_id\": 1\n      },\n      {\n        \"id\": 2,\n        \"name\": \"Semi-final\",\n        \"round_type\": \"semi_final\",\n        \"status\": \"completed\",\n        \"external_round_id\": 9953,\n        \"category_id\": 1\n      },\n      {\n        \"id\": 3,\n        \"name\": \"Final\",\n        \"round_type\": \"final\",\n        \"status\": \"completed\",\n        \"external_round_id\": 9955,\n        \"category_id\": 1\n      }\n    ]\n  }\n}"
+            },
+            {
+              "name": "404 Not Found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/categories/{{categoryId}}"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": \"Not found\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rounds",
+      "item": [
+        {
+          "name": "Get round",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/rounds/{{roundId}}"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/rounds/{{roundId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Qualification\",\n    \"round_type\": \"qualification\",\n    \"status\": \"completed\",\n    \"external_round_id\": 9381,\n    \"category_id\": 1,\n    \"round_results\": []\n  }\n}"
+            },
+            {
+              "name": "404 Not Found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/rounds/{{roundId}}"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": \"Not found\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Athletes",
+      "item": [
+        {
+          "name": "List athletes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/athletes?q={{athleteQuery}}&country={{countryCode}}&page=1&per_page=25"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/athletes?q={{athleteQuery}}&country={{countryCode}}&page=1&per_page=25"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 1,\n      \"first_name\": \"Sorato\",\n      \"last_name\": \"Anraku\",\n      \"country_code\": \"JPN\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 13040,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": \"2005-07-22\"\n    },\n    {\n      \"id\": 27,\n      \"first_name\": \"Anna Maria\",\n      \"last_name\": \"Apel\",\n      \"country_code\": \"GER\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 12336,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 6,\n      \"first_name\": \"Sam\",\n      \"last_name\": \"Avezou\",\n      \"country_code\": \"FRA\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 532,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 10,\n      \"first_name\": \"Oriane\",\n      \"last_name\": \"Bertone\",\n      \"country_code\": \"FRA\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 11462,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 34,\n      \"first_name\": \"Lijuan\",\n      \"last_name\": \"Deng\",\n      \"country_code\": \"CHN\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 3014,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 23,\n      \"first_name\": \"Yannick\",\n      \"last_name\": \"Flohé\",\n      \"country_code\": \"GER\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 3131,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 18,\n      \"first_name\": \"Alberto\",\n      \"last_name\": \"Ginés López\",\n      \"country_code\": \"ESP\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 811,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 41,\n      \"first_name\": \"Tahnia\",\n      \"last_name\": \"Harris\",\n      \"country_code\": \"AUS\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 15909,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 38,\n      \"first_name\": \"Campbell\",\n      \"last_name\": \"Harrison\",\n      \"country_code\": \"AUS\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 2493,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 35,\n      \"first_name\": \"Emma\",\n      \"last_name\": \"Hunt\",\n      \"country_code\": \"USA\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 1999,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 29,\n      \"first_name\": \"Hryhorii\",\n      \"last_name\": \"Ilchyshyn\",\n      \"country_code\": \"UKR\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 1547,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 26,\n      \"first_name\": \"Hélène\",\n      \"last_name\": \"Janicot\",\n      \"country_code\": \"FRA\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 455,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 7,\n      \"first_name\": \"Paul\",\n      \"last_name\": \"Jenft\",\n      \"country_code\": \"FRA\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 547,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 33,\n      \"first_name\": \"Jimin\",\n      \"last_name\": \"Jeong\",\n      \"country_code\": \"KOR\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 13154,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 30,\n      \"first_name\": \"Kiromal\",\n      \"last_name\": \"Katibin\",\n      \"country_code\": \"INA\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 3324,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 2,\n      \"first_name\": \"Dohyun\",\n      \"last_name\": \"Lee\",\n      \"country_code\": \"KOR\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 2101,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 28,\n      \"first_name\": \"Jianguo\",\n      \"last_name\": \"Long\",\n      \"country_code\": \"CHN\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 11395,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 16,\n      \"first_name\": \"Oceania\",\n      \"last_name\": \"Mackenzie\",\n      \"country_code\": \"AUS\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 2501,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 11,\n      \"first_name\": \"Erin\",\n      \"last_name\": \"McNeice\",\n      \"country_code\": \"GBR\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 11468,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 12,\n      \"first_name\": \"Mao\",\n      \"last_name\": \"Nakamura\",\n      \"country_code\": \"JPN\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 2327,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 3,\n      \"first_name\": \"Meichi\",\n      \"last_name\": \"Narasaki\",\n      \"country_code\": \"JPN\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 2307,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 4,\n      \"first_name\": \"Tomoa\",\n      \"last_name\": \"Narasaki\",\n      \"country_code\": \"JPN\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 2276,\n      \"height\": 170.0,\n      \"arm_span\": 175.0,\n      \"birthday\": \"1996-06-22\"\n    },\n    {\n      \"id\": 13,\n      \"first_name\": \"Miho\",\n      \"last_name\": \"Nonaka\",\n      \"country_code\": \"JPN\",\n      \"gender\": \"female\",\n      \"external_athlete_id\": 2294,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 20,\n      \"first_name\": \"Yufei\",\n      \"last_name\": \"Pan\",\n      \"country_code\": \"CHN\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 2947,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    },\n    {\n      \"id\": 37,\n      \"first_name\": \"Dylan\",\n      \"last_name\": \"Parks\",\n      \"country_code\": \"AUS\",\n      \"gender\": \"male\",\n      \"external_athlete_id\": 13853,\n      \"height\": null,\n      \"arm_span\": null,\n      \"birthday\": null\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"per_page\": 25,\n    \"total\": 41\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get athlete",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/athletes/{{athleteId}}"
+          },
+          "response": [
+            {
+              "name": "200 OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/athletes/{{athleteId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"id\": 35,\n    \"first_name\": \"Emma\",\n    \"last_name\": \"Hunt\",\n    \"country_code\": \"USA\",\n    \"gender\": \"female\",\n    \"external_athlete_id\": 1999,\n    \"height\": null,\n    \"arm_span\": null,\n    \"birthday\": null,\n    \"round_results\": []\n  }\n}"
+            },
+            {
+              "name": "404 Not Found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{baseUrl}}/api/v1/athletes/{{athleteId}}"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": \"Not found\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

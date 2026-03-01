@@ -1,0 +1,10 @@
+{
+  "workspace_name": "Team Workspace",
+  "workspace_id": "6759db24-dbe0-41a7-831c-1d411b034624",
+  "collection_uid": "52811363-b7fc4857-b764-4e29-b82b-c2afecdb5518",
+  "local_environment_uid": "52811363-6e7d58e1-538c-44a0-9e55-2aa18912f35e",
+  "mock_environment_uid": "52811363-d3088b95-74a1-4b6b-a8d6-a00d800aa432",
+  "mock_id": "49d0da93-1a50-440e-a192-89e26f5f4b34",
+  "mock_uid": "52811363-49d0da93-1a50-440e-a192-89e26f5f4b34",
+  "mock_url": "https://49d0da93-1a50-440e-a192-89e26f5f4b34.mock.pstmn.io"
+}

@@ -46,6 +46,22 @@ bin/bundler-audit               # Gem vulnerability audit
 
 Pre-commit hooks via Overcommit (`.overcommit.yml`) run RuboCop, Packwerk, BundleAudit, and Brakeman automatically.
 
+## Postman Sync
+
+Keep Postman assets in sync with the API whenever endpoints or `swagger/v1/swagger.yaml` change.
+
+1. Export your Postman API key in shell:
+   `export POSTMAN_API_KEY='PMAK-...'`
+2. Build fixture-backed Postman assets:
+   `ruby scripts/postman/build_postman_assets.rb`
+3. Sync collection, environments, and mock server to the team workspace:
+   `bash scripts/postman/sync_postman_resources.sh`
+
+Notes:
+- The generated Postman examples are derived from `test/fixtures/*.yml` so mocks stay realistic.
+- Default workspace name is `Team Workspace`; override with `POSTMAN_WORKSPACE_NAME`.
+- Never commit raw API keys.
+
 ## Architecture
 
 ### Data model
