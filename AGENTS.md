@@ -39,7 +39,7 @@ Run linting and security scans locally:
 
 ```bash
 bin/rubocop                     # RuboCop (rubocop-shopify + rubocop-rails)
-bin/packwerk check              # Packwerk architectural boundary check
+bundle exec packwerk check      # Packwerk architectural boundary check
 bin/brakeman                    # Rails security scanner
 bin/bundler-audit               # Gem vulnerability audit
 ```
@@ -160,7 +160,7 @@ packwerk.yml          # Packwerk configuration (include_paths: app, packs/*/app)
 ## Conventions
 
 - **Ruby style:** Shopify style guide via `rubocop-shopify` + `rubocop-rails`. No frozen_string_literal magic comments (Ruby 4 default). `class << self` for class methods.
-- **Architecture:** Packwerk packages in `packs/`. Run `bin/packwerk check` to validate boundaries. `packs/core` has no inbound pack deps; api/admin/sync depend only on core.
+- **Architecture:** Packwerk packages in `packs/`. Run `bundle exec packwerk check` to validate boundaries. `packs/core` has no inbound pack deps; api/admin/sync depend only on core.
 - **Filtering:** API filtering goes through query objects (`packs/api/app/queries/`). Use Ransack predicates — pass enum integer values (e.g., `Event.statuses[status_string]`) not strings.
 - **Testing:** Minitest with parallel workers. Shoulda-matchers for model validations. Committee for API schema conformance. Query tests in `test/queries/`.
 - **Models:** Enums for discipline, status, gender, round_type, role. Each model declares explicit `ransackable_attributes`/`ransackable_associations` allowlists.
@@ -169,6 +169,17 @@ packwerk.yml          # Packwerk configuration (include_paths: app, packs/*/app)
 - **Serialization:** Blueprinter with default and extended views. No inline JSON rendering.
 - **Jobs:** Rescue from `ApiError`, log, and continue processing remaining items.
 - **Database:** PostgreSQL with UUID-less integer primary keys. Multi-database in production (Solid Cache, Solid Queue, Solid Cable).
+
+## Commit workflow (Conventional Commits)
+
+Use small, single-purpose commits and follow Conventional Commits:
+
+- Commit format: `<type>(<scope>): <summary>`
+- Common types: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `ci`
+- Scope should name the subsystem (examples: `sync`, `fixtures`, `seeds`, `api`, `ci`)
+- Keep each commit focused to one logical change (for example: service deletion, fixture rewrite, seed behavior, CI workflow)
+- Stage explicitly by file (`git add <paths>`) to avoid mixing concerns
+- Run relevant checks before committing (`bin/rubocop`, `bundle exec packwerk check`, and targeted tests for touched areas)
 
 ## Deployment
 
