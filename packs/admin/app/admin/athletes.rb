@@ -48,8 +48,8 @@ ActiveAdmin.register(Athlete) do
     end
 
     panel "Recent Results" do
-      table_for resource.round_results.includes(round: { category: :competition }).order(created_at: :desc).limit(20) do
-        column("Competition") { |r| r.round.category.competition.name }
+      table_for resource.round_results.includes(round: { category: :event }).order(created_at: :desc).limit(20) do
+        column("Event") { |result| result.round.category.event.name }
         column("Round") { |r| r.round.name }
         column :rank
         column :score_raw

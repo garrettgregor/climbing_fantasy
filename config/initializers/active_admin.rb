@@ -24,6 +24,10 @@ ActiveAdmin.setup do |config|
   #     File.join(Rails.root, 'app', 'admin'),
   #     File.join(Rails.root, 'app', 'cashier')
   #   ]
+  config.load_paths = [
+    Rails.root.join("packs/admin/app/admin").to_s,
+    Rails.root.join("app/admin").to_s,
+  ]
 
   # == Default Namespace
   #
