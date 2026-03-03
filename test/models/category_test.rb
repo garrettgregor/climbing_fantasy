@@ -27,6 +27,10 @@ class CategoryTest < ActiveSupport::TestCase
     assert_includes cat.rounds, rounds(:keqiao_boulder_men_final)
   end
 
+  test "allows ransack filter by event_id" do
+    assert_includes Category.ransackable_attributes, "event_id"
+  end
+
   test "unique external_id within event" do
     existing = categories(:keqiao_boulder_men)
     duplicate = Category.new(

@@ -15,7 +15,7 @@ class Category < ApplicationRecord
 
   class << self
     def ransackable_attributes(_auth_object = nil)
-      ["name", "discipline", "gender"]
+      ["name", "discipline", "gender", "event_id"]
     end
 
     def ransackable_associations(_auth_object = nil)
