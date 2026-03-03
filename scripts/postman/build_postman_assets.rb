@@ -135,7 +135,7 @@ categories = categories_data.map do |_label, attrs|
     name: attrs.fetch("name"),
     discipline: CATEGORY_DISCIPLINES.fetch(attrs.fetch("discipline")),
     gender: CATEGORY_GENDERS.fetch(attrs.fetch("gender")),
-    external_id: attrs.fetch("external_id"),
+    external_dcat_id: attrs.fetch("external_dcat_id"),
     event_id: event_id_by_label.fetch(attrs.fetch("event")),
   }
 end
