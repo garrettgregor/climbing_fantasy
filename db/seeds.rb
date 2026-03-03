@@ -94,7 +94,7 @@ unless Rails.env.production?
     event = fetch_record.call(events, attrs["event"], "categories.yml")
     categories[key] = upsert.call(
       Category,
-      { event:, external_id: attrs["external_id"] },
+      { event:, external_dcat_id: attrs["external_dcat_id"] },
       {
         name: attrs["name"],
         discipline: attrs["discipline"],

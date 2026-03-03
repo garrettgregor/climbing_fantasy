@@ -2,7 +2,7 @@ ActiveAdmin.register(Category) do
   menu priority: 5
 
   permit_params :event_id,
-    :external_id,
+    :external_dcat_id,
     :name,
     :discipline,
     :gender
@@ -28,7 +28,7 @@ ActiveAdmin.register(Category) do
       row :discipline
       row :gender
       row(:event) { |c| link_to c.event.name, admin_event_path(c.event) }
-      row :external_id
+      row :external_dcat_id
     end
 
     panel "Rounds" do

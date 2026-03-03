@@ -405,7 +405,7 @@ components:
         gender:
           type: string
           enum: [male, female, non_binary, other, mixed]
-        external_id:
+        external_dcat_id:
           type: integer
           nullable: true
       required:
