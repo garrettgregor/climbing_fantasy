@@ -5,7 +5,6 @@ keqiao_boulder_men:
   name: "Boulder - Men"
   discipline: 0
   gender: 0
-  age_category: "Open"
 
 keqiao_boulder_women:
   event: keqiao_boulder
@@ -13,7 +12,6 @@ keqiao_boulder_women:
   name: "Boulder - Women"
   discipline: 0
   gender: 1
-  age_category: "Open"
 
 # --- Wujiang 2025 ---
 wujiang_lead_men:
@@ -22,7 +20,6 @@ wujiang_lead_men:
   name: "Lead - Men"
   discipline: 1
   gender: 0
-  age_category: "Open"
 
 wujiang_lead_women:
   event: wujiang_lead_speed
@@ -30,7 +27,6 @@ wujiang_lead_women:
   name: "Lead - Women"
   discipline: 1
   gender: 1
-  age_category: "Open"
 
 wujiang_speed_men:
   event: wujiang_lead_speed
@@ -38,7 +34,6 @@ wujiang_speed_men:
   name: "Speed - Men"
   discipline: 2
   gender: 0
-  age_category: "Open"
 
 wujiang_speed_women:
   event: wujiang_lead_speed
@@ -46,7 +41,6 @@ wujiang_speed_women:
   name: "Speed - Women"
   discipline: 2
   gender: 1
-  age_category: "Open"
 
 # --- NSW Oceania 2026 ---
 nsw_boulder_men:
@@ -55,7 +49,6 @@ nsw_boulder_men:
   name: "Boulder - Men"
   discipline: 0
   gender: 0
-  age_category: "Open"
 
 nsw_boulder_women:
   event: nsw_oceania
@@ -63,7 +56,6 @@ nsw_boulder_women:
   name: "Boulder - Women"
   discipline: 0
   gender: 1
-  age_category: "Open"
 
 # --- Keqiao 2026 (upcoming) ---
 keqiao_2026_boulder_men:
@@ -72,7 +64,6 @@ keqiao_2026_boulder_men:
   name: "Boulder - Men"
   discipline: 0
   gender: 0
-  age_category: "Open"
 
 keqiao_2026_boulder_women:
   event: keqiao_2026
@@ -80,23 +71,19 @@ keqiao_2026_boulder_women:
   name: "Boulder - Women"
   discipline: 0
   gender: 1
-  age_category: "Open"
 
 # == Schema Information
 #
 # Table name: categories
 #
-#  id                  :bigint           not null, primary key
-#  age_category        :string           default("open"), not null
-#  discipline          :integer          not null
-#  gender              :integer          not null
-#  name                :string           not null
-#  para_classification :string
-#  para_intensity      :integer
-#  created_at          :datetime         not null
-#  updated_at          :datetime         not null
-#  event_id            :bigint           not null
-#  external_id         :integer
+#  id          :bigint           not null, primary key
+#  discipline  :integer          not null
+#  gender      :integer          not null
+#  name        :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  event_id    :bigint           not null
+#  external_id :integer
 #
 # Indexes
 #

@@ -16,10 +16,6 @@ class CategoryTest < ActiveSupport::TestCase
     assert_equal ["male", "female", "non_binary", "other", "mixed"], Category.genders.keys
   end
 
-  test "age_category enum values" do
-    assert_equal ["open", "u17", "u19", "u21"], Category.age_categories.keys
-  end
-
   test "belongs to event" do
     cat = categories(:keqiao_boulder_men)
     assert_equal events(:keqiao_boulder), cat.event
@@ -43,43 +39,20 @@ class CategoryTest < ActiveSupport::TestCase
     assert_not duplicate.valid?
     assert_includes duplicate.errors[:external_id], "has already been taken"
   end
-
-  test "canonical_age_category maps Youth B to u17" do
-    cat = Category.new(name: "Youth B - Men", discipline: :boulder, gender: :male)
-    assert_equal :u17, cat.canonical_age_category
-  end
-
-  test "canonical_age_category maps Junior to u21" do
-    cat = Category.new(name: "Junior - Women", discipline: :lead, gender: :female)
-    assert_equal :u21, cat.canonical_age_category
-  end
-
-  test "canonical_age_category defaults to open" do
-    cat = Category.new(name: "Boulder - Men", discipline: :boulder, gender: :male)
-    assert_equal :open, cat.canonical_age_category
-  end
-
-  test "para? returns false when para_classification is nil" do
-    cat = categories(:keqiao_boulder_men)
-    assert_not cat.para?
-  end
 end
 
 # == Schema Information
 #
 # Table name: categories
 #
-#  id                  :bigint           not null, primary key
-#  age_category        :string           default("open"), not null
-#  discipline          :integer          not null
-#  gender              :integer          not null
-#  name                :string           not null
-#  para_classification :string
-#  para_intensity      :integer
-#  created_at          :datetime         not null
-#  updated_at          :datetime         not null
-#  event_id            :bigint           not null
-#  external_id         :integer
+#  id          :bigint           not null, primary key
+#  discipline  :integer          not null
+#  gender      :integer          not null
+#  name        :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  event_id    :bigint           not null
+#  external_id :integer
 #
 # Indexes
 #

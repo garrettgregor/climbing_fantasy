@@ -4,7 +4,6 @@ class AddHtmlSyncFieldsToEvents < ActiveRecord::Migration[8.1]
     add_column :events, :registrations_last_checked_at, :datetime
     add_column :events, :results_last_synced_at, :datetime
     add_column :events, :info_sheet_url, :string
-    add_column :events, :officials_last_synced_at, :datetime
 
     add_index :events, :sync_state
   end

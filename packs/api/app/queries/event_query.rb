@@ -14,9 +14,9 @@ class EventQuery < ApplicationQuery
   def ransack_params
     q = {}
     q[:season_id_eq]   = @params[:season_id] if @params[:season_id].present?
-    q[:discipline_eq]  = Event.disciplines[@params[:discipline]]      if @params[:discipline].present?
     q[:status_eq]      = Event.statuses[@params[:status]]             if @params[:status].present?
     q[:season_year_eq] = @params[:year]                               if @params[:year].present?
+    q[:categories_discipline_eq] = Category.disciplines[@params[:discipline]] if @params[:discipline].present?
     q
   end
 end

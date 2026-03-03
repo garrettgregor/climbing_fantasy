@@ -3,10 +3,7 @@ class CategoryBlueprint < Blueprinter::Base
   fields :name,
     :discipline,
     :gender,
-    :external_id,
-    :age_category,
-    :para_classification,
-    :para_intensity
+    :external_id
 
   view :extended do
     association :rounds, blueprint: RoundBlueprint

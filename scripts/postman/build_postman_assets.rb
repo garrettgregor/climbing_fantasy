@@ -13,17 +13,17 @@ OUT_COLLECTION = File.join(ROOT, "postman/collections/climbing_fantasy_api.postm
 OUT_LOCAL_ENV = File.join(ROOT, "postman/environments/climbing_fantasy_local.postman_environment.json")
 OUT_MOCK_ENV = File.join(ROOT, "postman/environments/climbing_fantasy_mock.postman_environment.json")
 
-EVENT_DISCIPLINES = {
+EVENT_STATUSES = {
+  0 => "upcoming",
+  1 => "in_progress",
+  2 => "completed",
+}.freeze
+CATEGORY_DISCIPLINES = {
   0 => "boulder",
   1 => "lead",
   2 => "speed",
   3 => "combined",
   4 => "boulder_and_lead",
-}.freeze
-EVENT_STATUSES = {
-  0 => "upcoming",
-  1 => "in_progress",
-  2 => "completed",
 }.freeze
 CATEGORY_GENDERS = {
   0 => "male",
@@ -121,7 +121,6 @@ events = events_data.map do |_label, attrs|
     location: attrs.fetch("location"),
     starts_on: attrs.fetch("starts_on"),
     ends_on: attrs.fetch("ends_on"),
-    discipline: EVENT_DISCIPLINES.fetch(attrs.fetch("discipline")),
     status: EVENT_STATUSES.fetch(attrs.fetch("status")),
     season_id: season_id_by_label.fetch(attrs.fetch("season")),
     external_id: attrs.fetch("external_id"),
@@ -134,12 +133,9 @@ categories = categories_data.map do |_label, attrs|
   {
     id: attrs.fetch("__id"),
     name: attrs.fetch("name"),
-    discipline: EVENT_DISCIPLINES.fetch(attrs.fetch("discipline")),
+    discipline: CATEGORY_DISCIPLINES.fetch(attrs.fetch("discipline")),
     gender: CATEGORY_GENDERS.fetch(attrs.fetch("gender")),
     external_id: attrs.fetch("external_id"),
-    age_category: attrs.fetch("age_category").to_s.downcase,
-    para_classification: attrs["para_classification"],
-    para_intensity: attrs["para_intensity"],
     event_id: event_id_by_label.fetch(attrs.fetch("event")),
   }
 end
@@ -249,7 +245,7 @@ collection = {
     { "key" => "athleteQuery", "value" => athlete_sample[:last_name] },
     { "key" => "countryCode", "value" => athlete_sample[:country_code] },
     { "key" => "year", "value" => season_sample[:year].to_s },
-    { "key" => "discipline", "value" => event_sample[:discipline] },
+    { "key" => "discipline", "value" => category_sample[:discipline] },
     { "key" => "eventStatus", "value" => event_sample[:status] },
   ],
   "item" => [
@@ -338,7 +334,7 @@ local_env = {
     { "key" => "athleteQuery", "value" => athlete_sample[:last_name], "type" => "default", "enabled" => true },
     { "key" => "countryCode", "value" => athlete_sample[:country_code], "type" => "default", "enabled" => true },
     { "key" => "year", "value" => season_sample[:year].to_s, "type" => "default", "enabled" => true },
-    { "key" => "discipline", "value" => event_sample[:discipline], "type" => "default", "enabled" => true },
+    { "key" => "discipline", "value" => category_sample[:discipline], "type" => "default", "enabled" => true },
     { "key" => "eventStatus", "value" => event_sample[:status], "type" => "default", "enabled" => true },
   ],
   "_postman_variable_scope" => "environment",

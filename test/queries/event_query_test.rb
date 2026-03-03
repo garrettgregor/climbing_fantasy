@@ -13,9 +13,12 @@ class EventQueryTest < ActiveSupport::TestCase
     assert_equal Event.where(season_id: season.id).count, results.count
   end
 
-  test "filters by discipline" do
+  test "filters by discipline via categories join" do
     results = EventQuery.call(discipline: "boulder")
-    assert results.all?(&:boulder?)
+    assert_not_empty results
+    results.each do |event|
+      assert event.categories.exists?(discipline: :boulder)
+    end
   end
 
   test "filters by status" do

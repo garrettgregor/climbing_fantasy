@@ -23,7 +23,6 @@ module Api
         assert event.key?("location")
         assert event.key?("starts_on")
         assert event.key?("ends_on")
-        assert event.key?("discipline")
         assert event.key?("status")
       end
 
@@ -37,12 +36,14 @@ module Api
         end
       end
 
-      test "GET /api/v1/events filters by discipline" do
+      test "GET /api/v1/events filters by discipline via categories" do
         get api_v1_events_path(discipline: "boulder")
         json = response.parsed_body
 
-        json["data"].each do |event|
-          assert_equal "boulder", event["discipline"]
+        assert_not json["data"].empty?
+        json["data"].each do |event_data|
+          event = Event.find(event_data["id"])
+          assert event.categories.exists?(discipline: :boulder)
         end
       end
 

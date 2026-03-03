@@ -81,7 +81,6 @@ unless Rails.env.production?
         location: attrs["location"],
         starts_on: attrs["starts_on"],
         ends_on: attrs["ends_on"],
-        discipline: attrs["discipline"],
         status: attrs["status"],
       },
     )
@@ -100,7 +99,6 @@ unless Rails.env.production?
         name: attrs["name"],
         discipline: attrs["discipline"],
         gender: attrs["gender"],
-        age_category: attrs["age_category"],
       },
     )
   end

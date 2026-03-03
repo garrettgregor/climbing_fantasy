@@ -5,10 +5,7 @@ ActiveAdmin.register(Category) do
     :external_id,
     :name,
     :discipline,
-    :gender,
-    :age_category,
-    :para_classification,
-    :para_intensity
+    :gender
 
   index do
     selectable_column
@@ -16,7 +13,6 @@ ActiveAdmin.register(Category) do
     column :name
     column :discipline
     column :gender
-    column :age_category
     column(:event) { |c| link_to c.event.name, admin_event_path(c.event) }
     actions
   end
@@ -31,9 +27,6 @@ ActiveAdmin.register(Category) do
       row :name
       row :discipline
       row :gender
-      row :age_category
-      row :para_classification
-      row :para_intensity
       row(:event) { |c| link_to c.event.name, admin_event_path(c.event) }
       row :external_id
     end

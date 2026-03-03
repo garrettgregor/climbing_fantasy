@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
+ActiveRecord::Schema[8.1].define(version: 2026_03_02_000006) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -71,15 +71,12 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "age_category", default: "Open", null: false
     t.datetime "created_at", null: false
     t.integer "discipline", null: false
     t.bigint "event_id", null: false
     t.integer "external_id"
     t.integer "gender", null: false
     t.string "name", null: false
-    t.string "para_classification"
-    t.integer "para_intensity"
     t.datetime "updated_at", null: false
     t.index ["event_id", "external_id"], name: "index_categories_on_event_id_and_external_id", unique: true
     t.index ["event_id"], name: "index_categories_on_event_id"
@@ -128,13 +125,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_01_000011) do
 
   create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.integer "discipline", null: false
     t.date "ends_on", null: false
     t.integer "external_id"
     t.string "info_sheet_url"
     t.string "location", null: false
     t.string "name", null: false
-    t.datetime "officials_last_synced_at"
     t.datetime "registrations_last_checked_at"
     t.datetime "results_last_synced_at"
     t.datetime "results_synced_at"

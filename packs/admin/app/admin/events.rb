@@ -7,7 +7,6 @@ ActiveAdmin.register(Event) do
     :location,
     :starts_on,
     :ends_on,
-    :discipline,
     :status
 
   scope :all
@@ -20,7 +19,6 @@ ActiveAdmin.register(Event) do
     id_column
     column :name
     column :location
-    column :discipline
     column :status
     column :starts_on
     column :ends_on
@@ -32,7 +30,6 @@ ActiveAdmin.register(Event) do
   filter :season
   filter :name
   filter :location
-  filter :discipline, as: :select, collection: Event.disciplines
   filter :status, as: :select, collection: Event.statuses
   filter :starts_on
 
@@ -40,8 +37,8 @@ ActiveAdmin.register(Event) do
     attributes_table do
       row :name
       row :location
-      row :discipline
       row :status
+      row :sync_state
       row :starts_on
       row :ends_on
       row(:season) { |e| link_to e.season.name, admin_season_path(e.season) }
@@ -55,7 +52,6 @@ ActiveAdmin.register(Event) do
         column(:name) { |c| link_to c.name, admin_category_path(c) }
         column :discipline
         column :gender
-        column :age_category
       end
     end
   end

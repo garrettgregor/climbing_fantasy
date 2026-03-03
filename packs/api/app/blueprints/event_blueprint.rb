@@ -4,7 +4,6 @@ class EventBlueprint < Blueprinter::Base
     :location,
     :starts_on,
     :ends_on,
-    :discipline,
     :status,
     :season_id,
     :external_id,

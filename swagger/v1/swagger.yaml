@@ -93,6 +93,7 @@ paths:
         - name: discipline
           in: query
           required: false
+          description: Filter events by category discipline
           schema:
             type: string
             enum: [boulder, lead, speed, combined, boulder_and_lead]
@@ -370,9 +371,6 @@ components:
         ends_on:
           type: string
           format: date
-        discipline:
-          type: string
-          enum: [boulder, lead, speed, combined, boulder_and_lead]
         status:
           type: string
           enum: [upcoming, in_progress, completed]
@@ -391,7 +389,6 @@ components:
         - location
         - starts_on
         - ends_on
-        - discipline
         - status
         - season_id
 
@@ -409,15 +406,6 @@ components:
           type: string
           enum: [male, female, non_binary, other, mixed]
         external_id:
-          type: integer
-          nullable: true
-        age_category:
-          type: string
-          enum: [open, u17, u19, u21]
-        para_classification:
-          type: string
-          nullable: true
-        para_intensity:
           type: integer
           nullable: true
       required:
