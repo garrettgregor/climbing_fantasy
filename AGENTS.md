@@ -201,6 +201,7 @@ Use small, single-purpose commits and follow Conventional Commits:
 - Keep each commit focused to one logical change (for example: service deletion, fixture rewrite, seed behavior, CI workflow)
 - Stage explicitly by file (`git add <paths>`) to avoid mixing concerns
 - Run relevant checks before committing (`bin/rubocop`, `bundle exec packwerk check`, and targeted tests for touched areas)
+- When `swagger/v1/swagger.yaml`, `test/fixtures/*.yml`, or `scripts/postman/build_postman_assets.rb` change, rebuild Postman assets (`ruby scripts/postman/build_postman_assets.rb`) and include the generated files in the commit
 
 ## Deployment
 
