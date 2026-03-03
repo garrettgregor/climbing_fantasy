@@ -49,7 +49,7 @@ jobs:
 
       - name: Open or update failure issue
         if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const prefix = "Weekly IFSC cassette re-record failed";
