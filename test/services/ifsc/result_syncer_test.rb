@@ -61,13 +61,13 @@ module Ifsc
       assert_equal "Julian", athlete.first_name
     end
 
-    test "updates results_last_synced_at" do
+    test "updates results_synced_at" do
       VCR.use_cassette("ifsc_api_client/get_category_round_results_10468") do
         ResultSyncer.call(event: @event, client: @client)
       end
 
       @event.reload
-      assert_not_nil @event.results_last_synced_at
+      assert_not_nil @event.results_synced_at
     end
 
     test "updates round status" do

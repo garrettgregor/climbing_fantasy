@@ -6,7 +6,7 @@ This document describes how competition data flows from the IFSC results API int
 
 We only sync **World Climbing Series** events (boulder, lead, speed world cups). A single event may be a combined event with multiple disciplines (e.g., both lead and speed categories at the same competition). Para, youth, regional, and continental championship events are excluded. Filtering happens at the SeasonSyncer level by fetching events from the "World Cups and World Championships" league via the season_leagues endpoint, rather than importing all events from a season.
 
-Within each event, EventSyncer only syncs boulder, lead, and speed categories — combined and boulder&lead categories are skipped.
+Within each event, EventSyncer only syncs boulder, lead, and speed categories with men's and women's divisions. Combined / boulder&lead categories and non men/women divisions are skipped.
 
 ## IFSC API
 
@@ -92,7 +92,7 @@ If no matching league is found, a warning is logged and no events are created fo
 
 **EventSyncer** then runs on each `pending_sync` event:
 1. Fetches `GET /events/:id` for full event detail
-2. Filters `d_cats[]` to only boulder, lead, and speed categories (skips combined and boulder&lead)
+2. Filters `d_cats[]` to only boulder, lead, and speed categories with men/women genders
 3. Creates/updates `Category` records keyed by `external_dcat_id` (the stable dcat ID from the API)
 4. Creates/updates `Round` records from `category_rounds[]` (maps round_type and status)
 5. Creates `Climb` records from routes
@@ -116,7 +116,7 @@ If no matching league is found, a warning is logged and no events are created fo
    - Finds or creates the `Athlete` record
    - Upserts `RoundResult` with rank, raw score, and discipline-specific aggregates (speed_time, lead_height)
    - Upserts `ClimbResult` records for each ascent (boulder: top/zone attempts, lead: height/plus, speed: time)
-5. Timestamps `results_last_synced_at`
+5. Timestamps `results_synced_at`
 6. When all rounds for the event are `completed`, sets `sync_state: synced` and `status: completed`
 
 ## Services

@@ -16,7 +16,7 @@ module Ifsc
 
       rounds.each { |round| sync_round_results(round) }
 
-      @event.update!(results_last_synced_at: Time.current)
+      @event.update!(results_synced_at: Time.current)
       finalize_event_status if all_rounds_completed?
     end
 

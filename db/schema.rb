@@ -131,7 +131,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_02_000003) do
     t.string "location", null: false
     t.string "name", null: false
     t.datetime "registrations_last_checked_at"
-    t.datetime "results_last_synced_at"
     t.datetime "results_synced_at"
     t.bigint "season_id", null: false
     t.date "starts_on", null: false

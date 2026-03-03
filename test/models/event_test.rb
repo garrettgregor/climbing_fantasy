@@ -63,7 +63,6 @@ end
 #  location                     :string           not null
 #  name                         :string           not null
 #  registrations_last_checked_at :datetime
-#  results_last_synced_at       :datetime
 #  results_synced_at            :datetime
 #  starts_on                    :date             not null
 #  status                       :integer          default("upcoming"), not null
