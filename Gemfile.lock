@@ -342,7 +342,10 @@ GEM
       prism (>= 0.25.0)
       sorbet-runtime (>= 0.5.9914)
       zeitwerk (>= 2.6.1)
-    pagy (9.4.0)
+    pagy (43.3.1)
+      json
+      uri
+      yaml
     parallel (1.27.0)
     parse_packwerk (0.27.0)
       bigdecimal
@@ -570,6 +573,7 @@ GEM
     wisper (2.0.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yaml (0.4.0)
     zeitwerk (2.7.5)
 
 PLATFORMS
@@ -604,7 +608,7 @@ DEPENDENCIES
   overcommit
   packs-rails
   packwerk
-  pagy (~> 9.0)
+  pagy (~> 43.3)
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
@@ -752,7 +756,7 @@ CHECKSUMS
   packs-rails (0.1.0) sha256=46c8b0292ea7fb0582557e7c84cdc43c9f7aaa6eeb3bc547dea029ccbd1a058b
   packs-specification (0.0.11) sha256=2b6ba6e0dd79af599796d4c8203234ce9a626bca42cb36fcceeac3d95731c86d
   packwerk (3.2.3) sha256=3cf5dd76d8072dc0a1c026328e94608fb151bd94ffec29dd7707124ffe84af54
-  pagy (9.4.0) sha256=db3f2e043f684155f18f78be62a81e8d033e39b9f97b1e1a8d12ad38d7bce738
+  pagy (43.3.1) sha256=78e6c3e5125463b817cbe48eb5ed7b552af062c7db90bef4810d1f442ec61744
   parallel (1.27.0) sha256=4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130
   parse_packwerk (0.27.0) sha256=3d69a1b182aa3a3cc9bb179780346467e773deb40cf91380188ac6ca332622da
   parser (3.3.10.2) sha256=6f60c84aa4bdcedb6d1a2434b738fe8a8136807b6adc8f7f53b97da9bc4e9357
@@ -847,6 +851,7 @@ CHECKSUMS
   websocket-extensions (0.1.5) sha256=1c6ba63092cda343eb53fc657110c71c754c56484aad42578495227d717a8241
   wisper (2.0.1) sha256=ce17bc5c3a166f241a2e6613848b025c8146fce2defba505920c1d1f3f88fae6
   xpath (3.2.0) sha256=6dfda79d91bb3b949b947ecc5919f042ef2f399b904013eb3ef6d20dd3a4082e
+  yaml (0.4.0) sha256=240e69d1e6ce3584d6085978719a0faa6218ae426e034d8f9b02fb54d3471942
   zeitwerk (2.7.5) sha256=d8da92128c09ea6ec62c949011b00ed4a20242b255293dd66bf41545398f73dd
 
 BUNDLED WITH
