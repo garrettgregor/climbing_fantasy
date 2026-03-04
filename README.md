@@ -41,7 +41,7 @@ brew services start redis
 
 ```bash
 # Clone the repo
-git clone git@github.com:garrettgregor/climbing_fantasy.git
+git clone git@github.com:TopOut-Fantasy/climbing_fantasy.git
 cd climbing_fantasy
 
 # Install dependencies
