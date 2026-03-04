@@ -24,7 +24,13 @@ ActiveAdmin.register(RoundResult) do
     actions
   end
 
-  filter :athlete
-  filter :round
+  filter :athlete, as: :select, collection: -> {
+    Athlete.order(:last_name, :first_name).map do |athlete|
+      ["#{athlete.last_name}, #{athlete.first_name}", athlete.id]
+    end
+  }
+  filter :round_round_type, as: :select, label: "Round Type", collection: -> {
+    Round.round_types.keys.map { |round_type| [round_type.humanize, round_type] }
+  }
   filter :rank
 end
