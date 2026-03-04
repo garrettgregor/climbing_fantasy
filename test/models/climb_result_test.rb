@@ -32,3 +32,34 @@ class ClimbResultTest < ActiveSupport::TestCase
     assert_equal climb_result.zone_attempts, climb_result.low_zone_attempts
   end
 end
+
+# == Schema Information
+#
+# Table name: climb_results
+#
+#  id                 :bigint           not null, primary key
+#  disqualification   :string
+#  height             :decimal(5, 2)
+#  high_zone_attempts :integer
+#  plus               :boolean
+#  rank               :integer
+#  score_raw          :string
+#  time               :decimal(7, 3)
+#  top_attempts       :integer          default(0), not null
+#  zone_attempts      :integer          default(0), not null
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  climb_id           :bigint           not null
+#  round_result_id    :bigint           not null
+#
+# Indexes
+#
+#  index_climb_results_on_climb_id                      (climb_id)
+#  index_climb_results_on_round_result_id               (round_result_id)
+#  index_climb_results_on_round_result_id_and_climb_id  (round_result_id,climb_id) UNIQUE
+#
+# Foreign Keys
+#
+#  fk_rails_...  (climb_id => climbs.id)
+#  fk_rails_...  (round_result_id => round_results.id)
+#

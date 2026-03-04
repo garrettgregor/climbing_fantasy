@@ -60,6 +60,7 @@
 :additional_file_patterns: []
 :model_dir:
 - app/models
+- packs/core/app/models
 :require: []
 :root_dir:
 - ''

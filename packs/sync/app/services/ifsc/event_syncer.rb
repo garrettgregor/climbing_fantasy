@@ -29,7 +29,6 @@ module Ifsc
 
       @event.update!(
         sync_state: :needs_results,
-        info_sheet_url: data["infosheet_url"],
         location:,
       )
     end

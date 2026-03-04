@@ -57,20 +57,19 @@ end
 #
 # Table name: events
 #
-#  id                           :bigint           not null, primary key
-#  ends_on                      :date             not null
-#  info_sheet_url               :string
-#  location                     :string           not null
-#  name                         :string           not null
+#  id                            :bigint           not null, primary key
+#  ends_on                       :date             not null
+#  location                      :string           not null
+#  name                          :string           not null
 #  registrations_last_checked_at :datetime
-#  results_synced_at            :datetime
-#  starts_on                    :date             not null
-#  status                       :integer          default("upcoming"), not null
-#  sync_state                   :integer          default("pending_sync"), not null
-#  created_at                   :datetime         not null
-#  updated_at                   :datetime         not null
-#  external_id                  :integer
-#  season_id                    :bigint           not null
+#  results_synced_at             :datetime
+#  starts_on                     :date             not null
+#  status                        :integer          default("upcoming"), not null
+#  sync_state                    :integer          default("pending_sync"), not null
+#  created_at                    :datetime         not null
+#  updated_at                    :datetime         not null
+#  external_id                   :integer
+#  season_id                     :bigint           not null
 #
 # Indexes
 #

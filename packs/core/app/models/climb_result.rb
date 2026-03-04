@@ -26,19 +26,20 @@ end
 #
 # Table name: climb_results
 #
-#  id               :bigint           not null, primary key
-#  disqualification :string
-#  height           :decimal(5, 2)
-#  plus             :boolean
-#  rank             :integer
-#  score_raw        :string
-#  time             :decimal(7, 3)
-#  top_attempts     :integer          default(0), not null
-#  zone_attempts    :integer          default(0), not null
-#  created_at       :datetime         not null
-#  updated_at       :datetime         not null
-#  climb_id         :bigint           not null
-#  round_result_id  :bigint           not null
+#  id                 :bigint           not null, primary key
+#  disqualification   :string
+#  height             :decimal(5, 2)
+#  high_zone_attempts :integer
+#  plus               :boolean
+#  rank               :integer
+#  score_raw          :string
+#  time               :decimal(7, 3)
+#  top_attempts       :integer          default(0), not null
+#  zone_attempts      :integer          default(0), not null
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  climb_id           :bigint           not null
+#  round_result_id    :bigint           not null
 #
 # Indexes
 #

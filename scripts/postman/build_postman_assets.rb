@@ -161,9 +161,6 @@ athletes = athletes_data.map do |_label, attrs|
     country_code: attrs.fetch("country_code"),
     gender: ATHLETE_GENDERS.fetch(attrs.fetch("gender")),
     external_athlete_id: attrs.fetch("external_athlete_id"),
-    height: attrs["height"],
-    arm_span: attrs["arm_span"],
-    birthday: attrs["birthday"],
   }
 end
 athlete_id_by_label = athletes_data.transform_values { |attrs| attrs.fetch("__id") }

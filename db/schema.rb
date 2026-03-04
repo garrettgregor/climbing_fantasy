@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_03_02_000003) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_28_000008) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -47,25 +47,13 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_02_000003) do
   end
 
   create_table "athletes", force: :cascade do |t|
-    t.integer "active_since_year"
-    t.integer "age_last_seen"
-    t.date "age_last_seen_at"
-    t.float "arm_span"
-    t.integer "birth_year_estimate"
-    t.string "birth_year_source"
-    t.date "birthday"
-    t.string "club"
     t.string "country_code", limit: 3, null: false
     t.datetime "created_at", null: false
     t.integer "external_athlete_id"
     t.string "first_name", null: false
     t.integer "gender", null: false
-    t.float "height"
-    t.string "hometown"
     t.string "last_name", null: false
-    t.integer "participations_count"
     t.string "photo_url"
-    t.datetime "profile_last_synced_at"
     t.datetime "updated_at", null: false
     t.index ["external_athlete_id"], name: "index_athletes_on_external_athlete_id", unique: true
   end
@@ -127,7 +115,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_03_02_000003) do
     t.datetime "created_at", null: false
     t.date "ends_on", null: false
     t.integer "external_id"
-    t.string "info_sheet_url"
     t.string "location", null: false
     t.string "name", null: false
     t.datetime "registrations_last_checked_at"

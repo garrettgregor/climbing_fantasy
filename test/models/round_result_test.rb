@@ -69,7 +69,10 @@ end
 # Table name: round_results
 #
 #  id                     :bigint           not null, primary key
+#  boulder_points         :decimal(, )
 #  group_label            :string
+#  high_zone_attempts     :integer
+#  high_zones             :integer
 #  lead_height            :decimal(, )
 #  lead_plus              :boolean          default(FALSE)
 #  rank                   :integer

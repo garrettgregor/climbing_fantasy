@@ -54,46 +54,10 @@ class AthleteTest < ActiveSupport::TestCase
     assert_equal "male", athlete.gender
   end
 
-  test "height arm_span and birthday are optional" do
-    athlete = Athlete.new(first_name: "X", last_name: "Y", country_code: "USA", gender: :male)
-    assert athlete.valid?
-    assert_nil athlete.height
-    assert_nil athlete.arm_span
-    assert_nil athlete.birthday
-  end
-
-  test "height must be greater than zero when present" do
-    athlete = Athlete.new(first_name: "X", last_name: "Y", country_code: "USA", gender: :male, height: -1)
-    assert_not athlete.valid?
-    assert_includes athlete.errors[:height], "must be greater than 0"
-
-    athlete.height = 0
-    assert_not athlete.valid?
-
-    athlete.height = 170.0
-    assert athlete.valid?
-  end
-
-  test "arm_span must be greater than zero when present" do
-    athlete = Athlete.new(first_name: "X", last_name: "Y", country_code: "USA", gender: :male, arm_span: -5)
-    assert_not athlete.valid?
-    assert_includes athlete.errors[:arm_span], "must be greater than 0"
-
-    athlete.arm_span = 175.0
-    assert athlete.valid?
-  end
-
   test "rejects unsupported gender values" do
     assert_raises(ArgumentError) do
       Athlete.new(first_name: "X", last_name: "Y", country_code: "USA", gender: :other)
     end
-  end
-
-  test "fixture athlete has height arm_span and birthday" do
-    athlete = athletes(:tomoa_narasaki)
-    assert_equal 170.0, athlete.height
-    assert_equal 175.0, athlete.arm_span
-    assert_equal Date.parse("1996-06-22"), athlete.birthday
   end
 end
 
@@ -102,13 +66,11 @@ end
 # Table name: athletes
 #
 #  id                  :bigint           not null, primary key
-#  arm_span            :float
-#  birthday            :date
 #  country_code        :string(3)        not null
 #  first_name          :string           not null
 #  gender              :integer          not null
-#  height              :float
 #  last_name           :string           not null
+#  photo_url           :string
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
 #  external_athlete_id :integer

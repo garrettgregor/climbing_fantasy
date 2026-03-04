@@ -59,9 +59,6 @@ unless Rails.env.production?
         last_name: attrs["last_name"],
         country_code: attrs["country_code"],
         gender: attrs["gender"],
-        height: attrs["height"],
-        arm_span: attrs["arm_span"],
-        birthday: attrs["birthday"],
       },
     )
   end

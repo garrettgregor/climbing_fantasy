@@ -98,7 +98,7 @@ If no matching league is found, a warning is logged and no events are created fo
 3. Creates/updates `Category` records keyed by `external_dcat_id` (the stable dcat ID from the API)
 4. Creates/updates `Round` records from `category_rounds[]` (maps round_type and status)
 5. Creates `Climb` records from routes
-6. Refreshes event metadata from detail payload (info sheet URL and canonical location)
+6. Refreshes event metadata from detail payload (canonical location)
 7. Sets `sync_state: needs_results`
 
 ### 2. Registration sync (SyncRegistrationsJob)

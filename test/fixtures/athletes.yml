@@ -5,7 +5,6 @@ sorato_anraku:
   last_name: "Anraku"
   country_code: "JPN"
   gender: 0
-  birthday: "2005-07-22"
 
 dohyun_lee:
   external_athlete_id: 2101
@@ -27,9 +26,6 @@ tomoa_narasaki:
   last_name: "Narasaki"
   country_code: "JPN"
   gender: 0
-  height: 170.0
-  arm_span: 175.0
-  birthday: "1996-06-22"
 
 mejdi_schalck:
   external_athlete_id: 11675
@@ -474,13 +470,11 @@ tahnia_harris:
 # Table name: athletes
 #
 #  id                  :bigint           not null, primary key
-#  arm_span            :float
-#  birthday            :date
 #  country_code        :string(3)        not null
 #  first_name          :string           not null
 #  gender              :integer          not null
-#  height              :float
 #  last_name           :string           not null
+#  photo_url           :string
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
 #  external_athlete_id :integer
