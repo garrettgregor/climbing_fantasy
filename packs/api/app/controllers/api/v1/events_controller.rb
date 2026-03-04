@@ -2,7 +2,7 @@ module Api
   module V1
     class EventsController < BaseController
       def index
-        pagy, events = pagy(EventQuery.call(params).order(starts_on: :desc), limit: params.fetch(:per_page, 25).to_i)
+        pagy, events = paginate_with_last_page(EventQuery.call(params).order(starts_on: :desc))
         render(json: {
           data: EventBlueprint.render_as_hash(events),
           meta: pagination_meta(pagy),

@@ -2,7 +2,7 @@ module Api
   module V1
     class AthletesController < BaseController
       def index
-        pagy, athletes = pagy(AthleteQuery.call(params).order(:last_name, :first_name), limit: params.fetch(:per_page, 25).to_i)
+        pagy, athletes = paginate_with_last_page(AthleteQuery.call(params).order(:last_name, :first_name))
         render(json: {
           data: AthleteBlueprint.render_as_hash(athletes),
           meta: pagination_meta(pagy),

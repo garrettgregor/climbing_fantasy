@@ -2,7 +2,7 @@ module Api
   module V1
     class SeasonsController < BaseController
       def index
-        pagy, seasons = pagy(Season.order(year: :desc), limit: params.fetch(:per_page, 25).to_i)
+        pagy, seasons = paginate_with_last_page(Season.order(year: :desc))
         render(json: {
           data: SeasonBlueprint.render_as_hash(seasons),
           meta: pagination_meta(pagy),

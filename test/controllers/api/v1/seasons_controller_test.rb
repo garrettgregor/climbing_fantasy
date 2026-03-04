@@ -23,6 +23,16 @@ module Api
         assert season.key?("year")
       end
 
+      test "GET /api/v1/seasons clamps overflow page to last page" do
+        get api_v1_seasons_path(page: 999, per_page: 1)
+        assert_response :success
+
+        json = response.parsed_body
+        assert_equal Season.count, json["meta"]["page"]
+        assert_equal 1, json["meta"]["per_page"]
+        assert_equal 1, json["data"].length
+      end
+
       test "GET /api/v1/seasons/:id returns season with events" do
         season = seasons(:season_2025)
         get api_v1_season_path(season)
