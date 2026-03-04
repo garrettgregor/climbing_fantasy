@@ -255,6 +255,176 @@ emma_hunt:
   country_code: "USA"
   gender: 1
 
+# --- Additional Speed Men (Wujiang 2025 finalists) ---
+shouhong_chu:
+  external_athlete_id: 14963
+  first_name: "Shouhong"
+  last_name: "Chu"
+  country_code: "CHN"
+  gender: 0
+
+matteo_zurloni:
+  external_athlete_id: 1027
+  first_name: "Matteo"
+  last_name: "Zurloni"
+  country_code: "ITA"
+  gender: 0
+
+yaroslav_tkach:
+  external_athlete_id: 1511
+  first_name: "Yaroslav"
+  last_name: "Tkach"
+  country_code: "UKR"
+  gender: 0
+
+amir_maimuratov:
+  external_athlete_id: 3362
+  first_name: "Amir"
+  last_name: "Maimuratov"
+  country_code: "KAZ"
+  gender: 0
+
+zach_hammer:
+  external_athlete_id: 13592
+  first_name: "Zach"
+  last_name: "Hammer"
+  country_code: "USA"
+  gender: 0
+
+dingfeng_zhang:
+  external_athlete_id: 13604
+  first_name: "Dingfeng"
+  last_name: "Zhang"
+  country_code: "CHN"
+  gender: 0
+
+xu_li:
+  external_athlete_id: 13601
+  first_name: "Xu"
+  last_name: "Li"
+  country_code: "CHN"
+  gender: 0
+
+sebastian_lucke:
+  external_athlete_id: 11602
+  first_name: "Sebastian"
+  last_name: "Lucke"
+  country_code: "GER"
+  gender: 0
+
+jie_yang:
+  external_athlete_id: 16426
+  first_name: "Jie"
+  last_name: "Yang"
+  country_code: "CHN"
+  gender: 0
+
+erik_noya_cardona:
+  external_athlete_id: 11701
+  first_name: "Erik"
+  last_name: "Noya Cardona"
+  country_code: "ESP"
+  gender: 0
+
+ryo_omasa:
+  external_athlete_id: 11381
+  first_name: "Ryo"
+  last_name: "Omasa"
+  country_code: "JPN"
+  gender: 0
+
+zechuan_shi:
+  external_athlete_id: 14962
+  first_name: "Zechuan"
+  last_name: "Shi"
+  country_code: "CHN"
+  gender: 0
+
+# --- Additional Speed Women (Wujiang 2025 finalists) ---
+desak_made_rita_kusuma_dewi:
+  external_athlete_id: 11357
+  first_name: "Desak"
+  last_name: "Made Rita Kusuma Dewi"
+  country_code: "INA"
+  gender: 1
+
+aleksandra_miroslaw:
+  external_athlete_id: 2848
+  first_name: "Aleksandra"
+  last_name: "Miroslaw"
+  country_code: "POL"
+  gender: 1
+
+natalia_kalucka:
+  external_athlete_id: 2879
+  first_name: "Natalia"
+  last_name: "Kalucka"
+  country_code: "POL"
+  gender: 1
+
+shixue_meng:
+  external_athlete_id: 15167
+  first_name: "Shixue"
+  last_name: "Meng"
+  country_code: "CHN"
+  gender: 1
+
+yafei_zhou:
+  external_athlete_id: 13611
+  first_name: "Yafei"
+  last_name: "Zhou"
+  country_code: "CHN"
+  gender: 1
+
+yumei_qin:
+  external_athlete_id: 16147
+  first_name: "Yumei"
+  last_name: "Qin"
+  country_code: "CHN"
+  gender: 1
+
+mi_yang:
+  external_athlete_id: 12071
+  first_name: "Mi"
+  last_name: "Yang"
+  country_code: "CHN"
+  gender: 1
+
+mengli_zhang:
+  external_athlete_id: 15133
+  first_name: "Mengli"
+  last_name: "Zhang"
+  country_code: "CHN"
+  gender: 1
+
+xinyue_shi:
+  external_athlete_id: 15589
+  first_name: "Xinyue"
+  last_name: "Shi"
+  country_code: "CHN"
+  gender: 1
+
+feiyan_yang:
+  external_athlete_id: 14972
+  first_name: "Feiyan"
+  last_name: "Yang"
+  country_code: "CHN"
+  gender: 1
+
+beatrice_colli:
+  external_athlete_id: 1024
+  first_name: "Beatrice"
+  last_name: "Colli"
+  country_code: "ITA"
+  gender: 1
+
+guizhen_xie:
+  external_athlete_id: 7165
+  first_name: "Guizhen"
+  last_name: "Xie"
+  country_code: "CHN"
+  gender: 1
+
 # --- NSW Oceania 2026 Boulder Men finalists ---
 max_thomas:
   external_athlete_id: 13855

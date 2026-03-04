@@ -2,14 +2,14 @@
 keqiao_boulder_men:
   event: keqiao_boulder
   external_dcat_id: 3
-  name: "Boulder - Men"
+  name: "BOULDER Men"
   discipline: 0
   gender: 0
 
 keqiao_boulder_women:
   event: keqiao_boulder
   external_dcat_id: 7
-  name: "Boulder - Women"
+  name: "BOULDER Women"
   discipline: 0
   gender: 1
 
@@ -17,28 +17,28 @@ keqiao_boulder_women:
 wujiang_lead_men:
   event: wujiang_lead_speed
   external_dcat_id: 1
-  name: "Lead - Men"
+  name: "LEAD Men"
   discipline: 1
   gender: 0
 
 wujiang_lead_women:
   event: wujiang_lead_speed
   external_dcat_id: 5
-  name: "Lead - Women"
+  name: "LEAD Women"
   discipline: 1
   gender: 1
 
 wujiang_speed_men:
   event: wujiang_lead_speed
   external_dcat_id: 2
-  name: "Speed - Men"
+  name: "SPEED Men"
   discipline: 2
   gender: 0
 
 wujiang_speed_women:
   event: wujiang_lead_speed
   external_dcat_id: 6
-  name: "Speed - Women"
+  name: "SPEED Women"
   discipline: 2
   gender: 1
 
@@ -46,29 +46,29 @@ wujiang_speed_women:
 nsw_boulder_men:
   event: nsw_oceania
   external_dcat_id: 491
-  name: "Boulder - Men"
+  name: "BOULDER Men"
   discipline: 0
   gender: 0
 
 nsw_boulder_women:
   event: nsw_oceania
   external_dcat_id: 511
-  name: "Boulder - Women"
+  name: "BOULDER Women"
   discipline: 0
   gender: 1
 
 # --- Keqiao 2026 (upcoming) ---
 keqiao_2026_boulder_men:
   event: keqiao_2026
-  external_dcat_id: 530
-  name: "Boulder - Men"
+  external_dcat_id: 3
+  name: "BOULDER Men"
   discipline: 0
   gender: 0
 
 keqiao_2026_boulder_women:
   event: keqiao_2026
-  external_dcat_id: 540
-  name: "Boulder - Women"
+  external_dcat_id: 7
+  name: "BOULDER Women"
   discipline: 0
   gender: 1
 

@@ -39,6 +39,46 @@ tomoa_keqiao_boulder_final:
   top_attempts: 5
   zone_attempts: 4
 
+mejdi_schalck_keqiao_boulder_final:
+  round: keqiao_boulder_men_final
+  athlete: mejdi_schalck
+  rank: 5
+  score_raw: "69.5"
+  tops: 2
+  zones: 4
+  top_attempts: 14
+  zone_attempts: 8
+
+sam_avezou_keqiao_boulder_final:
+  round: keqiao_boulder_men_final
+  athlete: sam_avezou
+  rank: 6
+  score_raw: "69.5"
+  tops: 2
+  zones: 4
+  top_attempts: 15
+  zone_attempts: 6
+
+paul_jenft_keqiao_boulder_final:
+  round: keqiao_boulder_men_final
+  athlete: paul_jenft
+  rank: 7
+  score_raw: "44.6"
+  tops: 1
+  zones: 3
+  top_attempts: 20
+  zone_attempts: 10
+
+oren_prihed_keqiao_boulder_final:
+  round: keqiao_boulder_men_final
+  athlete: oren_prihed
+  rank: 8
+  score_raw: "29.7"
+  tops: 0
+  zones: 3
+  top_attempts: 20
+  zone_attempts: 13
+
 # === Keqiao 2025 Boulder Women Final ===
 sanders_keqiao_boulder_final:
   round: keqiao_boulder_women_final
@@ -70,6 +110,56 @@ mcneice_keqiao_boulder_final:
   top_attempts: 2
   zone_attempts: 5
 
+mao_nakamura_keqiao_boulder_final:
+  round: keqiao_boulder_women_final
+  athlete: mao_nakamura
+  rank: 4
+  score_raw: "44.4"
+  tops: 1
+  zones: 3
+  top_attempts: 25
+  zone_attempts: 18
+
+miho_nonaka_keqiao_boulder_final:
+  round: keqiao_boulder_women_final
+  athlete: miho_nonaka
+  rank: 5
+  score_raw: "44.1"
+  tops: 1
+  zones: 3
+  top_attempts: 18
+  zone_attempts: 15
+
+melody_sekikawa_keqiao_boulder_final:
+  round: keqiao_boulder_women_final
+  athlete: melody_sekikawa
+  rank: 6
+  score_raw: "29.6"
+  tops: 0
+  zones: 3
+  top_attempts: 15
+  zone_attempts: 11
+
+chaehyun_seo_keqiao_boulder_final:
+  round: keqiao_boulder_women_final
+  athlete: chaehyun_seo
+  rank: 7
+  score_raw: "19.6"
+  tops: 0
+  zones: 2
+  top_attempts: 21
+  zone_attempts: 16
+
+oceania_mackenzie_keqiao_boulder_final:
+  round: keqiao_boulder_women_final
+  athlete: oceania_mackenzie
+  rank: 8
+  score_raw: "9.9"
+  tops: 0
+  zones: 1
+  top_attempts: 22
+  zone_attempts: 20
+
 # === Wujiang 2025 Lead Men Final ===
 anraku_wujiang_lead_final:
   round: wujiang_lead_men_final
@@ -93,6 +183,46 @@ gines_wujiang_lead_final:
   rank: 3
   score_raw: "39+"
   lead_height: 39.0
+  lead_plus: true
+
+satone_yoshida_wujiang_lead_final:
+  round: wujiang_lead_men_final
+  athlete: satone_yoshida
+  rank: 4
+  score_raw: "33"
+  lead_height: 33.0
+  lead_plus: false
+
+yufei_pan_wujiang_lead_final:
+  round: wujiang_lead_men_final
+  athlete: yufei_pan
+  rank: 5
+  score_raw: "32+"
+  lead_height: 32.0
+  lead_plus: true
+
+luka_potocar_wujiang_lead_final:
+  round: wujiang_lead_men_final
+  athlete: luka_potocar
+  rank: 6
+  score_raw: "32"
+  lead_height: 32.0
+  lead_plus: false
+
+filip_schenk_wujiang_lead_final:
+  round: wujiang_lead_men_final
+  athlete: filip_schenk
+  rank: 7
+  score_raw: "28+"
+  lead_height: 28.0
+  lead_plus: true
+
+yannick_flohe_wujiang_lead_final:
+  round: wujiang_lead_men_final
+  athlete: yannick_flohe
+  rank: 8
+  score_raw: "28+"
+  lead_height: 28.0
   lead_plus: true
 
 # === Wujiang 2025 Lead Women Final ===
@@ -119,6 +249,46 @@ sanders_wujiang_lead_final:
   score_raw: "39+"
   lead_height: 39.0
   lead_plus: true
+
+laura_rogora_wujiang_lead_final:
+  round: wujiang_lead_women_final
+  athlete: laura_rogora
+  rank: 4
+  score_raw: "34+"
+  lead_height: 34.0
+  lead_plus: true
+
+oceania_mackenzie_wujiang_lead_final:
+  round: wujiang_lead_women_final
+  athlete: oceania_mackenzie
+  rank: 5
+  score_raw: "34+"
+  lead_height: 34.0
+  lead_plus: true
+
+yuetong_zhang_wujiang_lead_final:
+  round: wujiang_lead_women_final
+  athlete: yuetong_zhang
+  rank: 6
+  score_raw: "33+"
+  lead_height: 33.0
+  lead_plus: true
+
+helene_janicot_wujiang_lead_final:
+  round: wujiang_lead_women_final
+  athlete: helene_janicot
+  rank: 7
+  score_raw: "33+"
+  lead_height: 33.0
+  lead_plus: true
+
+anna_maria_apel_wujiang_lead_final:
+  round: wujiang_lead_women_final
+  athlete: anna_maria_apel
+  rank: 8
+  score_raw: "21"
+  lead_height: 21.0
+  lead_plus: false
 
 # === Wujiang 2025 Speed Men Final ===
 long_wujiang_speed_final:
@@ -151,6 +321,88 @@ watson_wujiang_speed_final:
   speed_time: 5.04
   speed_eliminated_stage: "quarter_final"
 
+shouhong_chu_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: shouhong_chu
+  rank: 5
+  score_raw: "5.11 (4.99)"
+  speed_time: 5.117
+
+matteo_zurloni_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: matteo_zurloni
+  rank: 6
+  score_raw: "5.03"
+  speed_time: 5.038
+
+yaroslav_tkach_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: yaroslav_tkach
+  rank: 7
+  score_raw: "FALL (5.09)"
+  speed_time: 5.407
+
+amir_maimuratov_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: amir_maimuratov
+  rank: 8
+  score_raw: "FALL (5.11)"
+  speed_time: 5.154
+
+zach_hammer_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: zach_hammer
+  rank: 9
+  score_raw: "6.87 (4.96)"
+  speed_time: 6.872
+
+dingfeng_zhang_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: dingfeng_zhang
+  rank: 10
+  score_raw: "FALL (5.05)"
+
+xu_li_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: xu_li
+  rank: 11
+  score_raw: "5.19 (5.10)"
+  speed_time: 5.193
+
+sebastian_lucke_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: sebastian_lucke
+  rank: 12
+  score_raw: "7.22 (5.11)"
+  speed_time: 7.222
+
+jie_yang_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: jie_yang
+  rank: 13
+  score_raw: "7.99 (5.12)"
+  speed_time: 7.998
+
+erik_noya_cardona_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: erik_noya_cardona
+  rank: 14
+  score_raw: "5.41 (5.13)"
+  speed_time: 5.412
+
+ryo_omasa_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: ryo_omasa
+  rank: 15
+  score_raw: "FALSE START (5.14)"
+
+zechuan_shi_wujiang_speed_final:
+  round: wujiang_speed_men_final
+  athlete: zechuan_shi
+  rank: 16
+  score_raw: "5.16"
+  speed_time: 5.165
+
 # === Wujiang 2025 Speed Women Final ===
 shaoqin_wujiang_speed_final:
   round: wujiang_speed_women_final
@@ -173,6 +425,95 @@ deng_wujiang_speed_final:
   score_raw: "6.34"
   speed_time: 6.34
   speed_eliminated_stage: "semi_final"
+
+emma_hunt_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: emma_hunt
+  rank: 4
+  score_raw: "6.39"
+  speed_time: 6.391
+
+desak_made_rita_kusuma_dewi_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: desak_made_rita_kusuma_dewi
+  rank: 5
+  score_raw: "6.60 (6.37)"
+  speed_time: 6.608
+
+aleksandra_miroslaw_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: aleksandra_miroslaw
+  rank: 6
+  score_raw: "6.86 (6.43)"
+  speed_time: 6.627
+
+natalia_kalucka_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: natalia_kalucka
+  rank: 7
+  score_raw: "6.56 (6.50)"
+  speed_time: 6.569
+
+shixue_meng_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: shixue_meng
+  rank: 8
+  score_raw: "6.55"
+  speed_time: 6.551
+
+yafei_zhou_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: yafei_zhou
+  rank: 9
+  score_raw: "8.20 (6.58)"
+  speed_time: 8.208
+
+yumei_qin_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: yumei_qin
+  rank: 10
+  score_raw: "FALL (6.63)"
+
+mi_yang_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: mi_yang
+  rank: 11
+  score_raw: "10.64 (6.74)"
+  speed_time: 10.643
+
+mengli_zhang_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: mengli_zhang
+  rank: 12
+  score_raw: "9.23 (6.94)"
+  speed_time: 9.236
+
+xinyue_shi_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: xinyue_shi
+  rank: 13
+  score_raw: "FALL (7.00)"
+
+feiyan_yang_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: feiyan_yang
+  rank: 14
+  score_raw: "7.40 (7.10)"
+  speed_time: 7.403
+
+beatrice_colli_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: beatrice_colli
+  rank: 15
+  score_raw: "7.25 (7.11)"
+  speed_time: 7.253
+
+guizhen_xie_wujiang_speed_final:
+  round: wujiang_speed_women_final
+  athlete: guizhen_xie
+  rank: 16
+  score_raw: "7.13 (7.11)"
+  speed_time: 7.135
 
 # === NSW Oceania 2026 Boulder Men Final ===
 thomas_nsw_boulder_final:

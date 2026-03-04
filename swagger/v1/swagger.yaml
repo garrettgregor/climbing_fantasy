@@ -260,22 +260,22 @@ paths:
                     external_id: 37
                   categories:
                     - id: 331850261
-                      name: "Lead - Men"
+                      name: "LEAD Men"
                       discipline: "lead"
                       gender: "male"
                       external_dcat_id: 1
                     - id: 767885520
-                      name: "Lead - Women"
+                      name: "LEAD Women"
                       discipline: "lead"
                       gender: "female"
                       external_dcat_id: 5
                     - id: 622874940
-                      name: "Speed - Men"
+                      name: "SPEED Men"
                       discipline: "speed"
                       gender: "male"
                       external_dcat_id: 2
                     - id: 639244710
-                      name: "Speed - Women"
+                      name: "SPEED Women"
                       discipline: "speed"
                       gender: "female"
                       external_dcat_id: 6
@@ -321,7 +321,7 @@ paths:
               example:
                 data:
                   id: 430410076
-                  name: "Boulder - Men"
+                  name: "BOULDER Men"
                   discipline: "boulder"
                   gender: "male"
                   external_dcat_id: 3
