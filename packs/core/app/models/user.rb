@@ -9,7 +9,7 @@ class User < ApplicationRecord
     :rememberable,
     :validatable
 
-  validates :display_name, presence: true
+  validates :display_name, presence: true, uniqueness: { case_sensitive: false }
 
   class << self
     def ransackable_attributes(_auth_object = nil)
@@ -37,6 +37,7 @@ end
 #
 # Indexes
 #
+#  index_users_on_display_name          (display_name) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #

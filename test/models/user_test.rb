@@ -20,6 +20,13 @@ class UserTest < ActiveSupport::TestCase
     assert_includes duplicate.errors[:email], "has already been taken"
   end
 
+  test "validates uniqueness of display_name (case-insensitive)" do
+    existing = users(:alice)
+    duplicate = User.new(email: "other@example.com", password: "password123456", display_name: existing.display_name.upcase)
+    assert_not duplicate.valid?
+    assert_includes duplicate.errors[:display_name], "has already been taken"
+  end
+
   test "validates password minimum length" do
     user = User.new(email: "test@example.com", password: "short", display_name: "Test")
     assert_not user.valid?
@@ -55,6 +62,7 @@ end
 #
 # Indexes
 #
+#  index_users_on_display_name          (display_name) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #

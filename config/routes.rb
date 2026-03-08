@@ -16,6 +16,10 @@ Rails.application.routes.draw do
       passwords: "users/passwords",
     }
 
+  devise_scope :user do
+    get "register/availability", to: "users/registrations#availability", as: :user_registration_availability
+  end
+
   authenticated :user do
     root to: "dashboard#index", as: :authenticated_root
   end
