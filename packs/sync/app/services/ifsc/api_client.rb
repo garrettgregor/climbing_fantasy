@@ -24,6 +24,14 @@ module Ifsc
       get("/api/v1/events/#{id}")
     end
 
+    def get_event_category_results(event_id, dcat_id)
+      get("/api/v1/events/#{event_id}/result/#{dcat_id}")
+    end
+
+    def live
+      get("/api/v1/live")
+    end
+
     def get_category_round_results(id)
       get("/api/v1/category_rounds/#{id}/results")
     end

@@ -49,22 +49,64 @@ module Ifsc
     end
 
     test "#get_event returns parsed event data with d_cats" do
-      VCR.use_cassette("ifsc_api_client/get_event_1491") do
-        data = @client.get_event(1491)
+      VCR.use_cassette("ifsc_api_client/get_event_1405") do
+        data = @client.get_event(1405)
 
-        assert_equal(1491, data["id"])
+        assert_equal(1405, data["id"])
         assert(data.key?("d_cats"))
         assert(data.key?("starts_at"))
         assert(data.key?("location"))
+
+        dcat = data.fetch("d_cats").find { |cat| cat["dcat_id"] == 3 } || data.fetch("d_cats").first
+        assert(dcat.key?("top_3_results"))
+        assert(dcat.key?("full_results_url"))
+      end
+    end
+
+    test "#live returns active category rounds" do
+      VCR.use_cassette("ifsc_api_client/get_live") do
+        data = @client.live
+
+        assert(data.key?("live"))
+        assert_kind_of(Array, data["live"])
+      end
+    end
+
+    test "#get_event_category_results returns full category standings across rounds" do
+      VCR.use_cassette("ifsc_api_client/get_event_category_results_1405_3") do
+        data = @client.get_event_category_results(1405, 3)
+
+        assert(data.key?("event"))
+        assert(data.key?("dcat"))
+        assert(data.key?("category_rounds"))
+        assert(data.key?("ranking"))
+        assert_kind_of(Array, data["ranking"])
+        assert_not(data["ranking"].empty?)
+
+        athlete = data["ranking"].first
+        assert(athlete.key?("rounds"))
+        assert_kind_of(Array, athlete["rounds"])
+        assert_not(athlete["rounds"].empty?)
+
+        round = athlete["rounds"].first
+        assert(round.key?("category_round_id"))
+        assert(round.key?("round_name"))
       end
     end
 
     test "#get_category_round_results returns ranking data" do
-      VCR.use_cassette("ifsc_api_client/get_category_round_results_10468") do
-        data = @client.get_category_round_results(10468)
+      VCR.use_cassette("ifsc_api_client/get_category_round_results_9381") do
+        data = @client.get_category_round_results(9381)
 
+        assert_equal(9381, data["id"])
+        assert_equal("Qualification", data["round"])
         assert(data.key?("ranking"))
         assert_kind_of(Array, data["ranking"])
+        assert_not(data["ranking"].empty?)
+
+        athlete = data["ranking"].first
+        assert(athlete.key?("ascents"))
+        assert_kind_of(Array, athlete["ascents"])
       end
     end
 
@@ -73,7 +115,7 @@ module Ifsc
         data = @client.get_event_registrations(1491)
 
         assert_kind_of(Array, data)
-        return if data.empty?
+        assert_not(data.empty?)
 
         registration = data.first
         assert(registration.key?("athlete_id"))
@@ -81,6 +123,40 @@ module Ifsc
         assert(registration.key?("lastname"))
         assert(registration.key?("country"))
       end
+    end
+
+    test "#get_event_registrations handles partial payload with missing optional fields" do
+      partial_payload = [
+        {
+          "athlete_id" => 999001,
+          "firstname" => "Alex",
+          "lastname" => "Sample",
+          "country" => nil,
+          "federation" => nil,
+          "d_cats" => [],
+        },
+        {
+          "athlete_id" => 999002,
+          "firstname" => "Taylor",
+          "lastname" => "Example",
+        },
+      ]
+
+      stub_request(:get, "https://ifsc.results.info/api/v1/events/1491/registrations")
+        .to_return(
+          status: 200,
+          headers: { "Content-Type" => "application/json" },
+          body: partial_payload.to_json,
+        )
+
+      data = VCR.turned_off { @client.get_event_registrations(1491) }
+
+      assert_equal(2, data.length)
+      assert_nil(data.first["country"])
+      assert_nil(data.first["federation"])
+      assert_equal([], data.first["d_cats"])
+      assert_nil(data.second["country"])
+      assert_nil(data.second["d_cats"])
     end
 
     test "#search_athletes returns array of matching athletes" do

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 01 Mar 2026 16:53:29 GMT
+      - Mon, 09 Mar 2026 01:46:02 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -39,7 +39,7 @@ http_interactions:
       Link:
       - "</assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css>;
         rel=preload; as=style; nopush,</assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js>;
-        rel=preload; as=script; nopush,</vite/assets/entrypoint-X7AjDN1q.js>; rel=modulepreload;
+        rel=preload; as=script; nopush,</vite/assets/entrypoint-VRBxWAre.js>; rel=modulepreload;
         as=script; crossorigin=anonymous; nopush,</vite/assets/entrypoint-C-xbeWYT.css>;
         rel=preload; as=style; nopush,</vite/assets/rs_tabs-CrVLFnQq.css>; rel=preload;
         as=style; nopush,</vite/assets/app-tn0RQdqM.css>; rel=preload; as=style; nopush,</vite/assets/rs_hr-s5aWKrUf.css>;
@@ -49,16 +49,16 @@ http_interactions:
       Vary:
       - Accept
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MTOh3HumPilgedMqc0CG55A1IT59i8tiIKSbpqeDnHH6NnfngebR%2BIBHyNXLDhEk2dEHhThcn6nJgK2bTQW2rkcsYRNS5Hgw%2Fm9%2FlciGmWQ%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=M%2FNs2ZtCZZtAsfxN2SGX4Ww8vPeyRGxSFRP%2F7EMjf2fTwiUWPrvgHC6bzTgU6CEFZtITkm9YvB83AIk8Guw5OJX0mM8B4zTFnYQGviL2"}]}'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>; path=/; httponly;
-        samesite=lax
+      - _ifsc_resultservice_session=<RESULTS_SESSION_COOKIE>; path=/; expires=Mon,
+        23 Mar 2026 01:46:02 GMT; secure; httponly; samesite=lax
       X-Request-Id:
-      - 27aa9f2474fddc7eb6c24425ae0d6864
+      - ecef038db4e10d6c29c8d46f64da1d1c
       X-Runtime:
-      - '0.010663'
+      - '0.006608'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Access-Control-Allow-Origin:
@@ -78,7 +78,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 9d59ad99cff57d3a-DEN
+      - 9d966754adf5d215-DEN
     body:
       encoding: ASCII-8BIT
       string: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n
@@ -91,12 +91,12 @@ http_interactions:
         End Google Tag Manager -->\n    \n    <script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\"
         async></script>\n    <script>window.VL_UNIFIED_APP = true</script>\n    <title>IFSC
         Climbing Result Service</title>\n    <meta name=\"csrf-param\" content=\"authenticity_token\"
-        />\n<meta name=\"csrf-token\" content=\"yCcTJ7u4clUWH64NuGGH0EFMh93Z9e9OPWYcxFOrnN_4MfbD4ypVlPRezI9si_zc6CQeHA4VyxY50gjQj302hg\"
+        />\n<meta name=\"csrf-token\" content=\"u67YoSvbhMQvc6Ot0-WAMYIgCcEoZ1bx6BFmEeqiy3ghb38cexZ5l9ijclo5IA7zHOtq8eKbVw8Wk5ulxKdH3Q\"
         />\n    \n    \n\n    <link rel=\"stylesheet\" href=\"/assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css\"
         media=\"all\" />\n    <script src=\"/assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js\"></script>\n
-        \   <script src=\"/vite/assets/entrypoint-X7AjDN1q.js\" crossorigin=\"anonymous\"
+        \   <script src=\"/vite/assets/entrypoint-VRBxWAre.js\" crossorigin=\"anonymous\"
         type=\"module\"></script><link rel=\"modulepreload\" href=\"/vite/assets/preload-helper-5ZGr_LBp.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entrypoint-DFigYQlr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entrypoint-IdkGrngV.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/composables-jAtiwv2_.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.esm-CZESSAMY.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_icon-CXzTYfTJ.js\"
@@ -126,11 +126,11 @@ http_interactions:
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_modal-CuSQmv4o.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/feature_store-BA9tEMmL.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/country_store-BQ4y_X0A.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/public-Ce66jwHn.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/admin-CenVvafH.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lm-CNJFozQZ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/public-BiKbW6fm.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/admin-B7zFD8_C.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lm-CfP7C8M_.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/athlete-Bnws9B1q.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/federation-D8ES3qCv.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/federation-Bzhwan-l.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/media-B_nA_Chm.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/judges-rPeGmFf8.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/authentication_hook-B7Evn8Gn.js\"
@@ -146,13 +146,13 @@ http_interactions:
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/cable-BUaQ6ONA.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/mount_toast-Bb-DYg6f.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-toXovs3b.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_phase_store-BLvHv91B.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_phase_store-LyeWqNzd.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/ascent_store-iowA89w8.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/league_season_store-BMKwU82s.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/style-DhxIIjwg.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-D6DHuLFk.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.common-BOn40jyj.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/appsignal-Ca-Kv47_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/appsignal-BX7UjDmQ.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-BkxJEC-h.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/dynamic-import-helper-BheWnx7M.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tag_layout-SDMX3e4M.js\"
@@ -169,9 +169,9 @@ http_interactions:
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/listeners-osK7SfR5.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/bv-event.class-CtQx-8wU.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-qt9XboYO.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event-CHo2-zcV.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_setup-BVdPKmsN.js\"
-        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/category_round-BgmRfW6O.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event-C2AQa2jG.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_setup-BKa61JLj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/category_round-CE8pER5A.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/users-CAA06hyU.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/user_profile-BQvpUnAz.js\"
         as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/sport80-BXzd1kaM.js\"
@@ -193,7 +193,7 @@ http_interactions:
         \   <!-- End Google Tag Manager (noscript) -->\n\n    <div style=\"display:
         none;\" id=\"cable-path\">ifsc_cable</div>\n\n    <div id=\"unified-vue-app\">\n</div>\n\n
         \     <script nomodule=\"nomodule\" src=\"/vite/assets/polyfills-legacy-Bdc_imsb.js\"></script><script
-        nomodule=\"nomodule\">System.import('/vite/assets/entrypoint-legacy-CS2XE8it.js')</script>\n
+        nomodule=\"nomodule\">System.import('/vite/assets/entrypoint-legacy-BAiZs-3-.js')</script>\n
         \ </body>\n</html>\n"
-  recorded_at: Sun, 01 Mar 2026 16:53:29 GMT
+  recorded_at: Mon, 09 Mar 2026 01:46:02 GMT
 recorded_with: VCR 6.4.0

@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/live
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=<RESULTS_SESSION_COOKIE>
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Mar 2026 01:46:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"6279f64d565ee2af346dd36244021d3b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f4378ad6504aaf3b46bb7b409aeb9177
+      X-Runtime:
+      - '0.017189'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Z1%2BNNt4ZsTMIILGXOYC8ZiKdw9sixEnm6GtfMnQWpR1gbXrWnZ2bmFM69z2BNQr%2BbwLubcOuMzyzxdu%2Fad3ZL3FUx3gZeqXL1wTUvIg1l%2BQ%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9d9667582ea1e74f-DEN
+    body:
+      encoding: UTF-8
+      string: '{"live":[]}'
+  recorded_at: Mon, 09 Mar 2026 01:46:03 GMT
+recorded_with: VCR 6.4.0
