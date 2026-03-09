@@ -1,0 +1,2056 @@
+---
+info:
+  name: Get Event Metadata (/api/v1/events/:id)
+  type: http
+  seq: 3
+http:
+  method: GET
+  url: "{{usacBaseUrl}}/api/v1/events/{{usacEventId}}"
+  headers:
+  - name: Cookie
+    value: "{{usacCookieHeader}}"
+  - name: Referer
+    value: "{{usacBaseUrl}}/"
+  - name: Accept
+    value: application/json
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+examples:
+- name: 200 OK
+  request:
+    url: "{{usacBaseUrl}}/api/v1/events/{{usacEventId}}"
+    method: GET
+    headers:
+    - name: Cookie
+      value: "{{usacCookieHeader}}"
+    - name: Referer
+      value: "{{usacBaseUrl}}/"
+    - name: Accept
+      value: application/json
+  response:
+    statusText: '200'
+    headers:
+    - name: Content-Type
+      value: application/json
+    body:
+      type: json
+      data: |-
+        {
+          "id": 448,
+          "name": "2026 National Team Trials",
+          "type": "classic",
+          "league_id": 9,
+          "rounds": [
+            {
+              "id": 1189,
+              "name": "Round 1"
+            },
+            {
+              "id": 1204,
+              "name": "Round 1"
+            },
+            {
+              "id": 1192,
+              "name": "Round 1"
+            },
+            {
+              "id": 1190,
+              "name": "Round 2"
+            },
+            {
+              "id": 1205,
+              "name": "Round 2"
+            },
+            {
+              "id": 1193,
+              "name": "Round 2"
+            },
+            {
+              "id": 1191,
+              "name": "Round 3"
+            },
+            {
+              "id": 1206,
+              "name": "Round 3"
+            },
+            {
+              "id": 1194,
+              "name": "Round 3"
+            }
+          ],
+          "league_season_id": 17,
+          "season_id": 5,
+          "starts_at": "2026-03-04 08:00:00 UTC",
+          "ends_at": "2026-03-09 06:59:00 UTC",
+          "local_start_date": "2026-03-04",
+          "local_end_date": "2026-03-08",
+          "timezone": {
+            "value": "America/Los_Angeles"
+          },
+          "location": "Beaverton",
+          "registration_url": "/api/v1/events/448/registrations",
+          "public_information": {
+            "organiser_name": "USA Climbing",
+            "organiser_url": "https://usaclimbing.org/national-team-trials/",
+            "venue_name": "Portland Rock Gym Beaverton",
+            "description": ""
+          },
+          "cup_name": "",
+          "country": "USA",
+          "registration_deadline": "2026-03-03T19:00:00.000Z",
+          "registration_opens_at": "2026-02-18T19:00:00.000Z",
+          "removal_deadline": "2026-02-02T19:00:00.000Z",
+          "athlete_self_registration": true,
+          "team_official_self_registration": false,
+          "event_logo": null,
+          "series_logo": null,
+          "cover": null,
+          "infosheet_url": null,
+          "additional_info_url": null,
+          "is_paraclimbing_event": false,
+          "self_judged": false,
+          "d_cats": [
+            {
+              "dcat_id": 336,
+              "event_id": 448,
+              "dcat_name": "LEAD Men/Open",
+              "discipline_kind": "lead",
+              "category_id": 5405,
+              "category_name": "Men/Open",
+              "status": "finished",
+              "status_as_of": "2026-03-06 04:50:51 UTC",
+              "ranking_as_of": "2026-03-06 01:37:54 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11412,
+                  "kind": "lead",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 04:02:43 UTC",
+                  "result_url": "/api/v1/category_rounds/11412/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 2 routes",
+                  "routes": [
+                    {
+                      "id": 233526,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233526/startlist",
+                      "ranking": "/api/v1/routes/233526/results"
+                    },
+                    {
+                      "id": 233527,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/233527/startlist",
+                      "ranking": "/api/v1/routes/233527/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11414,
+                  "kind": "lead",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 21:04:49 UTC",
+                  "result_url": "/api/v1/category_rounds/11414/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233530,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233530/startlist",
+                      "ranking": "/api/v1/routes/233530/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11416,
+                  "kind": "lead",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 03:11:18 UTC",
+                  "result_url": "/api/v1/category_rounds/11416/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233532,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233532/startlist",
+                      "ranking": "/api/v1/routes/233532/results"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/336",
+              "top_3_results": [
+                {
+                  "athlete_id": 187,
+                  "rank": 1,
+                  "name": "GRUPPER Jesse",
+                  "firstname": "Jesse",
+                  "lastname": "GRUPPER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "5",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 275,
+                  "rank": 2,
+                  "name": "DUFFY Colin",
+                  "firstname": "Colin",
+                  "lastname": "DUFFY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "23",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1074,
+                  "rank": 3,
+                  "name": "FULKERSON Ross",
+                  "firstname": "Ross",
+                  "lastname": "FULKERSON",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "27",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 341,
+              "event_id": 448,
+              "dcat_name": "LEAD Women",
+              "discipline_kind": "lead",
+              "category_id": 5406,
+              "category_name": "Women",
+              "status": "finished",
+              "status_as_of": "2026-03-06 04:50:26 UTC",
+              "ranking_as_of": "2026-03-06 01:53:07 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11413,
+                  "kind": "lead",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-04 20:41:56 UTC",
+                  "result_url": "/api/v1/category_rounds/11413/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 2 routes",
+                  "routes": [
+                    {
+                      "id": 233528,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233528/startlist",
+                      "ranking": "/api/v1/routes/233528/results"
+                    },
+                    {
+                      "id": 233529,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/233529/startlist",
+                      "ranking": "/api/v1/routes/233529/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11415,
+                  "kind": "lead",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 21:02:18 UTC",
+                  "result_url": "/api/v1/category_rounds/11415/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233531,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233531/startlist",
+                      "ranking": "/api/v1/routes/233531/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11417,
+                  "kind": "lead",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 03:31:42 UTC",
+                  "result_url": "/api/v1/category_rounds/11417/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233533,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233533/startlist",
+                      "ranking": "/api/v1/routes/233533/results"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/341",
+              "top_3_results": [
+                {
+                  "athlete_id": 190,
+                  "rank": 1,
+                  "name": "RABOUTOU Brooke",
+                  "firstname": "Brooke",
+                  "lastname": "RABOUTOU",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "18",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1143,
+                  "rank": 2,
+                  "name": "FISHER Ella",
+                  "firstname": "Ella",
+                  "lastname": "FISHER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "27",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1139,
+                  "rank": 3,
+                  "name": "CLARK Adriene Akiko",
+                  "firstname": "Adriene Akiko",
+                  "lastname": "CLARK",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "2",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 337,
+              "event_id": 448,
+              "dcat_name": "SPEED Men/Open",
+              "discipline_kind": "speed",
+              "category_id": 5407,
+              "category_name": "Men/Open",
+              "status": "finished",
+              "status_as_of": "2026-03-07 03:38:39 UTC",
+              "ranking_as_of": "2026-03-07 02:01:33 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11469,
+                  "kind": "speed",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 19:11:40 UTC",
+                  "result_url": "/api/v1/category_rounds/11469/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233781,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233781/startlist"
+                    },
+                    {
+                      "id": 233782,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233782/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11471,
+                  "kind": "speed",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 00:59:52 UTC",
+                  "result_url": "/api/v1/category_rounds/11471/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233789,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233789/startlist"
+                    },
+                    {
+                      "id": 233790,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233790/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11473,
+                  "kind": "speed",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 02:05:05 UTC",
+                  "result_url": "/api/v1/category_rounds/11473/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233797,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233797/startlist"
+                    },
+                    {
+                      "id": 233798,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233798/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/337",
+              "top_3_results": [
+                {
+                  "athlete_id": 1104,
+                  "rank": 1,
+                  "name": "HOM Michael",
+                  "firstname": "Michael",
+                  "lastname": "HOM",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "17",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1112,
+                  "rank": 2,
+                  "name": "BRATSCHI Noah",
+                  "firstname": "Noah",
+                  "lastname": "BRATSCHI",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "12",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1100,
+                  "rank": 3,
+                  "name": "JENNINGS Ben",
+                  "firstname": "Ben",
+                  "lastname": "JENNINGS",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "11",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 342,
+              "event_id": 448,
+              "dcat_name": "SPEED Women",
+              "discipline_kind": "speed",
+              "category_id": 5408,
+              "category_name": "Women",
+              "status": "finished",
+              "status_as_of": "2026-03-07 03:38:56 UTC",
+              "ranking_as_of": "2026-03-07 01:33:45 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11470,
+                  "kind": "speed",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 18:51:55 UTC",
+                  "result_url": "/api/v1/category_rounds/11470/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233783,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233783/startlist"
+                    },
+                    {
+                      "id": 233784,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233784/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11472,
+                  "kind": "speed",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 00:30:50 UTC",
+                  "result_url": "/api/v1/category_rounds/11472/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233791,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233791/startlist"
+                    },
+                    {
+                      "id": 233792,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233792/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11474,
+                  "kind": "speed",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 01:36:08 UTC",
+                  "result_url": "/api/v1/category_rounds/11474/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233799,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233799/startlist"
+                    },
+                    {
+                      "id": 233800,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233800/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/342",
+              "top_3_results": [
+                {
+                  "athlete_id": 1161,
+                  "rank": 1,
+                  "name": "Curcio Sophia",
+                  "firstname": "Sophia",
+                  "lastname": "CURCIO",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "18",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 205,
+                  "rank": 2,
+                  "name": "Kelly Piper",
+                  "firstname": "Piper",
+                  "lastname": "KELLY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "14",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 3900,
+                  "rank": 3,
+                  "name": "Staudt Lily",
+                  "firstname": "Lily",
+                  "lastname": "STAUDT",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "13",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 338,
+              "event_id": 448,
+              "dcat_name": "BOULDER Men/Open",
+              "discipline_kind": "boulder",
+              "category_id": 5409,
+              "category_name": "Men/Open",
+              "status": "active",
+              "status_as_of": "2026-03-04 18:59:07 UTC",
+              "ranking_as_of": "2026-03-09 01:11:30 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11418,
+                  "kind": "boulder",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 06:37:28 UTC",
+                  "result_url": "/api/v1/category_rounds/11418/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234090,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234090/startlist"
+                    },
+                    {
+                      "id": 234091,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234091/startlist"
+                    },
+                    {
+                      "id": 234092,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234092/startlist"
+                    },
+                    {
+                      "id": 234093,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234093/startlist"
+                    },
+                    {
+                      "id": 234094,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234094/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11420,
+                  "kind": "boulder",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 19:25:08 UTC",
+                  "result_url": "/api/v1/category_rounds/11420/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234100,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234100/startlist"
+                    },
+                    {
+                      "id": 234101,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234101/startlist"
+                    },
+                    {
+                      "id": 234102,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234102/startlist"
+                    },
+                    {
+                      "id": 234103,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234103/startlist"
+                    },
+                    {
+                      "id": 234117,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234117/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11422,
+                  "kind": "boulder",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "active",
+                  "status_as_of": "2026-03-08 20:22:24 UTC",
+                  "result_url": "/api/v1/category_rounds/11422/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234108,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234108/startlist"
+                    },
+                    {
+                      "id": 234109,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234109/startlist"
+                    },
+                    {
+                      "id": 234110,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234110/startlist"
+                    },
+                    {
+                      "id": 234111,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234111/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/338",
+              "top_3_results": [
+                {
+                  "athlete_id": 620,
+                  "rank": 1,
+                  "name": "FINN Elijah",
+                  "firstname": "Elijah",
+                  "lastname": "FINN",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "20",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1070,
+                  "rank": 2,
+                  "name": "HOYER Hugo",
+                  "firstname": "Hugo",
+                  "lastname": "HOYER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "2",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 2422,
+                  "rank": 3,
+                  "name": "GAYDOSH Landers",
+                  "firstname": "Landers",
+                  "lastname": "GAYDOSH",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "5",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 343,
+              "event_id": 448,
+              "dcat_name": "BOULDER Women",
+              "discipline_kind": "boulder",
+              "category_id": 5410,
+              "category_name": "Women",
+              "status": "active",
+              "status_as_of": "2026-03-04 18:33:26 UTC",
+              "ranking_as_of": "2026-03-09 01:08:40 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11419,
+                  "kind": "boulder",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 07:09:22 UTC",
+                  "result_url": "/api/v1/category_rounds/11419/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234095,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234095/startlist"
+                    },
+                    {
+                      "id": 234096,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234096/startlist"
+                    },
+                    {
+                      "id": 234097,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234097/startlist"
+                    },
+                    {
+                      "id": 234098,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234098/startlist"
+                    },
+                    {
+                      "id": 234099,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234099/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11421,
+                  "kind": "boulder",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 20:12:02 UTC",
+                  "result_url": "/api/v1/category_rounds/11421/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234104,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234104/startlist"
+                    },
+                    {
+                      "id": 234105,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234105/startlist"
+                    },
+                    {
+                      "id": 234106,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234106/startlist"
+                    },
+                    {
+                      "id": 234107,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234107/startlist"
+                    },
+                    {
+                      "id": 234116,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234116/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11423,
+                  "kind": "boulder",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "active",
+                  "status_as_of": "2026-03-08 20:41:15 UTC",
+                  "result_url": "/api/v1/category_rounds/11423/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234112,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234112/startlist"
+                    },
+                    {
+                      "id": 234113,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234113/startlist"
+                    },
+                    {
+                      "id": 234114,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234114/startlist"
+                    },
+                    {
+                      "id": 234115,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234115/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/343",
+              "top_3_results": [
+                {
+                  "athlete_id": 193,
+                  "rank": 1,
+                  "name": "GROSSMAN Natalia",
+                  "firstname": "Natalia",
+                  "lastname": "GROSSMAN",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "1",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1140,
+                  "rank": 2,
+                  "name": "COSCOY Cloe",
+                  "firstname": "Cloe",
+                  "lastname": "COSCOY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "14",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 230,
+                  "rank": 3,
+                  "name": "SANDERS Nekaia",
+                  "firstname": "Nekaia",
+                  "lastname": "SANDERS",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "6",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            }
+          ],
+          "dcats": [
+            {
+              "dcat_id": 336,
+              "event_id": 448,
+              "dcat_name": "LEAD Men/Open",
+              "discipline_kind": "lead",
+              "category_id": 5405,
+              "category_name": "Men/Open",
+              "status": "finished",
+              "status_as_of": "2026-03-06 04:50:51 UTC",
+              "ranking_as_of": "2026-03-06 01:37:54 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11412,
+                  "kind": "lead",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 04:02:43 UTC",
+                  "result_url": "/api/v1/category_rounds/11412/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 2 routes",
+                  "routes": [
+                    {
+                      "id": 233526,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233526/startlist",
+                      "ranking": "/api/v1/routes/233526/results"
+                    },
+                    {
+                      "id": 233527,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/233527/startlist",
+                      "ranking": "/api/v1/routes/233527/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11414,
+                  "kind": "lead",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 21:04:49 UTC",
+                  "result_url": "/api/v1/category_rounds/11414/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233530,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233530/startlist",
+                      "ranking": "/api/v1/routes/233530/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11416,
+                  "kind": "lead",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 03:11:18 UTC",
+                  "result_url": "/api/v1/category_rounds/11416/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233532,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233532/startlist",
+                      "ranking": "/api/v1/routes/233532/results"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/336",
+              "top_3_results": [
+                {
+                  "athlete_id": 187,
+                  "rank": 1,
+                  "name": "GRUPPER Jesse",
+                  "firstname": "Jesse",
+                  "lastname": "GRUPPER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "5",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 275,
+                  "rank": 2,
+                  "name": "DUFFY Colin",
+                  "firstname": "Colin",
+                  "lastname": "DUFFY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "23",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1074,
+                  "rank": 3,
+                  "name": "FULKERSON Ross",
+                  "firstname": "Ross",
+                  "lastname": "FULKERSON",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "27",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 341,
+              "event_id": 448,
+              "dcat_name": "LEAD Women",
+              "discipline_kind": "lead",
+              "category_id": 5406,
+              "category_name": "Women",
+              "status": "finished",
+              "status_as_of": "2026-03-06 04:50:26 UTC",
+              "ranking_as_of": "2026-03-06 01:53:07 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11413,
+                  "kind": "lead",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-04 20:41:56 UTC",
+                  "result_url": "/api/v1/category_rounds/11413/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 2 routes",
+                  "routes": [
+                    {
+                      "id": 233528,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233528/startlist",
+                      "ranking": "/api/v1/routes/233528/results"
+                    },
+                    {
+                      "id": 233529,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/233529/startlist",
+                      "ranking": "/api/v1/routes/233529/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11415,
+                  "kind": "lead",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-05 21:02:18 UTC",
+                  "result_url": "/api/v1/category_rounds/11415/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233531,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233531/startlist",
+                      "ranking": "/api/v1/routes/233531/results"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11417,
+                  "kind": "lead",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 03:31:42 UTC",
+                  "result_url": "/api/v1/category_rounds/11417/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 route",
+                  "routes": [
+                    {
+                      "id": 233533,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/233533/startlist",
+                      "ranking": "/api/v1/routes/233533/results"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/341",
+              "top_3_results": [
+                {
+                  "athlete_id": 190,
+                  "rank": 1,
+                  "name": "RABOUTOU Brooke",
+                  "firstname": "Brooke",
+                  "lastname": "RABOUTOU",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "18",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1143,
+                  "rank": 2,
+                  "name": "FISHER Ella",
+                  "firstname": "Ella",
+                  "lastname": "FISHER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "27",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1139,
+                  "rank": 3,
+                  "name": "CLARK Adriene Akiko",
+                  "firstname": "Adriene Akiko",
+                  "lastname": "CLARK",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "2",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 337,
+              "event_id": 448,
+              "dcat_name": "SPEED Men/Open",
+              "discipline_kind": "speed",
+              "category_id": 5407,
+              "category_name": "Men/Open",
+              "status": "finished",
+              "status_as_of": "2026-03-07 03:38:39 UTC",
+              "ranking_as_of": "2026-03-07 02:01:33 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11469,
+                  "kind": "speed",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 19:11:40 UTC",
+                  "result_url": "/api/v1/category_rounds/11469/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233781,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233781/startlist"
+                    },
+                    {
+                      "id": 233782,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233782/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11471,
+                  "kind": "speed",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 00:59:52 UTC",
+                  "result_url": "/api/v1/category_rounds/11471/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233789,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233789/startlist"
+                    },
+                    {
+                      "id": 233790,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233790/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11473,
+                  "kind": "speed",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 02:05:05 UTC",
+                  "result_url": "/api/v1/category_rounds/11473/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233797,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233797/startlist"
+                    },
+                    {
+                      "id": 233798,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233798/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/337",
+              "top_3_results": [
+                {
+                  "athlete_id": 1104,
+                  "rank": 1,
+                  "name": "HOM Michael",
+                  "firstname": "Michael",
+                  "lastname": "HOM",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "17",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1112,
+                  "rank": 2,
+                  "name": "BRATSCHI Noah",
+                  "firstname": "Noah",
+                  "lastname": "BRATSCHI",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "12",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1100,
+                  "rank": 3,
+                  "name": "JENNINGS Ben",
+                  "firstname": "Ben",
+                  "lastname": "JENNINGS",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "11",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 342,
+              "event_id": 448,
+              "dcat_name": "SPEED Women",
+              "discipline_kind": "speed",
+              "category_id": 5408,
+              "category_name": "Women",
+              "status": "finished",
+              "status_as_of": "2026-03-07 03:38:56 UTC",
+              "ranking_as_of": "2026-03-07 01:33:45 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11470,
+                  "kind": "speed",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-06 18:51:55 UTC",
+                  "result_url": "/api/v1/category_rounds/11470/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233783,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233783/startlist"
+                    },
+                    {
+                      "id": 233784,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233784/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11472,
+                  "kind": "speed",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 00:30:50 UTC",
+                  "result_url": "/api/v1/category_rounds/11472/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233791,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233791/startlist"
+                    },
+                    {
+                      "id": 233792,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233792/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11474,
+                  "kind": "speed",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-07 01:36:08 UTC",
+                  "result_url": "/api/v1/category_rounds/11474/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC-E: Qualification (Tolerate FS)",
+                  "routes": [
+                    {
+                      "id": 233799,
+                      "name": "A",
+                      "startlist": "/api/v1/routes/233799/startlist"
+                    },
+                    {
+                      "id": 233800,
+                      "name": "B",
+                      "startlist": "/api/v1/routes/233800/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/342",
+              "top_3_results": [
+                {
+                  "athlete_id": 1161,
+                  "rank": 1,
+                  "name": "Curcio Sophia",
+                  "firstname": "Sophia",
+                  "lastname": "CURCIO",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "18",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 205,
+                  "rank": 2,
+                  "name": "Kelly Piper",
+                  "firstname": "Piper",
+                  "lastname": "KELLY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "14",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 3900,
+                  "rank": 3,
+                  "name": "Staudt Lily",
+                  "firstname": "Lily",
+                  "lastname": "STAUDT",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "13",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 338,
+              "event_id": 448,
+              "dcat_name": "BOULDER Men/Open",
+              "discipline_kind": "boulder",
+              "category_id": 5409,
+              "category_name": "Men/Open",
+              "status": "active",
+              "status_as_of": "2026-03-04 18:59:07 UTC",
+              "ranking_as_of": "2026-03-09 01:11:30 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11418,
+                  "kind": "boulder",
+                  "name": "Round 1",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 06:37:28 UTC",
+                  "result_url": "/api/v1/category_rounds/11418/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234090,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234090/startlist"
+                    },
+                    {
+                      "id": 234091,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234091/startlist"
+                    },
+                    {
+                      "id": 234092,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234092/startlist"
+                    },
+                    {
+                      "id": 234093,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234093/startlist"
+                    },
+                    {
+                      "id": 234094,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234094/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11420,
+                  "kind": "boulder",
+                  "name": "Round 2",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 19:25:08 UTC",
+                  "result_url": "/api/v1/category_rounds/11420/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234100,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234100/startlist"
+                    },
+                    {
+                      "id": 234101,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234101/startlist"
+                    },
+                    {
+                      "id": 234102,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234102/startlist"
+                    },
+                    {
+                      "id": 234103,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234103/startlist"
+                    },
+                    {
+                      "id": 234117,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234117/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11422,
+                  "kind": "boulder",
+                  "name": "Round 3",
+                  "category": "Men/Open",
+                  "schedule": null,
+                  "status": "active",
+                  "status_as_of": "2026-03-08 20:22:24 UTC",
+                  "result_url": "/api/v1/category_rounds/11422/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234108,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234108/startlist"
+                    },
+                    {
+                      "id": 234109,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234109/startlist"
+                    },
+                    {
+                      "id": 234110,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234110/startlist"
+                    },
+                    {
+                      "id": 234111,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234111/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/338",
+              "top_3_results": [
+                {
+                  "athlete_id": 620,
+                  "rank": 1,
+                  "name": "FINN Elijah",
+                  "firstname": "Elijah",
+                  "lastname": "FINN",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "20",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1070,
+                  "rank": 2,
+                  "name": "HOYER Hugo",
+                  "firstname": "Hugo",
+                  "lastname": "HOYER",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "2",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 2422,
+                  "rank": 3,
+                  "name": "GAYDOSH Landers",
+                  "firstname": "Landers",
+                  "lastname": "GAYDOSH",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "5",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            },
+            {
+              "dcat_id": 343,
+              "event_id": 448,
+              "dcat_name": "BOULDER Women",
+              "discipline_kind": "boulder",
+              "category_id": 5410,
+              "category_name": "Women",
+              "status": "active",
+              "status_as_of": "2026-03-04 18:33:26 UTC",
+              "ranking_as_of": "2026-03-09 01:08:40 UTC",
+              "category_rounds": [
+                {
+                  "category_round_id": 11419,
+                  "kind": "boulder",
+                  "name": "Round 1",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 07:09:22 UTC",
+                  "result_url": "/api/v1/category_rounds/11419/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 29
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234095,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234095/startlist"
+                    },
+                    {
+                      "id": 234096,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234096/startlist"
+                    },
+                    {
+                      "id": 234097,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234097/startlist"
+                    },
+                    {
+                      "id": 234098,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234098/startlist"
+                    },
+                    {
+                      "id": 234099,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234099/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11421,
+                  "kind": "boulder",
+                  "name": "Round 2",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "finished",
+                  "status_as_of": "2026-03-08 20:12:02 UTC",
+                  "result_url": "/api/v1/category_rounds/11421/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 30
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234104,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234104/startlist"
+                    },
+                    {
+                      "id": 234105,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234105/startlist"
+                    },
+                    {
+                      "id": 234106,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234106/startlist"
+                    },
+                    {
+                      "id": 234107,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234107/startlist"
+                    },
+                    {
+                      "id": 234116,
+                      "name": "5",
+                      "startlist": "/api/v1/routes/234116/startlist"
+                    }
+                  ]
+                },
+                {
+                  "category_round_id": 11423,
+                  "kind": "boulder",
+                  "name": "Round 3",
+                  "category": "Women",
+                  "schedule": null,
+                  "status": "active",
+                  "status_as_of": "2026-03-08 20:41:15 UTC",
+                  "result_url": "/api/v1/category_rounds/11423/results",
+                  "starting_groups": [],
+                  "combined_stages": [],
+                  "round": {
+                    "league_round_id": 31
+                  },
+                  "format": "IFSC: 1 group 2026 (points)",
+                  "routes": [
+                    {
+                      "id": 234112,
+                      "name": "1",
+                      "startlist": "/api/v1/routes/234112/startlist"
+                    },
+                    {
+                      "id": 234113,
+                      "name": "2",
+                      "startlist": "/api/v1/routes/234113/startlist"
+                    },
+                    {
+                      "id": 234114,
+                      "name": "3",
+                      "startlist": "/api/v1/routes/234114/startlist"
+                    },
+                    {
+                      "id": 234115,
+                      "name": "4",
+                      "startlist": "/api/v1/routes/234115/startlist"
+                    }
+                  ]
+                }
+              ],
+              "full_results_url": "/api/v1/events/448/result/343",
+              "top_3_results": [
+                {
+                  "athlete_id": 193,
+                  "rank": 1,
+                  "name": "GROSSMAN Natalia",
+                  "firstname": "Natalia",
+                  "lastname": "GROSSMAN",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "1",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 1140,
+                  "rank": 2,
+                  "name": "COSCOY Cloe",
+                  "firstname": "Cloe",
+                  "lastname": "COSCOY",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "14",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                },
+                {
+                  "athlete_id": 230,
+                  "rank": 3,
+                  "name": "SANDERS Nekaia",
+                  "firstname": "Nekaia",
+                  "lastname": "SANDERS",
+                  "paraclimbing_sport_class": null,
+                  "sport_class_status": null,
+                  "bib": "6",
+                  "country": null,
+                  "flag_url": null,
+                  "federation_id": null,
+                  "rounds": [],
+                  "extra_advancement": false,
+                  "qualified": null
+                }
+              ]
+            }
+          ],
+          "disciplines": [
+            {
+              "id": 518,
+              "kind": "lead",
+              "settings": null
+            },
+            {
+              "id": 519,
+              "kind": "speed",
+              "settings": null
+            },
+            {
+              "id": 520,
+              "kind": "boulder",
+              "settings": null
+            }
+          ],
+          "computed_combined_categories": [],
+          "team_ranking_disciplines": [],
+          "team_ranking_url": "/api/v1/events/448/team_results/",
+          "time_rankings": true,
+          "time_ranking_url": "/api/v1/events/448/time_results/",
+          "custom_event_registration_fields": []
+        }
+docs: Event + categories metadata with top_3_results and full_results_url per category.

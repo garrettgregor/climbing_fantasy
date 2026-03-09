@@ -1,0 +1,26 @@
+name: External Results APIs Local
+variables:
+  - name: usacBaseUrl
+    value: https://usac.results.info
+  - name: usacEventId
+    value: "448"
+  - name: usacDcatId
+    value: "338"
+  - name: usacCategoryRoundId
+    value: "11422"
+  - name: usacCookieHeader
+    value: ""
+  - name: ifscBaseUrl
+    value: https://ifsc.results.info
+  - name: ifscSeasonId
+    value: "38"
+  - name: ifscSeasonLeagueId
+    value: "457"
+  - name: ifscEventId
+    value: "1405"
+  - name: ifscCategoryRoundId
+    value: "9381"
+  - name: ifscCookieHeader
+    value: ""
+  - name: ifscDcatId
+    value: "3"

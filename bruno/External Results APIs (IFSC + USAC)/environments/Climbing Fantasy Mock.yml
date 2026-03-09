@@ -1,0 +1,24 @@
+name: Climbing Fantasy Mock
+variables:
+  - name: baseUrl
+    value: https://49d0da93-1a50-440e-a192-89e26f5f4b34.mock.pstmn.io
+  - name: seasonId
+    value: "1"
+  - name: eventId
+    value: "1"
+  - name: categoryId
+    value: "1"
+  - name: roundId
+    value: "1"
+  - name: athleteId
+    value: "40"
+  - name: athleteQuery
+    value: Hammer
+  - name: countryCode
+    value: USA
+  - name: year
+    value: "2025"
+  - name: discipline
+    value: boulder
+  - name: eventStatus
+    value: completed

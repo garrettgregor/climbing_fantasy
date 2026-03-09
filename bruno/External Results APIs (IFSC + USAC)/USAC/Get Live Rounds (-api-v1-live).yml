@@ -1,0 +1,78 @@
+---
+info:
+  name: Get Live Rounds (/api/v1/live)
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: "{{usacBaseUrl}}/api/v1/live"
+  headers:
+  - name: Cookie
+    value: "{{usacCookieHeader}}"
+  - name: Referer
+    value: "{{usacBaseUrl}}/"
+  - name: Accept
+    value: application/json
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+examples:
+- name: 200 OK
+  request:
+    url: "{{usacBaseUrl}}/api/v1/live"
+    method: GET
+    headers:
+    - name: Cookie
+      value: "{{usacCookieHeader}}"
+    - name: Referer
+      value: "{{usacBaseUrl}}/"
+    - name: Accept
+      value: application/json
+  response:
+    statusText: '200'
+    headers:
+    - name: Content-Type
+      value: application/json
+    body:
+      type: json
+      data: |-
+        {
+          "live": [
+            {
+              "category_round_id": 11422,
+              "event_name": "2026 National Team Trials",
+              "event_id": 448,
+              "event_location": "Beaverton",
+              "local_start_date": "2026-03-04",
+              "starts_at": "2026-03-04T08:00:00.000Z",
+              "local_end_date": "2026-03-08",
+              "ends_at": "2026-03-09T06:59:00.000Z",
+              "category": "Men/Open",
+              "discipline_kind": "boulder",
+              "round_name": "Round 3",
+              "timezone": {
+                "value": "America/Los_Angeles"
+              }
+            },
+            {
+              "category_round_id": 11423,
+              "event_name": "2026 National Team Trials",
+              "event_id": 448,
+              "event_location": "Beaverton",
+              "local_start_date": "2026-03-04",
+              "starts_at": "2026-03-04T08:00:00.000Z",
+              "local_end_date": "2026-03-08",
+              "ends_at": "2026-03-09T06:59:00.000Z",
+              "category": "Women",
+              "discipline_kind": "boulder",
+              "round_name": "Round 3",
+              "timezone": {
+                "value": "America/Los_Angeles"
+              }
+            }
+          ]
+        }
+docs: 'Live rounds feed. Note: browser route /live currently returns HTML 404, while /api/v1/live returns JSON.'

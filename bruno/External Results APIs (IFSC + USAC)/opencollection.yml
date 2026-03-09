@@ -1,0 +1,41 @@
+opencollection: 1.0.0
+
+info:
+  name: External Results APIs (IFSC + USAC)
+
+request:
+  variables:
+    - name: usacBaseUrl
+      value: https://usac.results.info
+    - name: usacEventId
+      value: "448"
+    - name: usacDcatId
+      value: "338"
+    - name: usacCategoryRoundId
+      value: "11422"
+    - name: ifscBaseUrl
+      value: https://ifsc.results.info
+    - name: ifscSeasonId
+      value: "38"
+    - name: ifscSeasonLeagueId
+      value: "457"
+    - name: ifscEventId
+      value: "1405"
+    - name: ifscCategoryRoundId
+      value: "9381"
+    - name: usacCookieHeader
+      value: ""
+    - name: ifscCookieHeader
+      value: ""
+    - name: ifscDcatId
+      value: "3"
+
+docs:
+  content: Reverse-engineered helper collection for viewing external IFSC/USAC result payload shapes. Includes example responses so endpoint shape is visible without sending requests. Run each provider's session request first to capture the cookie.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

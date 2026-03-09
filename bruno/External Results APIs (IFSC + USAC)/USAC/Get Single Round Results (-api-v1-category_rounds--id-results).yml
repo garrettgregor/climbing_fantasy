@@ -1,0 +1,1786 @@
+---
+info:
+  name: Get Single Round Results (/api/v1/category_rounds/:id/results)
+  type: http
+  seq: 5
+http:
+  method: GET
+  url: "{{usacBaseUrl}}/api/v1/category_rounds/{{usacCategoryRoundId}}/results"
+  headers:
+  - name: Cookie
+    value: "{{usacCookieHeader}}"
+  - name: Referer
+    value: "{{usacBaseUrl}}/"
+  - name: Accept
+    value: application/json
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+examples:
+- name: 200 OK
+  request:
+    url: "{{usacBaseUrl}}/api/v1/category_rounds/{{usacCategoryRoundId}}/results"
+    method: GET
+    headers:
+    - name: Cookie
+      value: "{{usacCookieHeader}}"
+    - name: Referer
+      value: "{{usacBaseUrl}}/"
+    - name: Accept
+      value: application/json
+  response:
+    statusText: '200'
+    headers:
+    - name: Content-Type
+      value: application/json
+    body:
+      type: json
+      data: |-
+        {
+          "id": 11422,
+          "event": "2026 National Team Trials",
+          "event_id": 448,
+          "dcat_id": 338,
+          "discipline": "Boulder",
+          "status": "active",
+          "status_as_of": "2026-03-08 20:22:24 UTC",
+          "category": "Men/Open",
+          "round": "Round 3",
+          "points_per_boulder_settings": {
+            "points_per_zone": 10,
+            "points_per_top": 25,
+            "points_per_low_zone": null,
+            "use_low_zone": false,
+            "fall_deduction": 0.1
+          },
+          "format": "IFSC: 1 group 2026 (points)",
+          "routes": [
+            {
+              "id": 234108,
+              "name": "1",
+              "startlist": "/api/v1/routes/234108/startlist"
+            },
+            {
+              "id": 234109,
+              "name": "2",
+              "startlist": "/api/v1/routes/234109/startlist"
+            },
+            {
+              "id": 234110,
+              "name": "3",
+              "startlist": "/api/v1/routes/234110/startlist"
+            },
+            {
+              "id": 234111,
+              "name": "4",
+              "startlist": "/api/v1/routes/234111/startlist"
+            }
+          ],
+          "ranking": [
+            {
+              "athlete_id": 620,
+              "name": "FINN Elijah",
+              "firstname": "Elijah",
+              "lastname": "FINN",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "20",
+              "rank": 1,
+              "score": "34.8",
+              "start_order": 1,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 2,
+                  "zone": true,
+                  "zone_tries": 2,
+                  "low_zone": true,
+                  "points": 9.9,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 00:33:41 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 8,
+                  "zone": false,
+                  "zone_tries": 8,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:47:05 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": 7,
+                  "zone": false,
+                  "zone_tries": 7,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:59:54 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": true,
+                  "top_tries": 2,
+                  "zone": true,
+                  "zone_tries": 2,
+                  "low_zone": true,
+                  "points": 24.9,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:11:29 +00:00",
+                  "status": "confirmed"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1070,
+              "name": "HOYER Hugo",
+              "firstname": "Hugo",
+              "lastname": "HOYER",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "2",
+              "rank": 2,
+              "score": "34.7",
+              "start_order": 7,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": true,
+                  "top_tries": 4,
+                  "zone": true,
+                  "zone_tries": 2,
+                  "low_zone": true,
+                  "points": 24.7,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 00:59:19 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 3,
+                  "zone": true,
+                  "zone_tries": 1,
+                  "low_zone": true,
+                  "points": 10.0,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:12:46 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 2422,
+              "name": "GAYDOSH Landers",
+              "firstname": "Landers",
+              "lastname": "GAYDOSH",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "5",
+              "rank": 3,
+              "score": "34.7",
+              "start_order": 4,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 7,
+                  "zone": false,
+                  "zone_tries": 7,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:47:03 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 7,
+                  "zone": true,
+                  "zone_tries": 3,
+                  "low_zone": true,
+                  "points": 9.8,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 00:59:56 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": true,
+                  "top_tries": 2,
+                  "zone": true,
+                  "zone_tries": 1,
+                  "low_zone": true,
+                  "points": 24.9,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:11:25 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1126,
+              "name": "BARRON Charles",
+              "firstname": "Charles",
+              "lastname": "BARRON",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "10",
+              "rank": 4,
+              "score": "19.9",
+              "start_order": 2,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 4,
+                  "zone": false,
+                  "zone_tries": 4,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:38:07 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 5,
+                  "zone": true,
+                  "zone_tries": 1,
+                  "low_zone": true,
+                  "points": 10.0,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 00:51:22 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": 3,
+                  "zone": true,
+                  "zone_tries": 2,
+                  "low_zone": true,
+                  "points": 9.9,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:04:03 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": 6,
+                  "zone": false,
+                  "zone_tries": 6,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:17:29 +00:00",
+                  "status": "confirmed"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1122,
+              "name": "ROTHFORK Cozmo",
+              "firstname": "Cozmo",
+              "lastname": "ROTHFORK",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "3",
+              "rank": 5,
+              "score": "19.4",
+              "start_order": 5,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 5,
+                  "zone": false,
+                  "zone_tries": 5,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:51:23 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 9,
+                  "zone": true,
+                  "zone_tries": 7,
+                  "low_zone": true,
+                  "points": 9.4,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:04:14 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": 5,
+                  "zone": true,
+                  "zone_tries": 1,
+                  "low_zone": true,
+                  "points": 10.0,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:17:21 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1089,
+              "name": "HANNA Benjamin",
+              "firstname": "Benjamin",
+              "lastname": "HANNA",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "14",
+              "rank": 6,
+              "score": "10.0",
+              "start_order": 6,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 5,
+                  "zone": false,
+                  "zone_tries": 5,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:55:32 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 9,
+                  "zone": false,
+                  "zone_tries": 9,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:08:44 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": 2,
+                  "zone": true,
+                  "zone_tries": 1,
+                  "low_zone": true,
+                  "points": 10.0,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:18:58 +00:00",
+                  "status": "active"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": true,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 374,
+              "name": "CHI Auggie",
+              "firstname": "Auggie",
+              "lastname": "CHI",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "6",
+              "rank": 7,
+              "score": "9.8",
+              "start_order": 9,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 5,
+                  "zone": true,
+                  "zone_tries": 3,
+                  "low_zone": true,
+                  "points": 9.8,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:08:26 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 4,
+                  "zone": false,
+                  "zone_tries": 4,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:19:26 +00:00",
+                  "status": "active"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": true,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1092,
+              "name": "LAKHNO Sergey",
+              "firstname": "Sergey",
+              "lastname": "LAKHNO",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "4",
+              "rank": 8,
+              "score": "9.7",
+              "start_order": 3,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 6,
+                  "zone": false,
+                  "zone_tries": 6,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:42:42 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 10,
+                  "zone": false,
+                  "zone_tries": 10,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 00:56:06 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": 8,
+                  "zone": true,
+                  "zone_tries": 4,
+                  "low_zone": true,
+                  "points": 9.7,
+                  "low_zone_tries": 1,
+                  "modified": "2026-03-09 01:08:38 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": 3,
+                  "zone": false,
+                  "zone_tries": 3,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:19:07 +00:00",
+                  "status": "active"
+                }
+              ],
+              "combined_stages": null,
+              "active": true,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 275,
+              "name": "DUFFY Colin",
+              "firstname": "Colin",
+              "lastname": "DUFFY",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "1",
+              "rank": 9,
+              "score": "0",
+              "start_order": 10,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 7,
+                  "zone": false,
+                  "zone_tries": 7,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:12:49 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1086,
+              "name": "GERHARDT Joshua",
+              "firstname": "Joshua",
+              "lastname": "GERHARDT",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "9",
+              "rank": 10,
+              "score": "0",
+              "start_order": 11,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 2,
+                  "zone": false,
+                  "zone_tries": 2,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:18:44 +00:00",
+                  "status": "active"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": true,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            },
+            {
+              "athlete_id": 1075,
+              "name": "EVERETT Vail",
+              "firstname": "Vail",
+              "lastname": "EVERETT",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null,
+              "bib": "7",
+              "rank": 11,
+              "score": "0",
+              "start_order": 8,
+              "extra_advancement": false,
+              "ascents": [
+                {
+                  "route_id": 234108,
+                  "route_name": "1",
+                  "top": false,
+                  "top_tries": 8,
+                  "zone": false,
+                  "zone_tries": 8,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:04:25 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234109,
+                  "route_name": "2",
+                  "top": false,
+                  "top_tries": 8,
+                  "zone": false,
+                  "zone_tries": 8,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-09 01:16:56 +00:00",
+                  "status": "confirmed"
+                },
+                {
+                  "route_id": 234110,
+                  "route_name": "3",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                },
+                {
+                  "route_id": 234111,
+                  "route_name": "4",
+                  "top": false,
+                  "top_tries": null,
+                  "zone": false,
+                  "zone_tries": null,
+                  "low_zone": false,
+                  "points": 0.0,
+                  "low_zone_tries": null,
+                  "modified": "2026-03-08 20:22:24 +00:00",
+                  "status": "pending"
+                }
+              ],
+              "combined_stages": null,
+              "active": false,
+              "under_appeal": false,
+              "invisible_score": null,
+              "applied_invisible_score_tiebreaker": false
+            }
+          ],
+          "startlist": [
+            {
+              "athlete_id": 620,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 1
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 3
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 5
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 7
+                }
+              ],
+              "name": "FINN Elijah",
+              "firstname": "Elijah",
+              "lastname": "FINN",
+              "bib": "20",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1126,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 2
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 4
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 6
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 8
+                }
+              ],
+              "name": "BARRON Charles",
+              "firstname": "Charles",
+              "lastname": "BARRON",
+              "bib": "10",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1092,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 3
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 5
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 7
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 9
+                }
+              ],
+              "name": "LAKHNO Sergey",
+              "firstname": "Sergey",
+              "lastname": "LAKHNO",
+              "bib": "4",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 2422,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 4
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 6
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 8
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 10
+                }
+              ],
+              "name": "GAYDOSH Landers",
+              "firstname": "Landers",
+              "lastname": "GAYDOSH",
+              "bib": "5",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1122,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 5
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 7
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 9
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 11
+                }
+              ],
+              "name": "ROTHFORK Cozmo",
+              "firstname": "Cozmo",
+              "lastname": "ROTHFORK",
+              "bib": "3",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1089,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 6
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 8
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 10
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 12
+                }
+              ],
+              "name": "HANNA Benjamin",
+              "firstname": "Benjamin",
+              "lastname": "HANNA",
+              "bib": "14",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1070,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 7
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 9
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 11
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 13
+                }
+              ],
+              "name": "HOYER Hugo",
+              "firstname": "Hugo",
+              "lastname": "HOYER",
+              "bib": "2",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1075,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 8
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 10
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 12
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 14
+                }
+              ],
+              "name": "EVERETT Vail",
+              "firstname": "Vail",
+              "lastname": "EVERETT",
+              "bib": "7",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 374,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 9
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 11
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 13
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 15
+                }
+              ],
+              "name": "CHI Auggie",
+              "firstname": "Auggie",
+              "lastname": "CHI",
+              "bib": "6",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 275,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 10
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 12
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 14
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 16
+                }
+              ],
+              "name": "DUFFY Colin",
+              "firstname": "Colin",
+              "lastname": "DUFFY",
+              "bib": "1",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1086,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 11
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 13
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 15
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 17
+                }
+              ],
+              "name": "GERHARDT Joshua",
+              "firstname": "Joshua",
+              "lastname": "GERHARDT",
+              "bib": "9",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1094,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 12
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 14
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 16
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 18
+                }
+              ],
+              "name": "GOODACRE Joe",
+              "firstname": "Joe",
+              "lastname": "GOODACRE",
+              "bib": "8",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 327,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 13
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 15
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 17
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 19
+                }
+              ],
+              "name": "HIBBELER Simon",
+              "firstname": "Simon",
+              "lastname": "HIBBELER",
+              "bib": "13",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1088,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 14
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 16
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 18
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 20
+                }
+              ],
+              "name": "ERNSBERGER Ellis",
+              "firstname": "Ellis",
+              "lastname": "ERNSBERGER",
+              "bib": "12",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1079,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 15
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 17
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 19
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 21
+                }
+              ],
+              "name": "PADILLA Cruz",
+              "firstname": "Cruz",
+              "lastname": "PADILLA",
+              "bib": "11",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1069,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 16
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 18
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 20
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 22
+                }
+              ],
+              "name": "OSGOOD Declan",
+              "firstname": "Declan",
+              "lastname": "OSGOOD",
+              "bib": "15",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 2739,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 17
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 19
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 21
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 23
+                }
+              ],
+              "name": "SMITH Wesley",
+              "firstname": "Wesley",
+              "lastname": "SMITH",
+              "bib": "19",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1077,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 18
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 20
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 22
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 24
+                }
+              ],
+              "name": "MONTE Nathan",
+              "firstname": "Nathan",
+              "lastname": "MONTE",
+              "bib": "23",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1096,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 19
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 21
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 23
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 25
+                }
+              ],
+              "name": "KELLEGHAN Jacob",
+              "firstname": "Jacob",
+              "lastname": "KELLEGHAN",
+              "bib": "18",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1120,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 20
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 22
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 24
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 26
+                }
+              ],
+              "name": "LEFF Isaac",
+              "firstname": "Isaac",
+              "lastname": "LEFF",
+              "bib": "22",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 2439,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 21
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 23
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 25
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 27
+                }
+              ],
+              "name": "ROSE-INNES Benjamin",
+              "firstname": "Benjamin",
+              "lastname": "ROSE-INNES",
+              "bib": "16",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1087,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 22
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 24
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 26
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 28
+                }
+              ],
+              "name": "GERHARDT Lukas",
+              "firstname": "Lukas",
+              "lastname": "GERHARDT",
+              "bib": "26",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1076,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 23
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 25
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 27
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 29
+                }
+              ],
+              "name": "AGADO Aami",
+              "firstname": "Aami",
+              "lastname": "AGADO",
+              "bib": "17",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 484,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 24
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 26
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 28
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 30
+                }
+              ],
+              "name": "HARRIS Aiden",
+              "firstname": "Aiden",
+              "lastname": "HARRIS",
+              "bib": "25",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 2740,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 25
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 27
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 29
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 31
+                }
+              ],
+              "name": "SMITH Harrison",
+              "firstname": "Harrison",
+              "lastname": "SMITH",
+              "bib": "21",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 2090,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 26
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 28
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 30
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 32
+                }
+              ],
+              "name": "SHIPLEY Jack",
+              "firstname": "Jack",
+              "lastname": "SHIPLEY",
+              "bib": "28",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 384,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 27
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 29
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 31
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 33
+                }
+              ],
+              "name": "SOUTHERN Jacob",
+              "firstname": "Jacob",
+              "lastname": "SOUTHERN",
+              "bib": "24",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            },
+            {
+              "athlete_id": 1081,
+              "route_start_positions": [
+                {
+                  "route_name": "1",
+                  "route_id": 234108,
+                  "position": 28
+                },
+                {
+                  "route_name": "2",
+                  "route_id": 234109,
+                  "position": 30
+                },
+                {
+                  "route_name": "3",
+                  "route_id": 234110,
+                  "position": 32
+                },
+                {
+                  "route_name": "4",
+                  "route_id": 234111,
+                  "position": 34
+                }
+              ],
+              "name": "SHREWSBURY Caden",
+              "firstname": "Caden",
+              "lastname": "SHREWSBURY",
+              "bib": "27",
+              "country": null,
+              "flag_url": null,
+              "federation_id": null
+            }
+          ]
+        }
+docs: Single-round results only (for example Round 3 for category_round_id 11422).

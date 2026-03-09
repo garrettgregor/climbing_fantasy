@@ -1,0 +1,11 @@
+info:
+  name: USAC
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
+
+docs:
+  content: "USAC scope notes: /api/v1/events/:id gives metadata + top_3_results + full_results_url; /api/v1/events/:id/result/:dcat_id is full category standings across rounds; /api/v1/category_rounds/:id/results is one round only."
+  type: text/markdown

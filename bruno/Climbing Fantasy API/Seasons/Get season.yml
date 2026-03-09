@@ -1,0 +1,76 @@
+info:
+  name: Get season
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: 200 OK
+    request:
+      url: "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+      method: GET
+    response:
+      statusText: "200"
+      headers:
+        - name: Content-Type
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+            "data": {
+              "id": 1,
+              "name": "IFSC World Cup 2025",
+              "year": 2025,
+              "external_id": 37,
+              "events": [
+                {
+                  "id": 1,
+                  "name": "IFSC World Cup Keqiao 2025",
+                  "location": "Keqiao, CHN",
+                  "starts_on": "2025-04-18",
+                  "ends_on": "2025-04-20",
+                  "status": "completed",
+                  "season_id": 1,
+                  "external_id": 1405,
+                  "results_synced_at": null
+                },
+                {
+                  "id": 2,
+                  "name": "IFSC World Cup Wujiang 2025",
+                  "location": "Wujiang, CHN",
+                  "starts_on": "2025-04-25",
+                  "ends_on": "2025-04-27",
+                  "status": "completed",
+                  "season_id": 1,
+                  "external_id": 1406,
+                  "results_synced_at": null
+                }
+              ]
+            }
+          }
+  - name: 404 Not Found
+    request:
+      url: "{{baseUrl}}/api/v1/seasons/{{seasonId}}"
+      method: GET
+    response:
+      statusText: "404"
+      headers:
+        - name: Content-Type
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+            "error": "Not found"
+          }

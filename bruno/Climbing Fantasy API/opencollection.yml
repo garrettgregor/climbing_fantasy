@@ -1,0 +1,39 @@
+opencollection: 1.0.0
+
+info:
+  name: Climbing Fantasy API
+
+request:
+  variables:
+    - name: baseUrl
+      value: http://localhost:3000
+    - name: seasonId
+      value: "1"
+    - name: eventId
+      value: "1"
+    - name: categoryId
+      value: "1"
+    - name: roundId
+      value: "1"
+    - name: athleteId
+      value: "40"
+    - name: athleteQuery
+      value: Hammer
+    - name: countryCode
+      value: USA
+    - name: year
+      value: "2025"
+    - name: discipline
+      value: boulder
+    - name: eventStatus
+      value: completed
+
+docs:
+  content: Generated from OpenAPI + fixture-backed examples for realistic mocks.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
