@@ -4,6 +4,11 @@ class AthleteBlueprint < Blueprinter::Base
     :last_name,
     :country_code,
     :gender,
+    :source,
+    :photo_url,
+    :flag_url,
+    :federation,
+    :federation_id,
     :external_athlete_id
 
   view :extended do

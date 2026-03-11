@@ -3,6 +3,7 @@ class CategoryBlueprint < Blueprinter::Base
   fields :name,
     :discipline,
     :gender,
+    :category_status,
     :external_dcat_id
 
   view :extended do

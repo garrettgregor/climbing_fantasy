@@ -2,7 +2,7 @@ openapi: 3.0.1
 info:
   title: Climbing Fantasy API
   version: v1
-  description: JSON API for World Climbing (IFSC) competition results
+  description: JSON API for competition climbing results from IFSC, USAC, and other federations
 servers:
   - url: http://localhost:3000
     description: Development
@@ -46,10 +46,12 @@ paths:
                   - id: 999184339
                     name: "World Climbing Series 2026"
                     year: 2026
+                    source: "ifsc"
                     external_id: 38
                   - id: 579274347
                     name: "IFSC World Cup 2025"
                     year: 2025
+                    source: "ifsc"
                     external_id: 37
                 meta:
                   page: 1
@@ -91,26 +93,37 @@ paths:
                   id: 579274347
                   name: "IFSC World Cup 2025"
                   year: 2025
+                  source: "ifsc"
                   external_id: 37
                   events:
                     - id: 672868979
                       name: "IFSC World Cup Keqiao 2025"
                       location: "Keqiao, CHN"
+                      country_code: "CHN"
                       starts_on: "2025-04-18"
                       ends_on: "2025-04-20"
+                      starts_at: "2025-04-17T16:00:00.000Z"
+                      ends_at: "2025-04-20T15:59:00.000Z"
+                      timezone_name: "Asia/Shanghai"
                       status: "completed"
+                      source: "ifsc"
                       season_id: 579274347
                       external_id: 1405
-                      results_synced_at: null
+                      results_synced_at: "2025-10-02T07:18:42.000Z"
                     - id: 1056528741
                       name: "IFSC World Cup Wujiang 2025"
                       location: "Wujiang, CHN"
+                      country_code: "CHN"
                       starts_on: "2025-04-25"
                       ends_on: "2025-04-27"
+                      starts_at: "2025-04-24T16:00:00.000Z"
+                      ends_at: "2025-04-27T15:59:00.000Z"
+                      timezone_name: "Asia/Shanghai"
                       status: "completed"
+                      source: "ifsc"
                       season_id: 579274347
                       external_id: 1406
-                      results_synced_at: null
+                      results_synced_at: "2025-10-05T09:30:00.000Z"
         "404":
           description: Season not found
           content:
@@ -181,30 +194,45 @@ paths:
                   - id: 895726900
                     name: "World Climbing Series Keqiao 2026"
                     location: "Keqiao, CHN"
+                    country_code: "CHN"
                     starts_on: "2026-05-01"
                     ends_on: "2026-05-03"
+                    starts_at: "2026-04-30T16:00:00.000Z"
+                    ends_at: "2026-05-03T15:59:00.000Z"
+                    timezone_name: "Asia/Shanghai"
                     status: "upcoming"
+                    source: "ifsc"
                     season_id: 999184339
                     external_id: 1524
                     results_synced_at: null
                   - id: 25834392
                     name: "World Climbing Oceania Series New South Wales 2026"
                     location: "Gladesville, AUS"
+                    country_code: "AUS"
                     starts_on: "2026-02-28"
                     ends_on: "2026-03-01"
+                    starts_at: "2026-02-27T13:00:00.000Z"
+                    ends_at: "2026-03-01T12:59:00.000Z"
+                    timezone_name: "Australia/Sydney"
                     status: "completed"
+                    source: "ifsc"
                     season_id: 999184339
                     external_id: 1523
-                    results_synced_at: null
+                    results_synced_at: "2026-03-02T04:15:00.000Z"
                   - id: 1056528741
                     name: "IFSC World Cup Wujiang 2025"
                     location: "Wujiang, CHN"
+                    country_code: "CHN"
                     starts_on: "2025-04-25"
                     ends_on: "2025-04-27"
+                    starts_at: "2025-04-24T16:00:00.000Z"
+                    ends_at: "2025-04-27T15:59:00.000Z"
+                    timezone_name: "Asia/Shanghai"
                     status: "completed"
+                    source: "ifsc"
                     season_id: 579274347
                     external_id: 1406
-                    results_synced_at: null
+                    results_synced_at: "2025-10-05T09:30:00.000Z"
                 meta:
                   page: 1
                   per_page: 25
@@ -247,37 +275,47 @@ paths:
                   id: 1056528741
                   name: "IFSC World Cup Wujiang 2025"
                   location: "Wujiang, CHN"
+                  country_code: "CHN"
                   starts_on: "2025-04-25"
                   ends_on: "2025-04-27"
+                  starts_at: "2025-04-24T16:00:00.000Z"
+                  ends_at: "2025-04-27T15:59:00.000Z"
+                  timezone_name: "Asia/Shanghai"
                   status: "completed"
+                  source: "ifsc"
                   season_id: 579274347
                   external_id: 1406
-                  results_synced_at: null
+                  results_synced_at: "2025-10-05T09:30:00.000Z"
                   season:
                     id: 579274347
                     name: "IFSC World Cup 2025"
                     year: 2025
+                    source: "ifsc"
                     external_id: 37
                   categories:
                     - id: 331850261
                       name: "LEAD Men"
                       discipline: "lead"
                       gender: "male"
+                      category_status: "finished"
                       external_dcat_id: 1
                     - id: 767885520
                       name: "LEAD Women"
                       discipline: "lead"
                       gender: "female"
+                      category_status: "finished"
                       external_dcat_id: 5
                     - id: 622874940
                       name: "SPEED Men"
                       discipline: "speed"
                       gender: "male"
+                      category_status: "finished"
                       external_dcat_id: 2
                     - id: 639244710
                       name: "SPEED Women"
                       discipline: "speed"
                       gender: "female"
+                      category_status: "finished"
                       external_dcat_id: 6
         "404":
           description: Event not found
@@ -324,22 +362,26 @@ paths:
                   name: "BOULDER Men"
                   discipline: "boulder"
                   gender: "male"
+                  category_status: "finished"
                   external_dcat_id: 3
                   rounds:
                     - id: 801082457
                       name: "Qualification"
                       round_type: "qualification"
                       status: "completed"
+                      format: "IFSC: 2 groups 2025 (points)"
                       external_round_id: 9381
                     - id: 89087024
                       name: "Semi-final"
                       round_type: "semi_final"
                       status: "completed"
+                      format: "IFSC: 1 group 2025 (points)"
                       external_round_id: 9953
                     - id: 572265335
                       name: "Final"
                       round_type: "final"
                       status: "completed"
+                      format: "IFSC: finals 2025 (points)"
                       external_round_id: 9955
         "404":
           description: Category not found
@@ -391,16 +433,26 @@ paths:
                   name: "Final"
                   round_type: "final"
                   status: "completed"
+                  format: "IFSC: finals 2025 (points)"
                   external_round_id: 9955
                   round_results:
                     - id: 978834716
                       rank: 1
                       score_raw: "99.7"
                       group_label: null
+                      start_order: 8
+                      bib: "52"
+                      starting_group: null
+                      group_rank: null
+                      active: false
+                      under_appeal: false
                       tops: 4
                       zones: 4
                       top_attempts: 7
                       zone_attempts: 4
+                      boulder_points: "99.7"
+                      high_zones: null
+                      high_zone_attempts: null
                       lead_height: null
                       lead_plus: false
                       speed_time: null
@@ -411,15 +463,29 @@ paths:
                         last_name: "Anraku"
                         country_code: "JPN"
                         gender: "male"
+                        source: "ifsc"
+                        photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/dz9q2bkpf0i0y0gjrwcuhwta6p3q"
+                        flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/JPN.png"
+                        federation: "JMA"
+                        federation_id: 25
                         external_athlete_id: 13040
                     - id: 789242916
                       rank: 2
                       score_raw: "99.3"
                       group_label: null
+                      start_order: 7
+                      bib: "35"
+                      starting_group: null
+                      group_rank: null
+                      active: false
+                      under_appeal: false
                       tops: 4
                       zones: 4
                       top_attempts: 13
                       zone_attempts: 7
+                      boulder_points: "99.3"
+                      high_zones: null
+                      high_zone_attempts: null
                       lead_height: null
                       lead_plus: false
                       speed_time: null
@@ -430,6 +496,11 @@ paths:
                         last_name: "Lee"
                         country_code: "KOR"
                         gender: "male"
+                        source: "ifsc"
+                        photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/3k4hgylx3fhvqyf9lqwzx36dnb83"
+                        flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/KOR.png"
+                        federation: "KAF"
+                        federation_id: 20
                         external_athlete_id: 2101
         "404":
           description: Round not found
@@ -492,18 +563,33 @@ paths:
                     last_name: "Anraku"
                     country_code: "JPN"
                     gender: "male"
+                    source: "ifsc"
+                    photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/dz9q2bkpf0i0y0gjrwcuhwta6p3q"
+                    flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/JPN.png"
+                    federation: "JMA"
+                    federation_id: 25
                     external_athlete_id: 13040
                   - id: 715182994
                     first_name: "Anna Maria"
                     last_name: "Apel"
                     country_code: "GER"
                     gender: "female"
+                    source: "ifsc"
+                    photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/y0r5m1hjqp67l8o4fnzpvn6bvmj0"
+                    flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/GER.png"
+                    federation: "DAV"
+                    federation_id: 10
                     external_athlete_id: 12336
                   - id: 154222274
                     first_name: "Sam"
                     last_name: "Avezou"
                     country_code: "FRA"
                     gender: "male"
+                    source: "ifsc"
+                    photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/s23jvhg8b4w7o1dexncmufyt9kz6"
+                    flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/FRA.png"
+                    federation: "FFME"
+                    federation_id: 11
                     external_athlete_id: 532
                 meta:
                   page: 1
@@ -547,16 +633,30 @@ paths:
                   last_name: "Anraku"
                   country_code: "JPN"
                   gender: "male"
+                  source: "ifsc"
+                  photo_url: "https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/dz9q2bkpf0i0y0gjrwcuhwta6p3q"
+                  flag_url: "https://d1n1qj9geboqnb.cloudfront.net/flags/JPN.png"
+                  federation: "JMA"
+                  federation_id: 25
                   external_athlete_id: 13040
                   round_results:
                     - id: 978834716
                       rank: 1
                       score_raw: "99.7"
                       group_label: null
+                      start_order: 8
+                      bib: "52"
+                      starting_group: null
+                      group_rank: null
+                      active: false
+                      under_appeal: false
                       tops: 4
                       zones: 4
                       top_attempts: 7
                       zone_attempts: 4
+                      boulder_points: "99.7"
+                      high_zones: null
+                      high_zone_attempts: null
                       lead_height: null
                       lead_plus: false
                       speed_time: null
@@ -565,10 +665,19 @@ paths:
                       rank: 1
                       score_raw: "TOP"
                       group_label: null
+                      start_order: 8
+                      bib: "52"
+                      starting_group: null
+                      group_rank: null
+                      active: false
+                      under_appeal: false
                       tops: null
                       zones: null
                       top_attempts: null
                       zone_attempts: null
+                      boulder_points: null
+                      high_zones: null
+                      high_zone_attempts: null
                       lead_height: "50.0"
                       lead_plus: false
                       speed_time: null
@@ -593,6 +702,9 @@ components:
           type: string
         year:
           type: integer
+        source:
+          type: string
+          enum: [ifsc, usac]
         external_id:
           type: integer
           nullable: true
@@ -600,6 +712,7 @@ components:
         - id
         - name
         - year
+        - source
 
     Event:
       type: object
@@ -610,15 +723,36 @@ components:
           type: string
         location:
           type: string
+        country_code:
+          type: string
+          nullable: true
+          description: ISO 3166-1 alpha-3 country code
         starts_on:
           type: string
           format: date
         ends_on:
           type: string
           format: date
+        starts_at:
+          type: string
+          format: date-time
+          nullable: true
+          description: Precise start datetime (when available from source)
+        ends_at:
+          type: string
+          format: date-time
+          nullable: true
+          description: Precise end datetime (when available from source)
+        timezone_name:
+          type: string
+          nullable: true
+          description: IANA timezone name (e.g. "Asia/Shanghai")
         status:
           type: string
           enum: [upcoming, in_progress, completed]
+        source:
+          type: string
+          enum: [ifsc, usac]
         season_id:
           type: integer
         external_id:
@@ -635,6 +769,7 @@ components:
         - starts_on
         - ends_on
         - status
+        - source
         - season_id
 
     Category:
@@ -650,6 +785,10 @@ components:
         gender:
           type: string
           enum: [male, female]
+        category_status:
+          type: string
+          enum: [not_started, active, finished]
+          nullable: true
         external_dcat_id:
           type: integer
           nullable: true
@@ -672,6 +811,9 @@ components:
         status:
           type: string
           enum: [pending, in_progress, completed]
+        format:
+          type: string
+          nullable: true
         external_round_id:
           type: integer
           nullable: true
@@ -695,6 +837,24 @@ components:
         group_label:
           type: string
           nullable: true
+        start_order:
+          type: integer
+          nullable: true
+        bib:
+          type: string
+          nullable: true
+        starting_group:
+          type: string
+          nullable: true
+        group_rank:
+          type: integer
+          nullable: true
+        active:
+          type: boolean
+          nullable: true
+        under_appeal:
+          type: boolean
+          nullable: true
         tops:
           type: integer
           nullable: true
@@ -705,6 +865,15 @@ components:
           type: integer
           nullable: true
         zone_attempts:
+          type: integer
+          nullable: true
+        boulder_points:
+          type: string
+          nullable: true
+        high_zones:
+          type: integer
+          nullable: true
+        high_zone_attempts:
           type: integer
           nullable: true
         lead_height:
@@ -732,9 +901,26 @@ components:
           type: string
         country_code:
           type: string
+          nullable: true
         gender:
           type: string
           enum: [male, female]
+          nullable: true
+        source:
+          type: string
+          enum: [ifsc, usac]
+        photo_url:
+          type: string
+          nullable: true
+        flag_url:
+          type: string
+          nullable: true
+        federation:
+          type: string
+          nullable: true
+        federation_id:
+          type: integer
+          nullable: true
         external_athlete_id:
           type: integer
           nullable: true
@@ -742,8 +928,7 @@ components:
         - id
         - first_name
         - last_name
-        - country_code
-        - gender
+        - source
 
     Pagination:
       type: object
