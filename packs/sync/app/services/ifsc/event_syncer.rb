@@ -44,6 +44,7 @@ module Ifsc
         c.discipline = map_discipline(d_cat["discipline_kind"])
         c.gender = gender
       end
+      category.update!(category_status: map_category_status(d_cat["status"]))
 
       d_cat["category_rounds"].each { |round_data| sync_round(category, round_data) }
     end
@@ -56,18 +57,20 @@ module Ifsc
         status: map_round_status(round_data["status"]),
       )
 
-      round_data["routes"]&.each { |route| sync_climb(round, route) }
+      round_data["routes"]&.each_with_index { |route, index| sync_route(round, route, index) }
     end
 
-    def sync_climb(round, route)
-      group_label = route["name"]&.downcase
+    def sync_route(round, route_data, index)
+      group_label = route_data["name"]&.downcase
       group_label = nil if ["a", "b"].exclude?(group_label)
 
-      Climb.find_or_create_by!(
+      Route.find_or_create_by!(
         round:,
-        number: route["id"],
-      ) do |climb|
-        climb.group_label = group_label
+        external_route_id: route_data["id"],
+      ) do |r|
+        r.route_name = route_data["name"]
+        r.route_order = index
+        r.group_label = group_label
       end
     end
 
@@ -103,6 +106,14 @@ module Ifsc
       when "finished" then :completed
       when "active" then :in_progress
       else :pending
+      end
+    end
+
+    def map_category_status(status)
+      case status.to_s
+      when "finished" then :finished
+      when "active" then :active
+      else :not_started
       end
     end
   end

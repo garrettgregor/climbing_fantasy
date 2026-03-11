@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Cookie:
-      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      - _ifsc_resultservice_session=<RESULTS_SESSION_COOKIE>
       Referer:
       - https://ifsc.results.info/
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 01 Mar 2026 16:53:30 GMT
+      - Tue, 10 Mar 2026 20:27:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -57,9 +57,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 675eb08e0b967ed0ca421924f79873b7
+      - 15146827a39c6b43f123deb89d866ad1
       X-Runtime:
-      - '0.080263'
+      - '0.026109'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Cf-Cache-Status:
@@ -67,11 +67,11 @@ http_interactions:
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cuANo%2BqIkzdcgZ%2BFyNzTMmy73Nid9kW1DNvFl6wg48b7uFrWLbIJatBffd%2FR3bozWcTTNWfuDXwCj1I2Du8cLeVgSpuPSibsAEsM1W%2B1"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=U%2FMNsi1idnpKT9bZrN6QQ86b5mU2nm0ZyWdTEZ3tqr9RtQx41ItOxyljkh%2FDC7ifdrXf59C8zusj5aqLIeAVgUdgkTQUVuD0Rjbs9jd8"}]}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 9d59ada1bbb4b188-DEN
+      - 9da50f579eb57c2c-DEN
     body:
       encoding: ASCII-8BIT
       string: '{"id":1491,"name":"World Climbing Oceania Championship Mount Maunganui
@@ -114,5 +114,5 @@ http_interactions:
         Helen","firstname":"Helen","lastname":"LEE","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"615","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3759,"rank":2,"name":"TETZLAFF
         Sarah","firstname":"Sarah","lastname":"TETZLAFF","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"622","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null},{"athlete_id":3772,"rank":3,"name":"GEBERT
         Abby","firstname":"Abby","lastname":"GEBERT","paraclimbing_sport_class":null,"sport_class_status":null,"bib":"602","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53,"rounds":[],"qualified":null}]}],"disciplines":[{"id":1826,"kind":"speed","settings":null}],"computed_combined_categories":[],"team_ranking_disciplines":["speed"],"team_ranking_url":"/api/v1/events/1491/team_results/","time_rankings":false,"time_ranking_url":null,"custom_event_registration_fields":[]}'
-  recorded_at: Sun, 01 Mar 2026 16:53:30 GMT
+  recorded_at: Tue, 10 Mar 2026 20:27:24 GMT
 recorded_with: VCR 6.4.0

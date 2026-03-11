@@ -12,7 +12,7 @@ module Ifsc
     end
 
     def call
-      rounds = @event.categories.includes(rounds: :climbs).flat_map(&:rounds)
+      rounds = @event.categories.includes(rounds: :routes).flat_map(&:rounds)
 
       rounds.each { |round| sync_round_results(round) }
 
@@ -39,44 +39,61 @@ module Ifsc
       round_result.update!(
         rank: entry["rank"],
         score_raw: entry["score"],
+        start_order: entry["start_order"],
+        bib: entry["bib"],
+        starting_group: entry["starting_group"],
+        group_rank: entry["group_rank"],
+        active: entry["active"],
+        under_appeal: entry["under_appeal"],
         **aggregate_ascents(entry["ascents"], round.category.discipline),
       )
 
-      sync_climb_results(round, round_result, entry["ascents"])
+      sync_ascents(round, round_result, entry["ascents"])
     end
 
-    def sync_climb_results(round, round_result, ascents)
-      return unless ascents
+    def sync_ascents(round, round_result, ascent_data)
+      return unless ascent_data
 
-      ascents.each do |ascent|
-        climb = round.climbs.find_by(number: ascent["route_id"])
-        next unless climb
+      ascent_data.each do |data|
+        route = round.routes.find_by(external_route_id: data["route_id"])
+        next unless route
 
-        climb_result = ClimbResult.find_or_initialize_by(round_result:, climb:)
-        update_climb_result(climb_result, ascent, round.category.discipline)
-        climb_result.save!
+        ascent = Ascent.find_or_initialize_by(round_result:, route:)
+        update_ascent(ascent, data, round.category.discipline)
+        ascent.save!
       end
     end
 
-    def update_climb_result(climb_result, ascent, discipline)
+    def update_ascent(ascent, data, discipline)
+      ascent.assign_attributes(
+        ascent_status: data["status"],
+        modified_at: data["modified"] ? Time.zone.parse(data["modified"]) : nil,
+      )
+
       case discipline
       when "speed"
-        climb_result.assign_attributes(
-          time: ascent["time_ms"]&.then { |ms| ms / 1000.0 },
-          top_attempts: ascent["dns"] || ascent["dnf"] ? 0 : 1,
-          zone_attempts: 0,
+        ascent.assign_attributes(
+          time_ms: data["time_ms"],
+          dnf: data["dnf"] || false,
+          dns: data["dns"] || false,
         )
       when "lead"
-        climb_result.assign_attributes(
-          height: ascent["score"]&.to_d,
-          plus: ascent["plus"] || false,
-          top_attempts: ascent["top"] ? 1 : 0,
-          zone_attempts: 0,
+        ascent.assign_attributes(
+          top: data["top"] || false,
+          height: data["score"]&.to_d,
+          plus: data["plus"] || false,
+          rank: data["rank"],
+          score_raw: data["score"],
         )
       else
-        climb_result.assign_attributes(
-          top_attempts: ascent["top"] ? 1 : (ascent["attempts"]&.to_i || 0),
-          zone_attempts: ascent["zone"] ? 1 : (ascent["attempts"]&.to_i || 0),
+        ascent.assign_attributes(
+          top: data["top"] || false,
+          top_tries: data["top_tries"],
+          zone: data["zone"] || false,
+          zone_tries: data["zone_tries"],
+          low_zone: data["low_zone"] || false,
+          low_zone_tries: data["low_zone_tries"],
+          points: data["points"],
         )
       end
     end
@@ -96,13 +113,17 @@ module Ifsc
     end
 
     def find_or_create_athlete(entry)
-      athlete = Athlete.find_or_initialize_by(external_athlete_id: entry["athlete_id"])
-      athlete.update!(
-        first_name: entry["firstname"],
-        last_name: entry["lastname"],
-        country_code: entry["country"],
-        gender: :male,
-      ) if athlete.new_record?
+      athlete = Athlete.find_or_initialize_by(source: :ifsc, external_athlete_id: entry["athlete_id"])
+      if athlete.new_record?
+        athlete.update!(
+          first_name: entry["firstname"],
+          last_name: entry["lastname"],
+          country_code: entry["country"],
+          flag_url: entry["flag_url"],
+        )
+      elsif entry["flag_url"].present? && athlete.flag_url.blank?
+        athlete.update!(flag_url: entry["flag_url"])
+      end
       athlete
     end
 

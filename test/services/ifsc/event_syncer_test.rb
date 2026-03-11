@@ -47,14 +47,14 @@ module Ifsc
       assert_equal "completed", qual.status
     end
 
-    test "creates climbs from routes" do
+    test "creates routes from API route data" do
       VCR.use_cassette("ifsc_api_client/get_event_1491") do
         EventSyncer.call(event: @event, client: @client)
       end
 
       cat = @event.categories.find_by(external_dcat_id: 490)
       qual = cat.rounds.find_by(external_round_id: 10468)
-      assert qual.climbs.any?
+      assert qual.routes.any?
     end
 
     test "marks event as needs_results" do

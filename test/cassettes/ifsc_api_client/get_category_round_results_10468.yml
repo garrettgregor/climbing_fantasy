@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Cookie:
-      - _verticallife_resultservice_session=<IFSC_SESSION_COOKIE>
+      - _ifsc_resultservice_session=<RESULTS_SESSION_COOKIE>
       Referer:
       - https://ifsc.results.info/
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 01 Mar 2026 16:53:29 GMT
+      - Tue, 10 Mar 2026 20:27:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -57,9 +57,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 03cf614dfb4a4e499d4693cd4406bd08
+      - e7ce545f9689e5011175d37df5377f1d
       X-Runtime:
-      - '0.007701'
+      - '0.299796'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Cf-Cache-Status:
@@ -67,11 +67,11 @@ http_interactions:
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FdjctFH2BP8dywnUbKZtj8%2BSHY98aYerFATtcpEX92XhKzVRqTeXbrCwfFGawIX9pg9FuFg4YfDHmjIy1rf3eOhE7zTZLezaotu9TLBzMJo%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cTjSbl5KxXwkPu4AyHChCuwE4004LBPejeRzwLWrUDMYM5pPmdDapqgjA5pCYnT%2Fd0BXNE9BHJvh9tJEHxkzHZte0IdWTTkbtJsTffHg"}]}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 9d59ad9d4edcb4d2-DEN
+      - 9da50f530cdb5382-DEN
     body:
       encoding: ASCII-8BIT
       string: '{"id":10468,"event":"World Climbing Oceania Championship Mount Maunganui
@@ -142,5 +142,5 @@ http_interactions:
         Timothy","firstname":"Timothy","lastname":"FREW","bib":"626","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":17583,"route_start_positions":[{"route_name":"A","route_id":18663,"position":16},{"route_name":"B","route_id":18664,"position":8}],"name":"CACHATOOR-FABER
         Eliezar","firstname":"Eliezar","lastname":"CACHATOOR-FABER","bib":"609","country":"NZL","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/NZL.png","federation_id":53},{"athlete_id":15242,"route_start_positions":[{"route_name":"A","route_id":18663,"position":8},{"route_name":"B","route_id":18664,"position":16}],"name":"BURGE
         Andrew","firstname":"Andrew","lastname":"BURGE","bib":"603","country":"AUS","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png","federation_id":28}],"next_round_startlist":[13915,17582,15243,13851,14987,13914,11841,17583,17584,13913,15242,15913,15249,16642,15235,17585]}'
-  recorded_at: Sun, 01 Mar 2026 16:53:29 GMT
+  recorded_at: Tue, 10 Mar 2026 20:27:24 GMT
 recorded_with: VCR 6.4.0

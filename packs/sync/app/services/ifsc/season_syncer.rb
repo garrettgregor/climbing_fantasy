@@ -30,7 +30,7 @@ module Ifsc
     def sync_season(season_id)
       data = @client.get_season(season_id)
 
-      season = Season.find_or_initialize_by(external_id: season_id)
+      season = Season.find_or_initialize_by(source: :ifsc, external_id: season_id)
       season.update!(
         name: data["name"],
         year: data["name"].to_i,
@@ -50,12 +50,16 @@ module Ifsc
     end
 
     def sync_event(season, event_data)
-      event = Event.find_or_initialize_by(external_id: event_data["event_id"])
+      event = Event.find_or_initialize_by(source: :ifsc, external_id: event_data["event_id"])
       attrs = {
         season:,
         name: event_data["event"],
+        country_code: event_data["country"],
         starts_on: Date.parse(event_data["local_start_date"]),
         ends_on: Date.parse(event_data["local_end_date"]),
+        starts_at: Time.zone.parse(event_data["starts_at"]),
+        ends_at: Time.zone.parse(event_data["ends_at"]),
+        timezone_name: event_data.dig("timezone", "value"),
         status: infer_status(event_data["starts_at"], event_data["ends_at"]),
       }
 
