@@ -24,3 +24,7 @@ variables:
     value: ""
   - name: ifscDcatId
     value: "3"
+  - name: ifscAthleteId
+    value: "1147"
+  - name: ifscAthleteSearch
+    value: "janja"

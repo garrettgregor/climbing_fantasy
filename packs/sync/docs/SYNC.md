@@ -24,6 +24,7 @@ Key endpoints used by the sync pipeline:
 | `GET /season_leagues/:id` | SeasonSyncer | Fetch events scoped to a specific league |
 | `GET /events/:id` | EventSyncer | Fetch categories, rounds, and climbs for an event |
 | `GET /events/:id/registrations` | RegistrationSyncer | Fetch athlete registrations for an event |
+| `GET /athletes/:id` | RegistrationSyncer | Enrich athlete with `photo_url` and `flag_url` |
 | `GET /category_rounds/:id/results` | ResultSyncer | Fetch results and athlete scores for a round |
 
 ## Data model
@@ -107,9 +108,10 @@ If no matching league is found, a warning is logged and no events are created fo
 
 **RegistrationSyncer** runs for `upcoming` and `in_progress` events:
 1. Fetches `GET /events/:id/registrations`
-2. For each registration, finds or creates the `Athlete` record
-3. Creates `CategoryRegistration` linking athlete to category (matched by name)
-4. Timestamps `registrations_last_checked_at`
+2. For each registration, finds or creates the `Athlete` record (with federation, gender, country_code)
+3. Enriches new athletes (or those missing `photo_url`) by calling `GET /api/v1/athletes/:id` to fetch `photo_url` and `flag_url`
+4. Creates `CategoryRegistration` linking athlete to category (matched by name)
+5. Timestamps `registrations_last_checked_at`
 
 ### 3. Result sync (SyncResultsJob)
 
@@ -118,7 +120,7 @@ If no matching league is found, a warning is logged and no events are created fo
 2. For each round, fetches `GET /category_rounds/:id/results`
 3. Updates round status from the API response
 4. For each athlete in the `ranking[]`:
-   - Finds or creates the `Athlete` record
+   - Finds or creates the `Athlete` record (backfills `flag_url` from ranking data if blank)
    - Upserts `RoundResult` with rank, raw score, and discipline-specific aggregates (speed_time, lead_height)
    - Upserts `ClimbResult` records for each ascent (boulder: top/zone attempts, lead: height/plus, speed: time)
 5. Timestamps `results_synced_at`
