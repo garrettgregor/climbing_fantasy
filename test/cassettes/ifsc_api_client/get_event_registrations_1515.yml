@@ -112,4 +112,2014 @@ http_interactions:
         YEE Zhenxuan","gender":1,"federation":"SSCMF","federation_id":51,"country":"SGP","d_cats":[{"id":191,"name":"BOULDER
         Women"}]}]'
   recorded_at: Sat, 07 Mar 2026 20:48:08 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:42 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - "</assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css>;
+        rel=preload; as=style; nopush,</assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js>;
+        rel=preload; as=script; nopush,</vite/assets/entrypoint-p0yg6Roy.js>; rel=modulepreload;
+        as=script; crossorigin=anonymous; nopush,</vite/assets/entrypoint-C-xbeWYT.css>;
+        rel=preload; as=style; nopush,</vite/assets/rs_tabs-CrVLFnQq.css>; rel=preload;
+        as=style; nopush,</vite/assets/app-tn0RQdqM.css>; rel=preload; as=style; nopush,</vite/assets/rs_hr-s5aWKrUf.css>;
+        rel=preload; as=style; nopush,</vite/assets/rs_modal-BzNihJLl.css>; rel=preload;
+        as=style; nopush,</vite/assets/style-CnzGhvb0.css>; rel=preload; as=style;
+        nopush,</vite/assets/tag_layout-BVd5WBkf.css>; rel=preload; as=style; nopush"
+      Vary:
+      - Accept
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sLN%2FuR8%2FxzYXRFN00sGvlvbfd3XEn2WW5xhWrcWQUyyO%2B8%2B7qAvp9lRNIXdEBOF0yrvSNMkIeR%2BzgHDd8nLkjeC%2FxJ3xHOz7sI2Apk1j"}]}'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:42 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - e53fe0150a16aa80714e7153c41fe57b
+      X-Runtime:
+      - '0.007513'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bd98965e64d-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,
+        maximum-scale=1.0\">\n    \n      <!-- Google Tag Manager -->\n      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n
+        \     })(window,document,'script','dataLayer','GTM-MT5GL8L');</script>\n      <!--
+        End Google Tag Manager -->\n    \n    <script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\"
+        async></script>\n    <script>window.VL_UNIFIED_APP = true</script>\n    <title>IFSC
+        Climbing Result Service</title>\n    <meta name=\"csrf-param\" content=\"authenticity_token\"
+        />\n<meta name=\"csrf-token\" content=\"OqxyjO4C-_sF2oFDnteYfaHWRPoQ9kdu5Jd1k6zHVXNmJ70JXuycUwY5hv4N_vFNeTEZr51Li4vE-35EV4bYtA\"
+        />\n    \n    \n\n    <link rel=\"stylesheet\" href=\"/assets/application-0c4f26a1c5ae454af51145ae3a4f9086160766b0050506fa98d45c837ce60d71.css\"
+        media=\"all\" />\n    <script src=\"/assets/application-87ede610f6de28a355cc2f5bb7d4985ddf53a2c06402fb38695d95175c05be43.js\"></script>\n
+        \   <script src=\"/vite/assets/entrypoint-p0yg6Roy.js\" crossorigin=\"anonymous\"
+        type=\"module\"></script><link rel=\"modulepreload\" href=\"/vite/assets/preload-helper-5ZGr_LBp.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entrypoint-DE6b-e8c.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/composables-jAtiwv2_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.esm-CZESSAMY.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_icon-CXzTYfTJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/_plugin-vue2_normalizer-p4i_2SC9.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/i18n_setup-BtuafnSi.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_tabs-B14Q5A6c.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_name-_1CfECI5.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_hr-C2aKFk-R.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tag-DmLb3DvM.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_utils-DwA0ZFyU.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/props-B3foWNzJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/key-codes-Bt4DpOyo.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/dom-DDZV-SPr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/events-CgYgUeaR.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/model-BF41jnrQ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/attrs-Cywx4c7b.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/id-BphFwieP.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/listen-on-root-DwFrt9zj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/normalize-slot-9NBffYSu.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/math-CQa76VPJ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/number-CJJY9OPM.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lib.esm-CapLYTHa.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/modal-BXBJUNMj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/bv-transition-CZBHMyEm.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/spinner-BjTMZdVG.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/entry_point_store-BHqGMENB.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/rs_modal-CuSQmv4o.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/feature_store-BA9tEMmL.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/country_store-BQ4y_X0A.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/public-2T_OLHhk.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/admin-Dm0j-wxu.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/lm-D8xDDTwa.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/athlete-_4p0-_J4.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/federation-DL8ebp5I.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/media-Cd96Gpr0.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/judges-rPeGmFf8.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/authentication_hook-B7Evn8Gn.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/authorization_hook-DjIMVP03.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/apollo-BxZXqVz_.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tslib.es6-DMAEmUcV.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/objects-Cf4v8IUe.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/apollo_fragments-mE_9tQOA.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-D0_PgLgw.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/_commonjsHelpers-BKZ-ARjd.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/__vite-browser-external-D7Ct-6yo.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-kgqKusg0.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/cable-BUaQ6ONA.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/mount_toast-Bb-DYg6f.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-toXovs3b.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_phase_store--9e9Vag-.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/ascent_store-iowA89w8.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/league_season_store-BMKwU82s.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/style-DhxIIjwg.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-D6DHuLFk.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/vue.runtime.common-BOn40jyj.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/appsignal-oKyfGmB7.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/index-BkxJEC-h.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/dynamic-import-helper-BheWnx7M.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/tag_layout-SDMX3e4M.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/cache-D5WFDLmr.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/loose-equal-CjsRkg3x.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/html-CRHIijQk.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/observe-dom-C2_rMkar.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/warn-D5o36TJc.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/create-new-child-component-Dum-xWhX.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/use-parent-D1dwWoLa.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/button-B4PhUwBI.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/link-Dk09RFOx.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/safe-vue-instance-DN0dfUsB.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/listeners-osK7SfR5.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/bv-event.class-CtQx-8wU.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/utils-qt9XboYO.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event-CpNEMYmZ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/event_setup-BSdfDfBS.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/category_round-Ia6Ke2BQ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/users-DerWluPZ.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/user_profile-51KCTR0h.js\"
+        as=\"script\" crossorigin=\"anonymous\">\n<link rel=\"modulepreload\" href=\"/vite/assets/sport80-C8vpZqeG.js\"
+        as=\"script\" crossorigin=\"anonymous\"><link rel=\"stylesheet\" href=\"/vite/assets/entrypoint-C-xbeWYT.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_tabs-CrVLFnQq.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/app-tn0RQdqM.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_hr-s5aWKrUf.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/rs_modal-BzNihJLl.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/style-CnzGhvb0.css\"
+        media=\"screen\" />\n<link rel=\"stylesheet\" href=\"/vite/assets/tag_layout-BVd5WBkf.css\"
+        media=\"screen\" />\n    <meta property=\"og:url\"                content='https://ifsc.results.info'
+        />\n    <meta property=\"og:type\"               content='website' />\n    <meta
+        property=\"og:title\"              content='IFSC Climbing Result Service'
+        />\n    <meta property=\"og:description\"        content='The result site
+        of IFSC climbing competitions, with starters, live results and rankings powered
+        by Vertical-Life'/>\n  </head>\n\n  <body>\n    <!-- Google Tag Manager (noscript)
+        -->\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-MT5GL8L\"\n
+        \   height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n
+        \   <!-- End Google Tag Manager (noscript) -->\n\n    <div style=\"display:
+        none;\" id=\"cable-path\">ifsc_cable</div>\n\n    <div id=\"unified-vue-app\">\n</div>\n\n
+        \     <script nomodule=\"nomodule\" src=\"/vite/assets/polyfills-legacy-Bdc_imsb.js\"></script><script
+        nomodule=\"nomodule\">System.import('/vite/assets/entrypoint-legacy-D3bOiU6l.js')</script>\n
+        \ </body>\n</html>\n"
+  recorded_at: Tue, 10 Mar 2026 23:30:42 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/3679
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"bbb20ded9c1d6306d735fa0eaa691715"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=8Db452YMi%2BwQjHq6SGgWmSFe%2FXEoQE%2BpzmosGzjnuRMZMPdfA27L1MZjV2NNWpQEvN1X9ldxH7Pfh4wL3PenkTKBgVRsVGxjMMkOYYuT2v6dz5dtMcZjDI1Q%2B%2BY%2B7gaANIizzfcE8f1xg281Fp0Q8GFeO%2FycMV0TZcAnL24S2tTaI6Yy5ZE3jOGPIfZ%2BFYMqGx4U%2FZ%2FzdecdjolRajtJdQKQf0z6rBnHiJVA85Fd9tgbxLnUtBOSAQyv%2FWYnJwpVbisGLcfPuvAraDxhFp9lOTZ6wzAg2mgUBVAyR%2BkH4i5sraRkkFT3h%2FX5pVfz7dEJO2xMZ14dEhX1--OBTz6tO1RdwIlfqe--lKj7%2F44plvF%2Fn7uQgg0A5A%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:43 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - d826f9a6c2c713e8c4320af8991372c2
+      X-Runtime:
+      - '0.041011'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=njrLmDFEdH1TyCnOxOOmvLDoLAEv%2FmW8NMNX4ieG4j%2BoPCUnBfNr45KMcz3I235GIusR%2FwwS1wv4RfaFZWV0nwFdXWl04AgiR0yBlCz0%2Bvg%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bdafe3f5521-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3679,"firstname":"Jarrell","lastname":"SOH JIT KAI","birthday":"2003-08-19","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"9.71","date":"2019-08-31","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":22,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":"","twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":26,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":187,"date":"2025-03-09","category_name":"Men","result_url":"/api/v1/events/1457/result/187"},{"season":"2022","rank":25,"discipline":"boulder","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":11,"date":"2022-09-01","category_name":"Juniors Male","result_url":"/api/v1/events/1246/result/11"},{"season":"2022","rank":31,"discipline":"lead","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":9,"date":"2022-09-01","category_name":"Juniors Male","result_url":"/api/v1/events/1246/result/9"},{"season":"2019","rank":13,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":199,"date":"2019-12-15","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1133/result/199"},{"season":"2019","rank":7,"discipline":"lead","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":197,"date":"2019-12-15","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1133/result/197"},{"season":"2019","rank":28,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":15,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/15"},{"season":"2019","rank":50,"discipline":"speed","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":14,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/14"},{"season":"2019","rank":15,"discipline":"combined","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":16,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/16"},{"season":"2019","rank":41,"discipline":"lead","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":13,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/13"},{"season":"2018","rank":10,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Chongqing (CHN) 2018","event_id":1072,"event_location":"Asian_Youth_Chp_18","d_cat":203,"date":"2018-11-04","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1072/result/203"},{"season":"2018","rank":19,"discipline":"speed","event_name":"Asian
+        Youth Championships - Chongqing (CHN) 2018","event_id":1072,"event_location":"Asian_Youth_Chp_18","d_cat":202,"date":"2018-11-04","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1072/result/202"},{"season":"2018","rank":15,"discipline":"lead","event_name":"Asian
+        Youth Championships - Chongqing (CHN) 2018","event_id":1072,"event_location":"Asian_Youth_Chp_18","d_cat":201,"date":"2018-11-04","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1072/result/201"},{"season":"2017","rank":13,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Singapore (SGP) 2017","event_id":1007,"event_location":"Asian_Youth_Chp_17","d_cat":203,"date":"2017-07-09","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1007/result/203"},{"season":"2017","rank":12,"discipline":"lead","event_name":"Asian
+        Youth Championships - Singapore (SGP) 2017","event_id":1007,"event_location":"Asian_Youth_Chp_17","d_cat":201,"date":"2017-07-09","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1007/result/201"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:43 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/3665
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"85b8fd3c1dbaf5aec8ae97b6cb8fce02"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=9VZ7pfv1bh9hd9X6yt76Qglu0Rt9e%2FxRMTQXO6N6wcvSZdcmNsU4DXeqgL7QY4XdzzPCiaVkIDAzMYTYwyLbC0tJOJHSAIEg0JaqzbESA%2Bn43OHnWArg24KVvTUAvmGmuglbBZDbV%2F3XIdIWxdm8wZ6TahSlYQTaw9JVnFo3rR4AZfsTs%2BpAg2cmvE8HecYU6l%2FQH4FvHk61pNHTQC%2BLiYCvsJalgJsY4kLia7BIJXXS4KOStG05T2VJHknxQ4um2MNgk%2Fk6tbhEMsLH2iRyf7b8KooBufbSY4j%2FLJufQ8AwtvAI1f2YzwDeIpQpgXsYERLqazhnJbm8--7IYVDgJsodFs6%2B%2BW--cm42IwIfAvGbLrzriopD9Q%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:43 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 6097eb7e32e1441459f181db88c5598b
+      X-Runtime:
+      - '0.063730'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eKRDJzrC5U4FfxaQL%2FD80de%2B%2FwBq15b6PYP1EWd5XdOLZjR3InyjrAHrb%2FPomgYQ5QjxfjdqnDYMtd8LaN3HC%2FV1uF6o7WW3VKlkCMffWDM%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bdc79f49289-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3665,"firstname":"Luke","lastname":"GOH WEN BIN","birthday":"2002-12-22","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"8.73","date":"2019-08-31","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":23,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":"https://d1n1qj9geboqnb.cloudfront.net/ifsc/public/kpqgwaaakbp3blh8l0c4qambry97","action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":1,"1":0,"2":0,"3":1},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":2,"1":0,"2":0,"3":2},{"discipline_kind":"combined","total":1,"1":0,"2":0,"3":1},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":50,"discipline":"lead","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":1,"date":"2025-05-04","category_name":"Men","result_url":"/api/v1/events/1407/result/1"},{"season":"2025","rank":51,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":1,"date":"2025-04-27","category_name":"Men","result_url":"/api/v1/events/1406/result/1"},{"season":"2025","rank":41,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2025","event_id":1405,"event_location":"Keqiao, CHN","d_cat":3,"date":"2025-04-20","category_name":"Men","result_url":"/api/v1/events/1405/result/3"},{"season":"2025","rank":10,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":187,"date":"2025-03-09","category_name":"Men","result_url":"/api/v1/events/1457/result/187"},{"season":"2024","rank":23,"discipline":"boulder","event_name":"IFSC
+        World Cup Innsbruck 2024","event_id":1356,"event_location":"Innsbruck","d_cat":3,"date":"2024-06-30","category_name":"Men","result_url":"/api/v1/events/1356/result/3"},{"season":"2024","rank":62,"discipline":"lead","event_name":"IFSC
+        World Cup Innsbruck 2024","event_id":1356,"event_location":"Innsbruck","d_cat":1,"date":"2024-06-30","category_name":"Men","result_url":"/api/v1/events/1356/result/1"},{"season":"2024","rank":51,"discipline":"boulder","event_name":"IFSC
+        World Cup Salt Lake City 2024","event_id":1355,"event_location":"Salt Lake
+        CIty","d_cat":3,"date":"2024-05-06","category_name":"Men","result_url":"/api/v1/events/1355/result/3"},{"season":"2024","rank":44,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2024","event_id":1354,"event_location":"Wujiang","d_cat":1,"date":"2024-04-14","category_name":"Men","result_url":"/api/v1/events/1354/result/1"},{"season":"2024","rank":43,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2024","event_id":1353,"event_location":"Keqiao","d_cat":3,"date":"2024-04-10","category_name":"Men","result_url":"/api/v1/events/1353/result/3"},{"season":"2023","rank":16,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asian Qualifier Jakarta 2023","event_id":1310,"event_location":"Jakarta","d_cat":661,"date":"2023-11-12","category_name":"Men","result_url":"/api/v1/events/1310/result/661"},{"season":"2023","rank":96,"discipline":"boulder","event_name":"IFSC
+        World Championships Bern 2023","event_id":1301,"event_location":"Bern","d_cat":3,"date":"2023-08-12","category_name":"Men","result_url":"/api/v1/events/1301/result/3"},{"season":"2023","rank":65,"discipline":"lead","event_name":"IFSC
+        World Championships Bern 2023","event_id":1301,"event_location":"Bern","d_cat":1,"date":"2023-08-12","category_name":"Men","result_url":"/api/v1/events/1301/result/1"},{"season":"2023","rank":76,"discipline":"boulder\u0026lead","event_name":"IFSC
+        World Championships Bern 2023","event_id":1301,"event_location":"Bern","d_cat":617,"date":"2023-08-12","category_name":"Men","result_url":"/api/v1/events/1301/result/617"},{"season":"2023","rank":47,"discipline":"boulder","event_name":"IFSC
+        World Cup Innsbruck 2023","event_id":1297,"event_location":"Innsbruck","d_cat":3,"date":"2023-06-18","category_name":"Men","result_url":"/api/v1/events/1297/result/3"},{"season":"2023","rank":72,"discipline":"lead","event_name":"IFSC
+        World Cup Innsbruck 2023","event_id":1297,"event_location":"Innsbruck","d_cat":1,"date":"2023-06-18","category_name":"Men","result_url":"/api/v1/events/1297/result/1"},{"season":"2023","rank":59,"discipline":"boulder","event_name":"IFSC
+        World Cup Brixen 2023","event_id":1296,"event_location":"Brixen","d_cat":3,"date":"2023-06-11","category_name":"Men","result_url":"/api/v1/events/1296/result/3"},{"season":"2023","rank":55,"discipline":"boulder","event_name":"IFSC
+        World Cup Prague 2023","event_id":1295,"event_location":"Prague","d_cat":3,"date":"2023-06-04","category_name":"Men","result_url":"/api/v1/events/1295/result/3"},{"season":"2023","rank":59,"discipline":"boulder","event_name":"IFSC
+        World Cup Seoul 2023","event_id":1292,"event_location":"Seoul","d_cat":3,"date":"2023-04-30","category_name":"Men","result_url":"/api/v1/events/1292/result/3"},{"season":"2023","rank":53,"discipline":"boulder","event_name":"IFSC
+        World Cup Hachioji 2023","event_id":1291,"event_location":"Hachioji","d_cat":3,"date":"2023-04-23","category_name":"Men","result_url":"/api/v1/events/1291/result/3"},{"season":"2022","rank":3,"discipline":"boulder","event_name":"IFSC
+        Asia - Continental Cup (B) - Manila (PHI) 2022","event_id":1315,"event_location":"Manila","d_cat":187,"date":"2022-11-06","category_name":"Men","result_url":"/api/v1/events/1315/result/187"},{"season":"2022","rank":25,"discipline":"boulder\u0026lead","event_name":"IFSC
+        - Climbing World Cup (B\u0026L) - Morioka, Iwate (JPN) 2022","event_id":1234,"event_location":"Japan","d_cat":617,"date":"2022-10-22","category_name":"Men","result_url":"/api/v1/events/1234/result/617"},{"season":"2022","rank":15,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":661,"date":"2022-10-16","category_name":"Men","result_url":"/api/v1/events/1287/result/661"},{"season":"2022","rank":23,"discipline":"boulder","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":187,"date":"2022-10-16","category_name":"Men","result_url":"/api/v1/events/1287/result/187"},{"season":"2022","rank":14,"discipline":"lead","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":185,"date":"2022-10-16","category_name":"Men","result_url":"/api/v1/events/1287/result/185"},{"season":"2022","rank":30,"discipline":"lead","event_name":"IFSC
+        - Climbing World Cup (L,S) - Jakarta (INA) 2022","event_id":1243,"event_location":"Jakarta","d_cat":1,"date":"2022-09-26","category_name":"Men","result_url":"/api/v1/events/1243/result/1"},{"season":"2022","rank":45,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Salt Lake City (USA) 2022","event_id":1237,"event_location":"Salt
+        Lake City","d_cat":3,"date":"2022-05-30","category_name":"Men","result_url":"/api/v1/events/1237/result/3"},{"season":"2022","rank":45,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Salt Lake City (USA) 2022","event_id":1236,"event_location":"Salt
+        Lake City","d_cat":3,"date":"2022-05-23","category_name":"Men","result_url":"/api/v1/events/1236/result/3"},{"season":"2022","rank":48,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Seoul (KOR) 2022","event_id":1235,"event_location":"Seoul","d_cat":3,"date":"2022-05-08","category_name":"Men","result_url":"/api/v1/events/1235/result/3"},{"season":"2021","rank":23,"discipline":"lead","event_name":"IFSC
+        - Climbing Youth World Championships (B,L,S) - Voronezh (RUS) 2021","event_id":1186,"event_location":"Voronezh","d_cat":9,"date":"2021-08-31","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1186/result/9"},{"season":"2021","rank":15,"discipline":"boulder","event_name":"IFSC
+        - Climbing Youth World Championships (B,L,S) - Voronezh (RUS) 2021","event_id":1186,"event_location":"Voronezh","d_cat":11,"date":"2021-08-31","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1186/result/11"},{"season":"2019","rank":3,"discipline":"lead","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":197,"date":"2019-12-15","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1133/result/197"},{"season":"2019","rank":3,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":199,"date":"2019-12-15","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1133/result/199"},{"season":"2019","rank":9,"discipline":"speed","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":198,"date":"2019-12-15","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1133/result/198"},{"season":"2019","rank":3,"discipline":"combined","event_name":"Asian
+        Combined Youth Championships - Chongqing (CHN) 2019","event_id":1132,"event_location":"Asian_Youth_Chp_18","d_cat":200,"date":"2019-11-17","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1132/result/200"},{"season":"2019","rank":12,"discipline":"combined","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":16,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/16"},{"season":"2019","rank":38,"discipline":"speed","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":14,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/14"},{"season":"2019","rank":29,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":15,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/15"},{"season":"2019","rank":40,"discipline":"lead","event_name":"IFSC
+        Youth World Championships -  Arco (ITA) 2019 ","event_id":1126,"event_location":"YWCH
+        Arco","d_cat":13,"date":"2019-08-31","category_name":"Youth A Male","result_url":"/api/v1/events/1126/result/13"},{"season":"2018","rank":6,"discipline":"boulder","event_name":"Asia
+        Cup (B,S) - Bangkok (THA) 2018","event_id":1068,"event_location":"Asia_Cup_18","d_cat":187,"date":"2018-06-17","category_name":"Men","result_url":"/api/v1/events/1068/result/187"},{"season":"2018","rank":24,"discipline":"boulder","event_name":"Asia
+        Cup (B) - Hong Kong (HKG) 2018","event_id":1067,"event_location":"Asia_Cup_18","d_cat":187,"date":"2018-03-11","category_name":"Men","result_url":"/api/v1/events/1067/result/187"},{"season":"2017","rank":16,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Singapore (SGP) 2017","event_id":1007,"event_location":"Asian_Youth_Chp_17","d_cat":203,"date":"2017-07-09","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1007/result/203"},{"season":"2017","rank":10,"discipline":"lead","event_name":"Asian
+        Youth Championships - Singapore (SGP) 2017","event_id":1007,"event_location":"Asian_Youth_Chp_17","d_cat":201,"date":"2017-07-09","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1007/result/201"},{"season":"2016","rank":39,"discipline":"lead","event_name":"IFSC
+        World Youth Championships - Guangzhou (CHN) - 2016","event_id":953,"event_location":"WYCH
+        Guangzhou","d_cat":17,"date":"2016-11-13","category_name":"Youth B Male","result_url":"/api/v1/events/953/result/17"},{"season":"2016","rank":23,"discipline":"speed","event_name":"IFSC
+        World Youth Championships - Guangzhou (CHN) - 2016","event_id":953,"event_location":"WYCH
+        Guangzhou","d_cat":18,"date":"2016-11-13","category_name":"Youth B Male","result_url":"/api/v1/events/953/result/18"},{"season":"2016","rank":26,"discipline":"boulder","event_name":"IFSC
+        World Youth Championships - Guangzhou (CHN) - 2016","event_id":953,"event_location":"WYCH
+        Guangzhou","d_cat":19,"date":"2016-11-13","category_name":"Youth B Male","result_url":"/api/v1/events/953/result/19"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2022","id":72,"season":"2022","lead":{"rank":76,"result_url":"/api/v1/cups/72/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":80,"result_url":"/api/v1/cups/72/dcat/3","d_cat_id":3,"disc_kind_id":2},"boulder\u0026lead":{"rank":25,"result_url":"/api/v1/cups/72/dcat/617","d_cat_id":617,"disc_kind_id":4}},{"name":"IFSC
+        Climbing World Cup 2023","id":90,"season":"2023","lead":{"rank":134,"result_url":"/api/v1/cups/90/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":78,"result_url":"/api/v1/cups/90/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2024","id":94,"season":"2024","lead":{"rank":101,"result_url":"/api/v1/cups/94/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":58,"result_url":"/api/v1/cups/94/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":83,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":106,"result_url":"/api/v1/cups/103/dcat/3","d_cat_id":3,"disc_kind_id":2}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:43 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14719
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"ca665578d28f48bc0df16b8ec6c7e34a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=JmHa5akX%2BhXyESeGHDgWWhkjtAfeS7ASgg6XM8Agylvg9xZB4IbcjzPhKsJ%2BFKHVVP342dqIOoDFRSdISqj8Ahl38MiiJuyfVqIhNjY3AvpPdljOiDgvznspj0eAxaKYvBzZBFQv3EfHobG7nTIWEDZBOJIndkr%2FO%2FwEzISUmOQyBtqSACJRCjr1YV1VUlO0kD0ISD5yDDhqX%2Fbwbjda1iZqiWssljlmZ0uYRIZNUvnUuaXhlQBMIDjKly%2FSM0Y4gUs1FvGPSMmdvDFRqF3R5AI8Ra4C0JonEWBPQLZ50TX948LtG808ohEeaCXICWM4p%2FrGN64i%2BryR--XNfCgpi326o4XKde--2K18dUQ0%2FVYtRLgx6GoWDw%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:43 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - a593ec6b05ea951b6094bf6154e44832
+      X-Runtime:
+      - '0.047604'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=O5tVCp2CV9cHFSTljr9uRv%2BwVhtVhKvJzsVIGM2fxR1ehwELhTWcGC827pK6cuh4nplHinOniuTQpG8ShxldFJtn0UFsa0uPSDGL%2BHL1UL4%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bdee8e8e73d-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14719,"firstname":"Yong Kang","lastname":"DYLAN SEOW","birthday":"2008-06-11","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":17,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":67,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":775,"date":"2025-08-03","category_name":"U19 Men","result_url":"/api/v1/events/1418/result/775"},{"season":"2025","rank":65,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":773,"date":"2025-08-03","category_name":"U19 Men","result_url":"/api/v1/events/1418/result/773"},{"season":"2025","rank":54,"discipline":"lead","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":1,"date":"2025-05-04","category_name":"Men","result_url":"/api/v1/events/1407/result/1"},{"season":"2025","rank":23,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":187,"date":"2025-03-09","category_name":"Men","result_url":"/api/v1/events/1457/result/187"},{"season":"2024","rank":47,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":13,"date":"2024-08-31","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1396/result/13"},{"season":"2024","rank":51,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":15,"date":"2024-08-31","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1396/result/15"},{"season":"2023","rank":10,"discipline":"lead","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":201,"date":"2023-10-22","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1349/result/201"},{"season":"2023","rank":15,"discipline":"boulder","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":203,"date":"2023-10-22","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1349/result/203"},{"season":"2023","rank":31,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":17,"date":"2023-08-27","category_name":"Youth B Male","result_url":"/api/v1/events/1304/result/17"},{"season":"2023","rank":40,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":19,"date":"2023-08-27","category_name":"Youth B Male","result_url":"/api/v1/events/1304/result/19"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":105,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:43 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14718
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"464aa8417b9066a46bc73b16295e7702"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=2G8HJoRYO8OgR9pei9cVvUTvibgMicjR8DJf%2B0CD5kMYinSxwr4L4LwtTPo5mGyZHwDjiY48HxLL60vZ2om0KWKYewKWw0Sy3M6sRNXqQ0YunO6YXr1vMy06lllFVSz9bDYDa372jrwu9V90%2FwhgCsiYl0BE1VSPvBm%2FOj8uNmzhVmsSgqrfAnyHCS8e482lHZyYcMo9K1nFjr7AXgXwe6UxqD9FgqfOpT3sOmmSE4%2F5TCZ2YlAI9hC8NINnhYt7mFZAboSLNvxFVznnOsZKpbWOLR4oNOfL0xewL7YTaumAp0DDqOGzFY6kP9Rqk1cxIuX9EATK6B%2Be--8u6rPRwT8led1tlu--O%2FePbsPVnsSxnsIgOnRd6A%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:44 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 1b36ab1a95d89a3870bfdda8c20bcdba
+      X-Runtime:
+      - '0.044158'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wTBRqa7BGB5U2%2BGl7jHQqEtVNfXYtnu1KybJjCK7PUQWp9XR8eWUdPEQi22%2BhrIgxU%2BkCJeYALsodzBS6y747b0YHSv9vlrLve%2FndwINOKE%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be07988798b-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14718,"firstname":"Mitchell Charles","lastname":"BOYER","birthday":"2009-05-19","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":"He","personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"6.30","date":"2025-08-03","event_name":"IFSC
+        Youth World Championships Helsinki 2025","round_name":"Final"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":16,"arm_span":161,"height":165,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":13,"discipline":"boulder","event_name":"IFSC
+        Youth Asian Championships Guiyang 2025","event_id":1468,"event_location":"Guiyang,
+        CHN","d_cat":805,"date":"2025-08-24","category_name":"U17 Men","result_url":"/api/v1/events/1468/result/805"},{"season":"2025","rank":7,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Guiyang 2025","event_id":1468,"event_location":"Guiyang,
+        CHN","d_cat":804,"date":"2025-08-24","category_name":"U17 Men","result_url":"/api/v1/events/1468/result/804"},{"season":"2025","rank":15,"discipline":"lead","event_name":"IFSC
+        Youth Asian Championships Guiyang 2025","event_id":1468,"event_location":"Guiyang,
+        CHN","d_cat":803,"date":"2025-08-24","category_name":"U17 Men","result_url":"/api/v1/events/1468/result/803"},{"season":"2025","rank":30,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":785,"date":"2025-08-03","category_name":"U17 Men","result_url":"/api/v1/events/1418/result/785"},{"season":"2025","rank":19,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":783,"date":"2025-08-03","category_name":"U17 Men","result_url":"/api/v1/events/1418/result/783"},{"season":"2025","rank":7,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":784,"date":"2025-08-03","category_name":"U17 Men","result_url":"/api/v1/events/1418/result/784"},{"season":"2024","rank":4,"discipline":"boulder","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":203,"date":"2024-11-17","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1398/result/203"},{"season":"2024","rank":9,"discipline":"lead","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":201,"date":"2024-11-17","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1398/result/201"},{"season":"2024","rank":7,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":202,"date":"2024-11-17","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1398/result/202"},{"season":"2024","rank":14,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":17,"date":"2024-08-31","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1396/result/17"},{"season":"2024","rank":29,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":19,"date":"2024-08-31","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1396/result/19"},{"season":"2023","rank":21,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":17,"date":"2023-08-27","category_name":"Youth B Male","result_url":"/api/v1/events/1304/result/17"},{"season":"2023","rank":20,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":18,"date":"2023-08-27","category_name":"Youth B Male","result_url":"/api/v1/events/1304/result/18"},{"season":"2023","rank":33,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":19,"date":"2023-08-27","category_name":"Youth B Male","result_url":"/api/v1/events/1304/result/19"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:44 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/16662
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"23b47de5ff2e4c77fc6d3096a44cc776"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=aCoEO3SFka6KXGYp8YxFYi4UibFJmefPO%2BRIQTSjNLbLOoLoLEw7t3XK%2FYetDiUOSBummXv%2FnylZI5D19%2BVYL9lxYvPaB7ol6e4nsuDciE8MS59ZvjtBxMcrAzVIA6ii8Juufiuayz9E0EIYFQGUf3%2FyQ1rEqDj%2FAjjKh3Z%2FUUhSxb6dRiT15AELuSmPI7lvytiF9%2BXsvmDRUSkYS%2F7TbZZe6VPD9RJ4g9pXtJCAurutXuwoRNo74P%2B%2BRx24OFOyG3%2BPr0r3nV%2BX3175sokP0ESZSxhKOc0bIKWhqGbXu5GPnvpdCezQNk03XiJfbz2uf9JiM1kkmh9j--8EdnvcGkYOUR5XZQ--3dGuuMWf3%2B7cAt0FJVhbSQ%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:44 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - f2abb8e4870737530acb2a24b2874388
+      X-Runtime:
+      - '0.042568'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fl%2FpA14jGiXQsLoTXZUiu2KeKXa1xKcIQXkj448AZnA1om29tjkoFV8EsBFoNk4lCnUQc%2B4fEOFBpX5eNAJAsecX9skUdsRUY%2BpEchgv"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be208e721f7-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":16662,"firstname":"Gerald","lastname":"BAYO VEROSIL","birthday":"2001-02-08","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":25,"arm_span":183,"height":173,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":"geraldverosil","twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":62,"discipline":"lead","event_name":"IFSC
+        World Championships Seoul 2025","event_id":1417,"event_location":"Seoul, KOR","d_cat":1,"date":"2025-09-28","category_name":"Men","result_url":"/api/v1/events/1417/result/1"},{"season":"2025","rank":75,"discipline":"boulder","event_name":"IFSC
+        World Championships Seoul 2025","event_id":1417,"event_location":"Seoul, KOR","d_cat":3,"date":"2025-09-28","category_name":"Men","result_url":"/api/v1/events/1417/result/3"},{"season":"2025","rank":56,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":1,"date":"2025-04-27","category_name":"Men","result_url":"/api/v1/events/1406/result/1"},{"season":"2025","rank":46,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2025","event_id":1405,"event_location":"Keqiao, CHN","d_cat":3,"date":"2025-04-20","category_name":"Men","result_url":"/api/v1/events/1405/result/3"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":105,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":110,"result_url":"/api/v1/cups/103/dcat/3","d_cat_id":3,"disc_kind_id":2}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:44 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/3632
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"8a0cf259ce000499efc52d15df3d0b68"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=N4w81aBepLOkp1%2FHpHUzf0AOV0GNBJpMyYb2Jpd37i7B3CY07zCfg5Mfcr3VpwUN7tPdqNSIxZirrKd8IKonTQkLTk%2Fj056htFxxm29j9ytjVBV5QS6j05bwG3HqtZg%2FY6b4z1YQyUpYs60XuYqvASQqwpFNpCl%2BKYBMqGdFsb9IDCQw%2Bf4rVwOaGpZ%2F%2F9odeOcgsG3Di9%2BLFftUqMeUaG7wLaYruUx0GD2nmkRlCo9LK4PHgB5MNlsLS%2FEfNqH8ZXwJfpq4zF44Xom5B4Lpdl7fRaq0XZX4tjUWHn6FMuil2z%2FJx%2FqVKNwJwEPmvHhTMcJFtAE7WMbR--z0oC7CQUhXnYH3uv--r0%2Fb6sSqr6dOGVnvZb5TQQ%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:44 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - b07099731eea3b9a8edfcc453c48d1ea
+      X-Runtime:
+      - '0.075549'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=luobx8AhSZcWolroAh%2FitGVTMgK6YEZEd26Bl9M1OYDN5QbL9eY71JFmoE4IaFbSlwVV%2Fu7SvcIEmLYaZYcgrcgH7lx5SM%2BBRzPx1QoW"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be3aa031f2a-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3632,"firstname":"Vanessa Si Yinn","lastname":"TENG","birthday":"1996-11-29","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"12.59","date":"2018-05-13","event_name":"IFSC
+        Climbing Worldcup (B,S) - Tai''an (CHN) 2018 ","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":29,"arm_span":171,"height":169,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":"Vanz.t","twitter":null,"facebook":null,"youtube":null,"nickname":"Vanez","residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":2,"1":0,"2":1,"3":1},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":50,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":5,"date":"2025-04-27","category_name":"Women","result_url":"/api/v1/events/1406/result/5"},{"season":"2025","rank":46,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2025","event_id":1405,"event_location":"Keqiao, CHN","d_cat":7,"date":"2025-04-20","category_name":"Women","result_url":"/api/v1/events/1405/result/7"},{"season":"2025","rank":8,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":191,"date":"2025-03-09","category_name":"Women","result_url":"/api/v1/events/1457/result/191"},{"season":"2024","rank":11,"discipline":"lead","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":189,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/189"},{"season":"2024","rank":12,"discipline":"boulder","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":191,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/191"},{"season":"2024","rank":50,"discipline":"boulder","event_name":"IFSC
+        World Cup Seoul 2024","event_id":1361,"event_location":"Seoul","d_cat":7,"date":"2024-10-06","category_name":"Women","result_url":"/api/v1/events/1361/result/7"},{"season":"2024","rank":38,"discipline":"lead","event_name":"IFSC
+        World Cup Seoul 2024","event_id":1361,"event_location":"Seoul","d_cat":5,"date":"2024-10-06","category_name":"Women","result_url":"/api/v1/events/1361/result/5"},{"season":"2023","rank":14,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asian Qualifier Jakarta 2023","event_id":1310,"event_location":"Jakarta","d_cat":662,"date":"2023-11-12","category_name":"Women","result_url":"/api/v1/events/1310/result/662"},{"season":"2022","rank":16,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":662,"date":"2022-10-16","category_name":"Women","result_url":"/api/v1/events/1287/result/662"},{"season":"2022","rank":21,"discipline":"boulder","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":191,"date":"2022-10-16","category_name":"Women","result_url":"/api/v1/events/1287/result/191"},{"season":"2022","rank":15,"discipline":"lead","event_name":"IFSC
+        Asia - Continental Championships (B, L, S, B\u0026L) - Republic of Korea 2022","event_id":1287,"event_location":"Seoul","d_cat":189,"date":"2022-10-16","category_name":"Women","result_url":"/api/v1/events/1287/result/189"},{"season":"2022","rank":29,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Salt Lake City (USA) 2022","event_id":1237,"event_location":"Salt
+        Lake City","d_cat":7,"date":"2022-05-30","category_name":"Women","result_url":"/api/v1/events/1237/result/7"},{"season":"2022","rank":37,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Salt Lake City (USA) 2022","event_id":1236,"event_location":"Salt
+        Lake City","d_cat":7,"date":"2022-05-23","category_name":"Women","result_url":"/api/v1/events/1236/result/7"},{"season":"2022","rank":23,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Seoul (KOR) 2022","event_id":1235,"event_location":"Seoul","d_cat":7,"date":"2022-05-08","category_name":"Women","result_url":"/api/v1/events/1235/result/7"},{"season":"2019","rank":13,"discipline":"lead","event_name":"Asian
+        Championships - Bogor (INA) 2019","event_id":1131,"event_location":"ACH Palembang","d_cat":189,"date":"2019-11-10","category_name":"Women","result_url":"/api/v1/events/1131/result/189"},{"season":"2019","rank":11,"discipline":"boulder","event_name":"Asian
+        Championships - Bogor (INA) 2019","event_id":1131,"event_location":"ACH Palembang","d_cat":191,"date":"2019-11-10","category_name":"Women","result_url":"/api/v1/events/1131/result/191"},{"season":"2018","rank":11,"discipline":"combined","event_name":"World
+        University Championships - Bratislava (SVK) 2018","event_id":1088,"event_location":"UCH18","d_cat":376,"date":"2018-06-23","category_name":"Women","result_url":"/api/v1/events/1088/result/376"},{"season":"2018","rank":17,"discipline":"speed","event_name":"World
+        University Championships - Bratislava (SVK) 2018","event_id":1088,"event_location":"UCH18","d_cat":374,"date":"2018-06-23","category_name":"Women","result_url":"/api/v1/events/1088/result/374"},{"season":"2018","rank":15,"discipline":"boulder","event_name":"World
+        University Championships - Bratislava (SVK) 2018","event_id":1088,"event_location":"UCH18","d_cat":375,"date":"2018-06-23","category_name":"Women","result_url":"/api/v1/events/1088/result/375"},{"season":"2018","rank":21,"discipline":"lead","event_name":"World
+        University Championships - Bratislava (SVK) 2018","event_id":1088,"event_location":"UCH18","d_cat":373,"date":"2018-06-23","category_name":"Women","result_url":"/api/v1/events/1088/result/373"},{"season":"2018","rank":45,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B) - Hachioji (JPN) 2018 ","event_id":1051,"event_location":"TokyoWC","d_cat":7,"date":"2018-06-03","category_name":"Women","result_url":"/api/v1/events/1051/result/7"},{"season":"2018","rank":39,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Tai''an (CHN) 2018 ","event_id":1050,"event_location":"TaianWC","d_cat":7,"date":"2018-05-13","category_name":"Women","result_url":"/api/v1/events/1050/result/7"},{"season":"2018","rank":34,"discipline":"speed","event_name":"IFSC
+        Climbing Worldcup (B,S) - Tai''an (CHN) 2018 ","event_id":1050,"event_location":"TaianWC","d_cat":6,"date":"2018-05-13","category_name":"Women","result_url":"/api/v1/events/1050/result/6"},{"season":"2018","rank":18,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Chongqing (CHN) 2018 ","event_id":1049,"event_location":"ChongqingWC","d_cat":7,"date":"2018-05-06","category_name":"Women","result_url":"/api/v1/events/1049/result/7"},{"season":"2018","rank":41,"discipline":"speed","event_name":"IFSC
+        Climbing Worldcup (B,S) - Chongqing (CHN) 2018 ","event_id":1049,"event_location":"ChongqingWC","d_cat":6,"date":"2018-05-06","category_name":"Women","result_url":"/api/v1/events/1049/result/6"},{"season":"2018","rank":3,"discipline":"boulder","event_name":"Asia
+        Cup (B) - Hong Kong (HKG) 2018","event_id":1067,"event_location":"Asia_Cup_18","d_cat":191,"date":"2018-03-11","category_name":"Women","result_url":"/api/v1/events/1067/result/191"},{"season":"2017","rank":2,"discipline":"boulder","event_name":"Asia
+        Cup - Wanxianshan (CHN) 2017","event_id":1005,"event_location":"Asia_Cup_17","d_cat":191,"date":"2017-10-29","category_name":"Women","result_url":"/api/v1/events/1005/result/191"},{"season":"2017","rank":9,"discipline":"lead","event_name":"Asia
+        Cup - Wanxianshan (CHN) 2017","event_id":1005,"event_location":"Asia_Cup_17","d_cat":189,"date":"2017-10-29","category_name":"Women","result_url":"/api/v1/events/1005/result/189"},{"season":"2017","rank":39,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B) - Hachioji, Tokyo (JPN) 2017","event_id":988,"event_location":"TokyoWC","d_cat":7,"date":"2017-05-07","category_name":"Women","result_url":"/api/v1/events/988/result/7"},{"season":"2017","rank":35,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Nanjing (CHN) 2017","event_id":987,"event_location":"NanjingWC","d_cat":7,"date":"2017-04-30","category_name":"Women","result_url":"/api/v1/events/987/result/7"},{"season":"2016","rank":19,"discipline":"lead","event_name":"World
+        University Championships - Shanghai (CHN) 2016","event_id":973,"event_location":"UCH16","d_cat":373,"date":"2016-10-16","category_name":"Women","result_url":"/api/v1/events/973/result/373"},{"season":"2016","rank":9,"discipline":"boulder","event_name":"World
+        University Championships - Shanghai (CHN) 2016","event_id":973,"event_location":"UCH16","d_cat":375,"date":"2016-10-16","category_name":"Women","result_url":"/api/v1/events/973/result/375"},{"season":"2016","rank":15,"discipline":"boulder","event_name":"Asian
+        Continental Championship - Duyun (CHN) 2016","event_id":958,"event_location":"ACH
+        Duyun","d_cat":191,"date":"2016-08-06","category_name":"Women","result_url":"/api/v1/events/958/result/191"},{"season":"2016","rank":17,"discipline":"lead","event_name":"Asian
+        Continental Championship - Duyun (CHN) 2016","event_id":958,"event_location":"ACH
+        Duyun","d_cat":189,"date":"2016-08-06","category_name":"Women","result_url":"/api/v1/events/958/result/189"},{"season":"2015","rank":5,"discipline":"boulder","event_name":"Asian
+        Youth Championship - Putrajaya (MAS) 2015","event_id":915,"event_location":"Asian_Youth_Chp_15","d_cat":211,"date":"2015-12-06","category_name":"Juniors
+        Female","result_url":"/api/v1/events/915/result/211"},{"season":"2015","rank":4,"discipline":"lead","event_name":"Asian
+        Youth Championship - Putrajaya (MAS) 2015","event_id":915,"event_location":"Asian_Youth_Chp_15","d_cat":209,"date":"2015-12-06","category_name":"Juniors
+        Female","result_url":"/api/v1/events/915/result/209"},{"season":"2014","rank":16,"discipline":"boulder","event_name":"22th
+        Asian Continental Championship - Lombok (INA) 2014","event_id":874,"event_location":"ACH
+        Lombok","d_cat":191,"date":"2014-10-03","category_name":"Women","result_url":"/api/v1/events/874/result/191"},{"season":"2014","rank":16,"discipline":"lead","event_name":"22th
+        Asian Continental Championship - Lombok (INA) 2014","event_id":874,"event_location":"ACH
+        Lombok","d_cat":189,"date":"2014-10-03","category_name":"Women","result_url":"/api/v1/events/874/result/189"},{"season":"2013","rank":8,"discipline":"lead","event_name":"Asian
+        Youth Championship - Surabaya (INA) 2013","event_id":814,"event_location":"Asian_Youth_Chp_13","d_cat":213,"date":"2013-12-14","category_name":"Youth
+        A Female","result_url":"/api/v1/events/814/result/213"},{"season":"2012","rank":35,"discipline":"lead","event_name":"IFSC
+        World Youth Championship - Singapore (SIN) - 2012","event_id":747,"event_location":"YWCH
+        Singapore","d_cat":29,"date":"2012-09-01","category_name":"Youth A Female","result_url":"/api/v1/events/747/result/29"},{"season":"2012","rank":17,"discipline":"speed","event_name":"IFSC
+        World Youth Championship - Singapore (SIN) - 2012","event_id":747,"event_location":"YWCH
+        Singapore","d_cat":30,"date":"2012-09-01","category_name":"Youth A Female","result_url":"/api/v1/events/747/result/30"},{"season":"2012","rank":13,"discipline":"speed","event_name":"Asian
+        Youth Championship - Hamedan (IRI) 2012","event_id":752,"event_location":"Asian_Youth_Chp_12","d_cat":214,"date":"2012-07-13","category_name":"Youth
+        A Female","result_url":"/api/v1/events/752/result/214"},{"season":"2012","rank":6,"discipline":"lead","event_name":"Asian
+        Youth Championship - Hamedan (IRI) 2012","event_id":752,"event_location":"Asian_Youth_Chp_12","d_cat":213,"date":"2012-07-13","category_name":"Youth
+        A Female","result_url":"/api/v1/events/752/result/213"},{"season":"2011","rank":15,"discipline":"lead","event_name":"Asian
+        Youth Championship - Singapore (SGP) 2011","event_id":693,"event_location":"Asian_Youth_Chp","d_cat":217,"date":"2011-07-30","category_name":"Youth
+        B Female","result_url":"/api/v1/events/693/result/217"}],"cup_rankings":[{"name":"IFSC
+        Climbing Worldcup 2017","id":59,"season":"2017","boulder":{"rank":83,"result_url":"/api/v1/cups/59/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing Worldcup 2018","id":61,"season":"2018","speed":{"rank":92,"result_url":"/api/v1/cups/61/dcat/2","d_cat_id":2,"disc_kind_id":1},"boulder":{"rank":51,"result_url":"/api/v1/cups/61/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2022","id":72,"season":"2022","boulder":{"rank":50,"result_url":"/api/v1/cups/72/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2024","id":94,"season":"2024","lead":{"rank":93,"result_url":"/api/v1/cups/94/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":121,"result_url":"/api/v1/cups/94/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":110,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":110,"result_url":"/api/v1/cups/103/dcat/3","d_cat_id":3,"disc_kind_id":2}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:44 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/13815
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"2fe0c35b3989ae8ac1529bd35d819f56"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=BKTA9jFmP%2B5NsiAuzV1DM8%2Fgivb4pYxP6kPNyxFzZ49Xuc7B%2BjN%2F0TKyE8ieV0TokSibtVvVyNMdJg7H3zWvNskaXy3P22uZvSlEZc%2FSyMgJU%2F7kJQo5ZPnKHjF7zpPZVljX5IwHQaV3NWkf4VkvZ2xSzW9Vq8kHS96Lb%2F%2BrP8MGHpfLSIPNS8opNC8sgb3vnBVKo23qTWDWZZqOgseb30gO9sEPd0Nuh0%2BQ%2FthMcTkLDVhyadLU8JOIXSH03Z5y%2FIIzzQ2JaEMTUHESqDc2nH734WTQmMywvp9NEK6hcjy%2BNQ1c1r86jigIKgTKBn0WJLI9aqj%2FeeFB--jsDfVJknTzLyL8Zo--ashHdL1GVCvXQCtn6aPZ8w%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:44 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - f8c354c7f7e733af46448088fb164d20
+      X-Runtime:
+      - '0.060605'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AxReEV9OnK9YsvERQeoips%2Fq53p0FxLSa98fNw%2FZVAxm7m3zx1mLSkO0I09yex2AuFXryelzH9AT7U1BZLoJAiUUe9XjhOOSEdame26mb%2BU%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be60fb8aca1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":13815,"firstname":"Natalie","lastname":"GOH SIHUI","birthday":"2007-08-09","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":18,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":15,"discipline":"boulder","event_name":"IFSC
+        Youth Asian Championships Guiyang 2025","event_id":1468,"event_location":"Guiyang,
+        CHN","d_cat":800,"date":"2025-08-24","category_name":"U19 Women","result_url":"/api/v1/events/1468/result/800"},{"season":"2025","rank":12,"discipline":"lead","event_name":"IFSC
+        Youth Asian Championships Guiyang 2025","event_id":1468,"event_location":"Guiyang,
+        CHN","d_cat":798,"date":"2025-08-24","category_name":"U19 Women","result_url":"/api/v1/events/1468/result/798"},{"season":"2025","rank":40,"discipline":"lead","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":5,"date":"2025-05-04","category_name":"Women","result_url":"/api/v1/events/1407/result/5"},{"season":"2025","rank":53,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":5,"date":"2025-04-27","category_name":"Women","result_url":"/api/v1/events/1406/result/5"},{"season":"2025","rank":4,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":191,"date":"2025-03-09","category_name":"Women","result_url":"/api/v1/events/1457/result/191"},{"season":"2024","rank":9,"discipline":"lead","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":213,"date":"2024-11-17","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1398/result/213"},{"season":"2024","rank":9,"discipline":"boulder","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":215,"date":"2024-11-17","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1398/result/215"},{"season":"2024","rank":19,"discipline":"boulder","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":191,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/191"},{"season":"2024","rank":12,"discipline":"lead","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":189,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/189"},{"season":"2024","rank":53,"discipline":"boulder","event_name":"IFSC
+        World Cup Prague 2024","event_id":1360,"event_location":"Prague","d_cat":7,"date":"2024-09-22","category_name":"Women","result_url":"/api/v1/events/1360/result/7"},{"season":"2024","rank":55,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":29,"date":"2024-08-31","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1396/result/29"},{"season":"2024","rank":50,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":31,"date":"2024-08-31","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1396/result/31"},{"season":"2024","rank":55,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2024","event_id":1354,"event_location":"Wujiang","d_cat":5,"date":"2024-04-14","category_name":"Women","result_url":"/api/v1/events/1354/result/5"},{"season":"2024","rank":57,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2024","event_id":1353,"event_location":"Keqiao","d_cat":7,"date":"2024-04-10","category_name":"Women","result_url":"/api/v1/events/1353/result/7"},{"season":"2023","rank":15,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asian Qualifier Jakarta 2023","event_id":1310,"event_location":"Jakarta","d_cat":662,"date":"2023-11-12","category_name":"Women","result_url":"/api/v1/events/1310/result/662"},{"season":"2023","rank":11,"discipline":"boulder","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":215,"date":"2023-10-22","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1349/result/215"},{"season":"2023","rank":12,"discipline":"lead","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":213,"date":"2023-10-22","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1349/result/213"},{"season":"2023","rank":11,"discipline":"boulder\u0026lead","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":667,"date":"2023-10-22","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1349/result/667"},{"season":"2023","rank":42,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":29,"date":"2023-08-27","category_name":"Youth A Female","result_url":"/api/v1/events/1304/result/29"},{"season":"2023","rank":44,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":31,"date":"2023-08-27","category_name":"Youth A Female","result_url":"/api/v1/events/1304/result/31"},{"season":"2023","rank":69,"discipline":"boulder","event_name":"IFSC
+        World Cup Seoul 2023","event_id":1292,"event_location":"Seoul","d_cat":7,"date":"2023-04-30","category_name":"Women","result_url":"/api/v1/events/1292/result/7"},{"season":"2022","rank":18,"discipline":"boulder","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":35,"date":"2022-09-01","category_name":"Youth B Female","result_url":"/api/v1/events/1246/result/35"},{"season":"2022","rank":33,"discipline":"lead","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":33,"date":"2022-09-01","category_name":"Youth B Female","result_url":"/api/v1/events/1246/result/33"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2023","id":90,"season":"2023","boulder":{"rank":149,"result_url":"/api/v1/cups/90/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2024","id":94,"season":"2024","lead":{"rank":134,"result_url":"/api/v1/cups/94/dcat/1","d_cat_id":1,"disc_kind_id":0},"boulder":{"rank":106,"result_url":"/api/v1/cups/94/dcat/3","d_cat_id":3,"disc_kind_id":2}},{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":75,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:44 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/3630
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"8f0e2de475f87dd2e5f61f2c86b54960"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=oZmzd7X7BDI4z%2Fj7ajGUtWZnqxlnIB9SibEB8zeOcF8Nax4reuUvS82lA3CCMQEJ%2F4HWL1SAEvlE6XBlbmLr8FPenI8sR24AmZwnkIPGkpgZOT8zYCjJ4YYp3I0PazcKuHKP6%2FxgPNiVPi2VKm36JU%2B9iVLM64TMqex3jq9Lir5JbTCaOy4tVceHkvyFKllFoGWn5V%2B%2BSal03iDOUTh3KV25pEDFKLIs6sb6UdokWBv5p7XmnZQ1ens26DacgvT%2B7VGDrZhtl5gBYzZVZHjmG4U%2FPnEsm%2BVph%2FYyrA4HJOj81Exmb7HbciIqmU6CPI417QRPaeVF8Ily--8P%2BsTRrlc9i9PIjo--hJS2AotH%2FJo8APc5MgIkuw%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:45 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 6263baab8db8a8b3d381e11d1e05940f
+      X-Runtime:
+      - '0.055344'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=b1wL%2FhgLSOz1%2Bn4FvxMuGZph2PBQN8P4LtSg1ZkgThcvdFNYbx8xQPAsPXHCv2cd7onKPD6vRO8OX7btgvJCjYVWJyRdZ1aBPYD%2B16Cq"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be7ae63e675-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3630,"firstname":"Lynnette","lastname":"KOH SIOK HENG","birthday":"1994-01-23","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"sin","age":32,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":47,"discipline":"lead","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":5,"date":"2025-05-04","category_name":"Women","result_url":"/api/v1/events/1407/result/5"},{"season":"2024","rank":20,"discipline":"boulder","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":191,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/191"},{"season":"2024","rank":17,"discipline":"lead","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":189,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/189"},{"season":"2019","rank":14,"discipline":"lead","event_name":"Asian
+        Championships - Bogor (INA) 2019","event_id":1131,"event_location":"ACH Palembang","d_cat":189,"date":"2019-11-10","category_name":"Women","result_url":"/api/v1/events/1131/result/189"},{"season":"2015","rank":19,"discipline":"lead","event_name":"Asian
+        Continental Championship - Ningbo (CHN) 2015","event_id":914,"event_location":"ACH
+        Ningbo","d_cat":189,"date":"2015-11-24","category_name":"Women","result_url":"/api/v1/events/914/result/189"},{"season":"2014","rank":15,"discipline":"lead","event_name":"22th
+        Asian Continental Championship - Lombok (INA) 2014","event_id":874,"event_location":"ACH
+        Lombok","d_cat":189,"date":"2014-10-03","category_name":"Women","result_url":"/api/v1/events/874/result/189"},{"season":"2014","rank":17,"discipline":"boulder","event_name":"22th
+        Asian Continental Championship - Lombok (INA) 2014","event_id":874,"event_location":"ACH
+        Lombok","d_cat":191,"date":"2014-10-03","category_name":"Women","result_url":"/api/v1/events/874/result/191"},{"season":"2013","rank":7,"discipline":"lead","event_name":"Asian
+        Youth Championship - Surabaya (INA) 2013","event_id":814,"event_location":"Asian_Youth_Chp_13","d_cat":209,"date":"2013-12-14","category_name":"Juniors
+        Female","result_url":"/api/v1/events/814/result/209"},{"season":"2012","rank":35,"discipline":"lead","event_name":"IFSC
+        World Youth Championship - Singapore (SIN) - 2012","event_id":747,"event_location":"YWCH
+        Singapore","d_cat":25,"date":"2012-09-01","category_name":"Juniors Female","result_url":"/api/v1/events/747/result/25"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","lead":{"rank":103,"result_url":"/api/v1/cups/103/dcat/1","d_cat_id":1,"disc_kind_id":0}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:45 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/17205
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"3ec5569ef5fde78efc0e71b3f732b9a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=ZEtav%2Ba7cha1twc67l5O7OVHcF9CVb1CX69oNmxlXcBuea5frExdK7STnk8naNdS55v33gkfCkcBEtVG6ZvcJ0%2Bg6O%2FAGuMR4CPjyej8w%2FcdGfxCbSVuobfJetX6KK3INF8dcizfmCBQRJuThR3uKnsud9A2RBqUZ7PGBzfFp6DIgpFGfMlYd8tbDrP%2F%2Bd%2Bw1SPlS%2BaQkTV7Roiq3M7YCLTBLgF9jIbJlg%2Bb2SKKIyZMZFdWWzLpPyvRidCtso3njFMWZ4QJ6aDE3bBsboJ5RXQrB2Zw6h2lAWKI8MeDVcUT3IEDe2tNPAKLz187%2FBl4eJS3%2BBShXTWQ--QCEk6BR7seUfZ0pa--Fr0GhoGJ1PYOz6TMb3W4LQ%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:45 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - f5252a3ffa350a37f38bb66f2fecf5fd
+      X-Runtime:
+      - '0.041761'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BdAaNWEQxzSRriMC0tbx6%2BhOv1y8%2FkmcU%2Ba%2FM2ALTI2UGzjOe6Ww%2FNcWNB1WgRVZ%2Bb6nvrTEUfyLHkqHFU96AvNO8P1lXbvOisyVPE5aaUk%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61be95e8d7a56-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":17205,"firstname":"Sharvin","lastname":"SEKAR","birthday":"2008-03-08","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"6.82","date":"2025-08-03","event_name":"IFSC
+        Youth World Championships Helsinki 2025","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":18,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":33,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":774,"date":"2025-08-03","category_name":"U19 Men","result_url":"/api/v1/events/1418/result/774"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:45 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/16428
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"c4b6c1f809d1a716110c6a2cbed9935f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=Ztk3JjmvwM8azjpkIwkAo1wGreyySQNfIs%2Fxkml0dp0E8ZKacZSOsAYuCAhDSarvk8GJiTHw2tPeGkRhUL60d6%2Bh0uVmO0P50zF2U6VqjkFC9YDYQGS661C6sFlbLo1swi8Pz6qb2vg4hKn4KpcsDbhz2rjsiGZe05L2m3XRrzwmiJt8tY%2Frw3DCanFNPvWRUfivFz6xwKJb4tgbomlpwIQJp3deGwcVvn6fClLiRXMGu2wly19dqp1x6Lg%2FGyPbajNCc0Uwd8fWTBPzrAo2WA%2BdmfGISoP6kGtgOb8NvWgiqL4Qr%2BwT2tIhcFmECB5PuxPhiKmYIiO9--%2FtQX9dacgWR4nboG--PT92EzH0B7ntHT4m4sz8pg%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:45 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 2be85806d35f581f47b0e1e532815648
+      X-Runtime:
+      - '0.042420'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bJQeSKVG%2FUOgcwjWrGQxjy1GTX%2FzQYOwNGrHnp1wR5yyGcLwScdaVlfBRsgh%2FIRwQyPEarAjPsW2LsZ3YAAZ2DV46PwDT94zhLdDCeIp"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61beae8c360a3-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":16428,"firstname":"Ezell, Qing Wei","lastname":"LOW","birthday":"2006-04-29","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"5.61","date":"2025-09-25","event_name":"IFSC
+        World Championships Seoul 2025","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":19,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":18,"discipline":"speed","event_name":"International
+        Speed Master Meishan 2025","event_id":1476,"event_location":"Meishan, CHN","d_cat":394,"date":"2025-10-25","category_name":"Men","result_url":"/api/v1/events/1476/result/394"},{"season":"2025","rank":47,"discipline":"speed","event_name":"IFSC
+        World Championships Seoul 2025","event_id":1417,"event_location":"Seoul, KOR","d_cat":2,"date":"2025-09-28","category_name":"Men","result_url":"/api/v1/events/1417/result/2"},{"season":"2025","rank":49,"discipline":"speed","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":2,"date":"2025-05-04","category_name":"Men","result_url":"/api/v1/events/1407/result/2"},{"season":"2025","rank":51,"discipline":"speed","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":2,"date":"2025-04-27","category_name":"Men","result_url":"/api/v1/events/1406/result/2"},{"season":"2024","rank":14,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":194,"date":"2024-11-17","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1398/result/194"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","speed":{"rank":85,"result_url":"/api/v1/cups/103/dcat/2","d_cat_id":2,"disc_kind_id":1}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:45 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14715
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"16ec86763e70125590a0293a24f02fbe"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=bgTpRYAmQHgWRJHmbS4FcBFyvvFH8NZoySNzNr5%2FRMBOvkMeD3%2BorfKZXf8id%2F1Z0oiLwTj6dtFEChcLINb6fFjNZ%2F5Yi1%2FGgbuII1rnp5HC9uWSH4w5pFPsKxXqKRsQKqvq7Elp77P1dXDprCvngwskhWtktTEEzhHwpxx7n6%2BWbxi2YKAjReHaJHxBtQr8HeBc2QwNp9T7zqnDdRY2f20AVAW3ZVTyP1vWCxoiDO6o9xk5p8lAMhSV9RVHR9%2BKfX3KbapzuPslB22g20jVCjXmFTMnCEGQXw%2BHTvBuf3c96truAvIe9aS2oVqFwweOtscL33c%2BzVli--ZA0RiF3bJ%2FPbugFm--kC%2BTFsJdV6v64T8NSRhpqw%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:46 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 22d1d45aa935c16de1899ef11b4aafbc
+      X-Runtime:
+      - '0.106565'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=z%2ByZZ1QWsFFNvgxNe2fEU2R0vb5xiArW3R0t67gaqgbs5XfJylhG%2FfT2lMzEv84hDQI9GV5pnru79c3ocUdcyEPJnJf65rz5NB5uHf1f"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bec7899538c-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14715,"firstname":"Andre Ho","lastname":"JIN RUI","birthday":"2006-02-23","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"5.74","date":"2025-09-25","event_name":"IFSC
+        World Championships Seoul 2025","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":20,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":20,"discipline":"speed","event_name":"International
+        Speed Master Meishan 2025","event_id":1476,"event_location":"Meishan, CHN","d_cat":394,"date":"2025-10-25","category_name":"Men","result_url":"/api/v1/events/1476/result/394"},{"season":"2025","rank":53,"discipline":"speed","event_name":"IFSC
+        World Championships Seoul 2025","event_id":1417,"event_location":"Seoul, KOR","d_cat":2,"date":"2025-09-28","category_name":"Men","result_url":"/api/v1/events/1417/result/2"},{"season":"2025","rank":48,"discipline":"speed","event_name":"IFSC
+        World Cup Bali 2025","event_id":1407,"event_location":"Bali, INA","d_cat":2,"date":"2025-05-04","category_name":"Men","result_url":"/api/v1/events/1407/result/2"},{"season":"2025","rank":40,"discipline":"speed","event_name":"IFSC
+        World Cup Wujiang 2025","event_id":1406,"event_location":"Wujiang, CHN","d_cat":2,"date":"2025-04-27","category_name":"Men","result_url":"/api/v1/events/1406/result/2"},{"season":"2024","rank":5,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":194,"date":"2024-11-17","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1398/result/194"},{"season":"2024","rank":16,"discipline":"speed","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":186,"date":"2024-10-14","category_name":"Men","result_url":"/api/v1/events/1397/result/186"},{"season":"2024","rank":24,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":10,"date":"2024-08-31","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1396/result/10"},{"season":"2023","rank":9,"discipline":"speed","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":198,"date":"2023-10-22","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1349/result/198"},{"season":"2023","rank":10,"discipline":"speed","event_name":"IFSC
+        Asia - Continental Youth Cup (S) - Singapore (SGP) 2023","event_id":1342,"event_location":"Singapore","d_cat":198,"date":"2023-07-08","category_name":"Youth
+        A Male","result_url":"/api/v1/events/1342/result/198"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2025","id":103,"season":"2025","speed":{"rank":74,"result_url":"/api/v1/cups/103/dcat/2","d_cat_id":2,"disc_kind_id":1}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:46 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/11967
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"6fc935e7541efe0ee622c0c3d9e59ed8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=mQELhaR%2F%2BjARFBqqfbczj4B%2FgQ8Ga6eysZDuopPF9AhXi7%2B1K%2BQ%2FBlkjW8E0qxmjuj3yzJ39kCD14vJJKWO572LWDdVhCqlOHh0%2FviCwvQfN5yD8Gf5toavQDv4IVKETCT2sgNpfkV%2FNS1RqZGjOqQNF9gjfwFZmX5SOa%2B%2BAYENxW103VX965T0y%2BsMTpLCh%2Fnj28WoVlZTY3oU5cb4rSKHSp4RM%2BkUAN%2BdqnpDWmpIxx0rohviU6HgmKtjqT6cFZ1%2BZOIYx%2BVWF%2BUuOmK3OUQSXcf7ojzafjbCpK%2BOI1KnQgFDRZvlOCX3joBVfl%2Fd%2Bw9Z1QRp6m7MC--BWMbsA8RP0Rr3Rwn--%2FZKyzQNOkxxsS4em7oaUeQ%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:46 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 9b94c20ecddfab6486a842c8d5f534dd
+      X-Runtime:
+      - '0.036600'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pJKMZM3IbGKPH8mWVl%2Borx1qYfVS4Ws1MXWOmYIyRL1Zcrb27A9C7TvG3%2BDgPq0VHtDMA7NiId3qB6uiKmsrU5q5UnW20bA7x%2FaQrQr7"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bee6b4be675-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":11967,"firstname":"Jit Yi","lastname":"DENZEL CHUA","birthday":"2005-09-03","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"7.44","date":"2023-05-06","event_name":"IFSC
+        World Cup Jakarta 2023","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":20,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2023","rank":8,"discipline":"speed","event_name":"IFSC
+        Asia - Continental Youth Cup (S) - Singapore (SGP) 2023","event_id":1342,"event_location":"Singapore","d_cat":194,"date":"2023-07-08","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1342/result/194"},{"season":"2023","rank":68,"discipline":"speed","event_name":"IFSC
+        World Cup Jakarta 2023","event_id":1293,"event_location":"Indonesia","d_cat":2,"date":"2023-05-07","category_name":"Men","result_url":"/api/v1/events/1293/result/2"},{"season":"2019","rank":13,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":203,"date":"2019-12-15","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1133/result/203"},{"season":"2019","rank":11,"discipline":"speed","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":202,"date":"2019-12-15","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1133/result/202"},{"season":"2019","rank":11,"discipline":"lead","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":201,"date":"2019-12-15","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1133/result/201"},{"season":"2019","rank":20,"discipline":"combined","event_name":"Asian
+        Combined Youth Championships - Chongqing (CHN) 2019","event_id":1132,"event_location":"Asian_Youth_Chp_18","d_cat":204,"date":"2019-11-17","category_name":"Youth
+        B Male","result_url":"/api/v1/events/1132/result/204"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2023","id":90,"season":"2023","speed":{"rank":121,"result_url":"/api/v1/cups/90/dcat/2","d_cat_id":2,"disc_kind_id":1}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:46 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14721
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"6f8a6f2481dcf34c791952c00a340e30"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=CRaXYKwd9t2Fz9HurAluqmjhqTk3uhs5Zj6Do6GiTh4Jno%2BDRHem5Qjhkukg782r%2Fg0wDr6YZSuE1vLjLG9PqX5FclkU9zayVk2DG%2F3EXdLF1a%2FfvVO%2FqC7GFT4QZdJnyhqDgoKSAzXvYOWUmxSB1u3u6t%2BryaZqU%2F0ELVtFDGBwK%2FOyUtjA%2FNJFNHlVpDzFNpWpkfBPi2vff9p%2Bp7NqZtmDbLLJyqBfovEDvgri%2BsYZuv4c3NvlJiu38ToSYlVaD0vhcqHJwDoCSqlXx225CN9OQDrxWjtiH6PJio4NpdKe95pUKtP4Iy%2Ft%2Fo906Pgq44x50%2Bb1DelS--Gv7govbiw1g3o6VE--PUWNmCJy%2Bh0pnxIKEh%2FfeA%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:46 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 025c351d7866f0e3bcea18a038c9199e
+      X-Runtime:
+      - '0.036659'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EqnPjr6oyhSHtvHHgAUvaVBikXR7gHK%2Fo2eOGx1LgQJBkpvGs%2BCWlHIDEBmskWAyyNFULemJcrfFlIgrGrMEQvNZkZy492HL6RF7EUSxwuo%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf02be97989-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14721,"firstname":"Adre","lastname":"ALFIYAN","birthday":"2005-03-23","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":"he/him","personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"6.64","date":"2024-08-30","event_name":"IFSC
+        Youth World Championships Guiyang 2024","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"singapore","age":20,"arm_span":195,"height":175,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2024","rank":6,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":194,"date":"2024-11-17","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1398/result/194"},{"season":"2024","rank":25,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Guiyang 2024","event_id":1396,"event_location":"Guiyang","d_cat":10,"date":"2024-08-31","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1396/result/10"},{"season":"2023","rank":13,"discipline":"speed","event_name":"IFSC
+        Asia - Continental Youth Championships (B, S, L, B\u0026L) - Chongqing (CHN)
+        2023","event_id":1349,"event_location":"Chongqing","d_cat":194,"date":"2023-10-22","category_name":"Juniors
+        Male","result_url":"/api/v1/events/1349/result/194"},{"season":"2023","rank":63,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":9,"date":"2023-08-27","category_name":"Juniors Male","result_url":"/api/v1/events/1304/result/9"},{"season":"2023","rank":31,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":10,"date":"2023-08-27","category_name":"Juniors Male","result_url":"/api/v1/events/1304/result/10"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:46 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/11361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"7572eedbb945d6e06df0dbfcb5d4ca94"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=JO4HiujFR2X1%2F8nbvJxL2YTRhNGSPgC%2FKixCOoZJyygfdRCCStmcm7ovN6JxUgH9F4jvUq9wdg%2BE6w1Ac3YbqbwNe9DEwHk6nVbMAlZJRvVDB6l%2B1gTjIjeBIKkK0lVaxczMGqYwrhdZppYkg0V7CkeZjiBqqxp3hJ2RfMqiYb9j%2FQh3ftG%2FvrwidPcn3ML8FmCuOoAwwMVj1UeR%2FiHijQtcXzeDIIlK%2B95xUeqNHESRs8QUWeiKz4j%2FQ%2FDDpjjypNRvjE5gFHHecxMcS1Tm6%2B1%2FTOT8grqbV4bPOLB7PLfOJ1W1KPMuDjoca3PaMTa4WKOZUR3DNHLW--8hRkPGef%2BUn9un3q--FXgvoaHmAid2NAg7UECZ1w%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:46 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 3ed84f6b98cb9e33d8afcddfb20f9f23
+      X-Runtime:
+      - '0.146474'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Kh%2FjjhYeiaCcwrmd3gBtlgjodi5srHBE0mBOO18QvEisgCUzmR3I1tN7CoYK8Wabj7%2BZwGehbTBr4%2FQ1AYe4wubZrejSc96Y1GYJ0wXj"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf1cb45e659-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":11361,"firstname":"Eilin","lastname":"TAN","birthday":"2003-01-02","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"9.12","date":"2024-10-04","event_name":"IFSC
+        World Cup Seoul 2024","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":23,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2024","rank":14,"discipline":"boulder","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":191,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/191"},{"season":"2024","rank":12,"discipline":"speed","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":190,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/190"},{"season":"2024","rank":33,"discipline":"boulder","event_name":"IFSC
+        World Cup Seoul 2024","event_id":1361,"event_location":"Seoul","d_cat":7,"date":"2024-10-06","category_name":"Women","result_url":"/api/v1/events/1361/result/7"},{"season":"2024","rank":26,"discipline":"speed","event_name":"IFSC
+        World Cup Seoul 2024","event_id":1361,"event_location":"Seoul","d_cat":6,"date":"2024-10-06","category_name":"Women","result_url":"/api/v1/events/1361/result/6"},{"season":"2024","rank":57,"discipline":"lead","event_name":"IFSC
+        World Cup Wujiang 2024","event_id":1354,"event_location":"Wujiang","d_cat":5,"date":"2024-04-14","category_name":"Women","result_url":"/api/v1/events/1354/result/5"},{"season":"2024","rank":51,"discipline":"boulder","event_name":"IFSC
+        World Cup Keqiao 2024","event_id":1353,"event_location":"Keqiao","d_cat":7,"date":"2024-04-10","category_name":"Women","result_url":"/api/v1/events/1353/result/7"},{"season":"2022","rank":39,"discipline":"boulder","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":27,"date":"2022-09-01","category_name":"Juniors Female","result_url":"/api/v1/events/1246/result/27"},{"season":"2022","rank":30,"discipline":"lead","event_name":"IFSC
+        - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022","event_id":1246,"event_location":"United
+        States","d_cat":25,"date":"2022-09-01","category_name":"Juniors Female","result_url":"/api/v1/events/1246/result/25"},{"season":"2019","rank":4,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":215,"date":"2019-12-15","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1133/result/215"},{"season":"2019","rank":4,"discipline":"speed","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":214,"date":"2019-12-15","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1133/result/214"},{"season":"2019","rank":4,"discipline":"lead","event_name":"Asian
+        Youth Championships - Bengaluru (IND) 2019 ","event_id":1133,"event_location":"Asian_Youth_Chp_19","d_cat":213,"date":"2019-12-15","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1133/result/213"},{"season":"2018","rank":11,"discipline":"boulder","event_name":"Asian
+        Youth Championships - Chongqing (CHN) 2018","event_id":1072,"event_location":"Asian_Youth_Chp_18","d_cat":219,"date":"2018-11-04","category_name":"Youth
+        B Female","result_url":"/api/v1/events/1072/result/219"},{"season":"2018","rank":21,"discipline":"speed","event_name":"Asian
+        Youth Championships - Chongqing (CHN) 2018","event_id":1072,"event_location":"Asian_Youth_Chp_18","d_cat":218,"date":"2018-11-04","category_name":"Youth
+        B Female","result_url":"/api/v1/events/1072/result/218"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2024","id":94,"season":"2024","boulder":{"rank":76,"result_url":"/api/v1/cups/94/dcat/3","d_cat_id":3,"disc_kind_id":2},"lead":{"rank":140,"result_url":"/api/v1/cups/94/dcat/1","d_cat_id":1,"disc_kind_id":0},"speed":{"rank":65,"result_url":"/api/v1/cups/94/dcat/2","d_cat_id":2,"disc_kind_id":1}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:47 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14717
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"411eab2eb2fdfe5225755b84f5dce156"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=E%2BaUQ0ukON4zxgg0a6doMHwSVo7THbT6TA6hbEtVEoXKIoAUDu2u5FHkdTj7NZiUZTHOca0Bcu958mboi7iT5yqkD2PcaWtS1Q1IvzxjuBSsOIvoti8UXXceqc4P%2BCphjw7GPAL5t5TnO8TrfEjzk%2Bhd%2FhYLX3YpvZJe%2FemOFf1eUe20%2BVz5Zb0wEcXjgoqFCXh8MS8IaC7%2Ba0N83nIQm3fVZ6zFQAzCr7V8E8zEqo8JkaLgTzbcTrLFZnSjPYRHaSyxICfg7JmCZkgCyqqq%2FEwjjSQqdOx%2BtUDmuB1CQ4uO4I48aETcDuNDNRyZ6ZtkEVdukb9VSI9s--Ox%2BpuDJND%2F4kusml--wXpmQNn3Y7ogH5l7HLY%2FFA%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:47 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 169aad4928864e3d8c93a868cf873ed7
+      X-Runtime:
+      - '0.033743'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PvDnDdh%2FeY%2F5YX3PxyWwICpov9p03tzSFwdgXMlzDYKOjYAZwrTzRp8wo9zoKKod4O1ch32DtJy08VE%2F2Zf%2BRmVE6LvarYDVO8RqilJu"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf48bf353de-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14717,"firstname":"Koh","lastname":"JEANETTE FRANCES","birthday":"2004-11-02","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":{"time":"11.02","date":"2023-08-24","event_name":"IFSC
+        Youth World Championships Seoul 2023","round_name":"Qualification"},"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":21,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":1,"1":0,"2":0,"3":1},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2024","rank":21,"discipline":"boulder","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":191,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/191"},{"season":"2024","rank":22,"discipline":"lead","event_name":"IFSC
+        Asian Championships Tai''an 2024","event_id":1397,"event_location":"Tai''an","d_cat":189,"date":"2024-10-14","category_name":"Women","result_url":"/api/v1/events/1397/result/189"},{"season":"2023","rank":15,"discipline":"speed","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":26,"date":"2023-08-27","category_name":"Juniors Female","result_url":"/api/v1/events/1304/result/26"},{"season":"2023","rank":3,"discipline":"speed","event_name":"IFSC
+        Asia - Continental Youth Cup (S) - Singapore (SGP) 2023","event_id":1342,"event_location":"Singapore","d_cat":210,"date":"2023-07-08","category_name":"Juniors
+        Female","result_url":"/api/v1/events/1342/result/210"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:47 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/3672
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"2ad33552c96a58fdb812d541c7a7a96e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=LnjvaYf8bsoJZbZIJDs6DhfVyMpEZ9JL8WTAAu02m%2Bsa%2F0bPFTcIPsazk%2B7uxjsK1FfFNot24GG%2FFK6ji2R%2FUPVinwRWVd7WqhijMGuNAKPlxZqvPZ6PJOnI4ydJpaHh3NRIpVwE2ctZ0pLSGg32i4WTyDrwNnUsfqgmbTt4Vx7r5XvYu1j9RrY5Hy0uaUJzgAyqLG4gmzzMFuZIU43UxMU9%2B0kpXrfX7X0PGEtRrfpsCWqw6gaN3KTcb36EMOgYsE1Gho8m%2FZIjYVKbH56RwP6Fw4JKS8XX2YxamuaNMYZTWwXXyqu%2BO8dlwytSasaCaJ9DMP7Gxld5--Q%2F%2BJ%2BJYt7CT9CAh%2B--EoqqrafAGKj54CcIkZmrZQ%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:47 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 7d164741b52d24ad568e139a4f93771f
+      X-Runtime:
+      - '0.041470'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xEmZx%2FCHeFdwT7WABUmQdtmxHd7yVaOIIhLEdA9%2FDQTbck5i%2FbkCqHXt%2B3os5uFk%2FbsOBwHQpGXFgardyLAsw8n3dWFrmoeKJjHqFGV9zEE%3D"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf6199d79a1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3672,"firstname":"Asher Gavin","lastname":" CHIAM KAI CHEN","birthday":"1997-05-15","gender":"male","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":28,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":14,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":187,"date":"2025-03-09","category_name":"Men","result_url":"/api/v1/events/1457/result/187"},{"season":"2018","rank":77,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B) - Hachioji (JPN) 2018 ","event_id":1051,"event_location":"TokyoWC","d_cat":3,"date":"2018-06-03","category_name":"Men","result_url":"/api/v1/events/1051/result/3"},{"season":"2018","rank":29,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Tai''an (CHN) 2018 ","event_id":1050,"event_location":"TaianWC","d_cat":3,"date":"2018-05-13","category_name":"Men","result_url":"/api/v1/events/1050/result/3"},{"season":"2018","rank":51,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Chongqing (CHN) 2018 ","event_id":1049,"event_location":"ChongqingWC","d_cat":3,"date":"2018-05-06","category_name":"Men","result_url":"/api/v1/events/1049/result/3"},{"season":"2018","rank":7,"discipline":"boulder","event_name":"Asia
+        Cup (B) - Hong Kong (HKG) 2018","event_id":1067,"event_location":"Asia_Cup_18","d_cat":187,"date":"2018-03-11","category_name":"Men","result_url":"/api/v1/events/1067/result/187"},{"season":"2017","rank":51,"discipline":"boulder","event_name":"IFSC
+        Climbing Worldcup (B,S) - Nanjing (CHN) 2017","event_id":987,"event_location":"NanjingWC","d_cat":3,"date":"2017-04-30","category_name":"Men","result_url":"/api/v1/events/987/result/3"}],"cup_rankings":[{"name":"IFSC
+        Climbing Worldcup 2018","id":61,"season":"2018","boulder":{"rank":63,"result_url":"/api/v1/cups/61/dcat/3","d_cat_id":3,"disc_kind_id":2}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:47 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/13504
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"ddc747e84f97a95f98ec0a6163a11104"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=r012qnUVZTqnHqhA1B2LaMXmBfQznl3WG3eTQPjOkDm1MpRad7lSvzf3Rt1IzgDad1KvVC2V84IRFiDZzNvrylVa9Wo24v5kpiTWZwdXYgsdlV4bocI1sjLeRJ7AApAVa0sh8NNZgse3ps8KRCNmZvPhBSXlqa1skEpAvE0ehNnd8CbAmvourllxSsdQPZvlt7sSiulsavnTp6rRucAP8uwn6lR6qLuQxxHOYa%2Bg1PefmIwEKlhlmivfh9fwYqtJizXcVWpe1T%2Ft7nD6RthwL%2FRe1s22pK07kVK0cEhdSNm1SoLWLPoS4dTFPQU8m%2BAWYcpaG4cA2gI3--YoslYN2uAFIkV4mN--ErNz8dr5RFY2BWkBEYjfug%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:47 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 6bc405cbeec662ec15dab555d4e330a0
+      X-Runtime:
+      - '0.035858'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=oNvByleG5o7TPER3Bhu4rYtx0VXm30ewYduJIJTW7gZoFn0AWXsMrlNAQutkmDGSss8uBbM6C1Yelw%2FAsDe0XJdfh36mzua46CufSFoi"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf7ad64e669-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":13504,"firstname":"Xu","lastname":"LITING","birthday":"1988-03-28","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":"Singapore","age":37,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":7,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":191,"date":"2025-03-09","category_name":"Women","result_url":"/api/v1/events/1457/result/191"},{"season":"2022","rank":44,"discipline":"boulder","event_name":"IFSC
+        - Climbing World Cup (B,S) - Seoul (KOR) 2022","event_id":1235,"event_location":"Seoul","d_cat":7,"date":"2022-05-08","category_name":"Women","result_url":"/api/v1/events/1235/result/7"}],"cup_rankings":[{"name":"IFSC
+        Climbing World Cup 2022","id":72,"season":"2022","boulder":{"rank":98,"result_url":"/api/v1/cups/72/dcat/3","d_cat_id":3,"disc_kind_id":2}}]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:47 GMT
+- request:
+    method: get
+    uri: https://ifsc.results.info/api/v1/athletes/14716
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - _ifsc_resultservice_session=VnXzcw9j0YuysVMrPyb3n45MjijJ3DFquIGlCFDliHRd%2BB5YCME2x%2BKsPIUxvPPHX8eVA43RTCsFmNCgLqmSJCzLTUTSEXtm0n%2BHd6ba%2B33dbhWQgIQsBEtT3%2F8VBF66dQnGKDVU4AyAekwZ7miQ7j6EQ5dJEjUtusca%2FNpmI0a37mW%2FTGl%2FaZKEQgVLUj0qQ5zax6Pn6z8Li5BpftVcTDAjRuoyOXbGYpv8Xa5stym4XOSnaNBTEdPQ33j8dR5Uih%2Fody4ft1xAmLe6EAj7kBFJNeTDjC%2FIDRSQsUhcO1XU18AWKNgop%2FqRX5vH4D1u0JqrTUra64L%2F--urbu%2BK7uNw0AJcaT--YipSN1nQxmuUcUKhzV7drw%3D%3D
+      Referer:
+      - https://ifsc.results.info/
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 23:30:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CSRF-Token, Authorization, Content-Type, X-Auth-Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept
+      Etag:
+      - W/"179484905890b9e46c5cff29a140a406"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _ifsc_resultservice_session=qjN0wxN9VWy4LP3TJl7mJQkYrkQaJ5C7eFx5TfPgK3BDfjxXL2vGwiHvH1Z4NFpRgUMDdLzzXLN8Mfmh%2B7Y%2FHfozLp9U7Oj8JSpvIqWzykoOygl%2FNxEH21oViZ2GB1iaWf8CdhBU6MPYIA5IJh%2FYGbaY62ejBQRHGGUaZXK7RWlEyZbYsA81%2FOh1ho%2F%2B5LILYXkBq%2FUTTuKb5O%2BsJFO8ynmOQvPO4pQdjl3gAaJXq6hYGWZ5spBmJh97X%2Fb%2FPJptPkpWBM9coGPCVD1zZ4b86fNHxXuisg9PO8%2BES%2BYeaF3bBKH3ixjfszO%2B9d8uOABW0aF%2BGvthR7%2FR--k607KCjkYdUE2Fr%2F--I78fUpBoPA4UvNXDXiAghg%3D%3D;
+        path=/; expires=Tue, 24 Mar 2026 23:30:47 GMT; secure; httponly; samesite=lax
+      X-Request-Id:
+      - 6bc5f9eac735e5c493584404ea055216
+      X-Runtime:
+      - '0.038980'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G1W3jX44wTu2O2%2F%2B8BFkzVHGi1K8xNI6PMF1iidMMviNoN5UXeLZBl2BpLo4THBW7WBzzs3zDmdXGD9CYTQa2avYuFYKxJZ3LAdsUcmt"}]}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9da61bf93a903001-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":14716,"firstname":"Zhenxuan","lastname":"ELISE YEE","birthday":"2007-12-01","gender":"female","paraclimbing_sport_class":null,"sport_class_status":null,"sport_class_review_date":null,"pronouns":null,"personal_story":null,"federation":{"id":51,"name":"Singapore
+        Sport Climbing and Mountaineering Federation","abbreviation":"SSCMF","url":"www.smf-climbing.org"},"speed_personal_best":null,"country":"SGP","flag_url":"https://d1n1qj9geboqnb.cloudfront.net/flags/SGP.png","city":null,"age":18,"arm_span":null,"height":null,"favourite_movie":null,"favourite_game":null,"favourite_song":null,"sporting_hero":null,"hobby":null,"website":null,"instagram":null,"twitter":null,"facebook":null,"youtube":null,"nickname":null,"residence":null,"spoken_languages":null,"coach":null,"photo_url":null,"action_photo_url":null,"discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"world_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"continental_championships_discipline_podiums":[{"discipline_kind":"lead","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"speed","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"combined","total":0,"1":0,"2":0,"3":0},{"discipline_kind":"boulder\u0026lead","total":0,"1":0,"2":0,"3":0}],"all_results":[{"season":"2025","rank":54,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Helsinki 2025","event_id":1418,"event_location":"Helsinki,
+        FIN","d_cat":780,"date":"2025-08-03","category_name":"U19 Women","result_url":"/api/v1/events/1418/result/780"},{"season":"2025","rank":11,"discipline":"boulder","event_name":"IFSC
+        Asian Cup Hong Kong 2025","event_id":1457,"event_location":"Hong Kong, HKG","d_cat":191,"date":"2025-03-09","category_name":"Women","result_url":"/api/v1/events/1457/result/191"},{"season":"2024","rank":8,"discipline":"boulder","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":215,"date":"2024-11-17","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1398/result/215"},{"season":"2024","rank":10,"discipline":"speed","event_name":"IFSC
+        Youth Asian Championships Jamshedpur 2024","event_id":1398,"event_location":"Jamshedpur","d_cat":214,"date":"2024-11-17","category_name":"Youth
+        A Female","result_url":"/api/v1/events/1398/result/214"},{"season":"2023","rank":61,"discipline":"lead","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":29,"date":"2023-08-27","category_name":"Youth A Female","result_url":"/api/v1/events/1304/result/29"},{"season":"2023","rank":53,"discipline":"boulder","event_name":"IFSC
+        Youth World Championships Seoul 2023","event_id":1304,"event_location":"South
+        Korea","d_cat":31,"date":"2023-08-27","category_name":"Youth A Female","result_url":"/api/v1/events/1304/result/31"}],"cup_rankings":[]}'
+  recorded_at: Tue, 10 Mar 2026 23:30:48 GMT
 recorded_with: VCR 6.4.0

@@ -33,14 +33,28 @@ module Ifsc
     end
 
     def find_or_create_athlete(reg)
-      athlete = Athlete.find_or_initialize_by(external_athlete_id: reg["athlete_id"])
+      athlete = Athlete.find_or_initialize_by(source: :ifsc, external_athlete_id: reg["athlete_id"])
+      was_new = athlete.new_record?
       athlete.update!(
         first_name: reg["firstname"],
         last_name: reg["lastname"],
         country_code: reg["country"],
         gender: map_gender(reg["gender"]),
+        federation: reg["federation"],
+        federation_id: reg["federation_id"],
       )
+      enrich_athlete(athlete) if was_new || athlete.photo_url.blank?
       athlete
+    end
+
+    def enrich_athlete(athlete)
+      data = @client.get_athlete(athlete.external_athlete_id)
+      attrs = {}
+      attrs[:photo_url] = data["photo_url"] if data["photo_url"].present? && athlete.photo_url.blank?
+      attrs[:flag_url] = data["flag_url"] if data["flag_url"].present? && athlete.flag_url.blank?
+      athlete.update!(attrs) if attrs.any?
+    rescue StandardError => e
+      Rails.logger.warn("Failed to enrich athlete #{athlete.external_athlete_id}: #{e.message}")
     end
 
     def map_gender(value)

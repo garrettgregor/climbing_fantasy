@@ -37,6 +37,17 @@ module Ifsc
       assert_equal "male", athlete.gender
     end
 
+    test "enriches athletes with photo_url and flag_url from athlete detail endpoint" do
+      VCR.use_cassette("ifsc_api_client/get_event_registrations_1491") do
+        RegistrationSyncer.call(event: @event, client: @client)
+      end
+
+      athlete = Athlete.find_by(external_athlete_id: 16642)
+      assert_not_nil athlete.flag_url, "flag_url should be populated from athlete detail"
+      assert_equal "https://d1n1qj9geboqnb.cloudfront.net/flags/AUS.png", athlete.flag_url
+      assert_not_nil athlete.photo_url, "photo_url should be populated from athlete detail"
+    end
+
     test "creates category registrations" do
       VCR.use_cassette("ifsc_api_client/get_event_registrations_1491") do
         RegistrationSyncer.call(event: @event, client: @client)
@@ -166,6 +177,10 @@ module Ifsc
     def get_event_registrations(event_id)
       @calls << event_id
       @responses.shift || []
+    end
+
+    def get_athlete(_id)
+      raise Ifsc::ApiClient::ApiError, "stubbed"
     end
   end
 
