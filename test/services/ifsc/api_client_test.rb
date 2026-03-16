@@ -7,7 +7,7 @@ module Ifsc
     end
 
     test "acquires session cookie on initialization" do
-      VCR.use_cassette("ifsc_api_client/session", rerecord_session_options) do
+      VCR.use_cassette("ifsc_api_client/session", re_record_interval: 7.days) do
         client = ApiClient.new
         assert_instance_of(ApiClient, client)
       end
@@ -196,14 +196,6 @@ module Ifsc
           @client.get_season(999999)
         end
       end
-    end
-
-    private
-
-    def rerecord_session_options
-      return {} unless ENV["RERECORD_IFSC_SESSION_CASSETTE"] == "1"
-
-      { record: :all }
     end
   end
 end

@@ -45,8 +45,7 @@ jobs:
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432
-          RERECORD_IFSC_SESSION_CASSETTE: "1"
-        run: bin/rails test test/services/ifsc/api_client_test.rb
+        run: bin/rails test test/services/ifsc/api_client_test.rb -n '/acquires session cookie on initialization/'
 
       - name: Open or update failure issue
         if: failure()
@@ -60,7 +59,7 @@ jobs:
               "",
               `Workflow run: ${runUrl}`,
               "",
-              "Run `bin/rails test test/services/ifsc/api_client_test.rb` locally and inspect cassette/API contract drift."
+              "Run `bin/rails test test/services/ifsc/api_client_test.rb -n '/acquires session cookie on initialization/'` locally and inspect cassette/API contract drift."
             ].join("\n");
 
             const issues = await github.paginate(github.rest.issues.listForRepo, {
