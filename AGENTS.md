@@ -1,6 +1,10 @@
 # Agents
 
 Guidance for AI coding agents working with the Climbing Fantasy codebase.
+Shared durable agent state lives in:
+
+- `.agents/README.md`
+- `.agents/lessons.md`
 
 ## Workflow Orchestration
 
@@ -20,7 +24,7 @@ Guidance for AI coding agents working with the Climbing Fantasy codebase.
 
 ### 3. Self-Improvement Loop
 
-- After ANY correction from the user: update `tasks/lessons.md` with the pattern
+- After ANY correction from the user: update `.agents/lessons.md` with the pattern
 - Write rules for yourself that prevent the same mistake
 - Ruthlessly iterate on these lessons until mistake rate drops
 - Review lessons at session start for relevant project
@@ -46,14 +50,12 @@ Guidance for AI coding agents working with the Climbing Fantasy codebase.
 - Zero context switching required from the user
 - Go fix failing CI tests without being told how
 
-## Task Management
+## Agent State
 
-1. **Plan First**: Write plan to `tasks/todo.md` with checkable items
-2. **Verify Plan**: Check in before starting implementation
-3. **Track Progress**: Mark items complete as you go
-4. **Explain Changes**: High-level summary at each step
-5. **Document Results**: Add review section to `tasks/todo.md`
-6. **Capture Lessons**: Update `tasks/lessons.md` after corrections
+1. **Shared State Lives in `.agents/`**: Put cross-agent guidance and durable notes in `.agents/`.
+2. **Lessons Are Shared**: Update `.agents/lessons.md` after corrections so Claude, Codex, and future agents read the same history.
+3. **Tasks Are Ephemeral**: Do not create persistent task-tracking files in the repo. Keep plans in your tool state or working context unless the user explicitly asks for a checked-in task document.
+4. **Keep Shared Files Focused**: `.agents/` should contain durable agent guidance, not per-task scratch notes.
 
 ## Core Principles
 
