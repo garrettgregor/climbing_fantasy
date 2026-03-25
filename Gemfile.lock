@@ -148,7 +148,7 @@ GEM
       sorbet-runtime (>= 0.6.12763)
     code_teams (1.3.0)
       sorbet-runtime
-    committee (5.6.1)
+    committee (5.6.2)
       json_schema (~> 0.14, >= 0.14.3)
       openapi_parser (~> 2.0)
       rack (>= 1.5)
@@ -674,7 +674,7 @@ CHECKSUMS
   code_ownership (2.1.1-x86_64-linux) sha256=601714890d0e260f0e443ae762dc0e633ab004878e6bf80afb25dbb99cc2a88d
   code_ownership (2.1.1-x86_64-linux-musl) sha256=3ed7624c44889aaaf4b62a1d5708ea3f656cf59a5a17c0b3d90cb2005c724396
   code_teams (1.3.0) sha256=73ee6e4d5b45fa65dd8c436d5b8ce61a2674d4856bbfd0cde5d8243835f17014
-  committee (5.6.1) sha256=464d99be2efdddfbce4f7658899b84b92c5ac790bc66971397c94acccff06a50
+  committee (5.6.2) sha256=4a0a7250962a4178878b48c33a2400822906f502f86b8a3cd82fe6c413a20341
   committee-rails (0.10.0) sha256=8145d0ce8924ad257cd3c5e1c324401e934d01cc847fa8f57dfe9bc2fe7446f1
   concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
   connection_pool (3.0.2) sha256=33fff5ba71a12d2aa26cb72b1db8bba2a1a01823559fb01d29eb74c286e62e0a
